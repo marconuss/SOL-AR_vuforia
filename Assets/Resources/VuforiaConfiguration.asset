@@ -13,27 +13,27 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: 
+    vuforiaLicenseKey: ARGn5k7/////AAABmRXNcTljjEmuqOlQxpkEiDQW1IYxvlcjwddGoMTBygli+xuwGqDIo+I28k06lO7P37u41w20FAiVjrWgYkpT1Ix/aQC4EaxseeHZ12C2SDYC5P+Gwb+eEFWbTB86pa4Eg31B+IlJp2Kcl9gAxdMjnv5VKwxq/69aj2fQD4Wp5PvyUxjGIFnyo64sszV4uVbyq+LVHs+P729Uy8RAnZjPFoz2IEv4ThmX/TeWjfts/RTcmxn6/Y9HV/5C3O6GIeMFuY8Tbcqq+14w7uFlyzsmUTQKnwkY9fUpTIrV7iPnK80oSvnuzj/AbePv1S71CLw+ECLAiuuoDRuJc3SE1G5XqMx21AIW8xeZW7wWAPgfNalN
     ufoLicenseKey: QVhhMW1LVC8vLy8vQUFBQUtEZnM2OTBiTjB1S24zME1lcWdBNEtHUkVTbHg0Qzk0ZW5ZcW5XbGEyRDNtdEpaK3dLRGFqZUpUQUhCczFGRG5QTnEvcWNjZWtmRUxrY3EyTG5hQVRyVjhyaStEOElsTTJGa296MUZxeFo4aTVVVTFpcVA3VjB5dVNKN0Q2dlg2TjBlZ1lNZGw1eTVyRXR6ZVpxeGxQR0FzTWQycS9EK2RzMWJORWFDNjVaNFExMStWMm9sUFc0S1dTQXVhb2NsQ3JnUUF1bHlGZXVPQ25FNk5ONGw0Wjh1ZXcvTjArVWRzd05qRDNSOFo5OUdTSDViRnpsNkI0a1dNNExmY2tkNFRadGloYm9wWVJKRlhpbnpRc3ozcXhZa2ovVFJKWEdVV3JPYjhnQ2dLR21tOXJ5bGFpSDRpUjlMWndGRHJSb0tWNjNIcWF4Nk5MTG14eGNvMUFrTUxQaTNiRlI2RkxNdFl4Qm42Z2xRSFZiT1E=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 1
+    maxSimultaneousImageTargets: 10
     maxSimultaneousObjectTargets: 1
     virtualSceneScaleFactor: 1
     useDelayedLoadingObjectTargets: 0
     modelTargetRecoWhileExtendedTracked: 1
     shareRecordingsInITunes: 0
-    version: 9.1.2
-    eulaAcceptedVersions: '{"Values":["","9.8","0.0"]}'
+    version: 9.8.8
+    eulaAcceptedVersions: '{"Values":["","9.8","0.0","8.6","8.1","8.5"]}'
   database:
     disableModelExtraction: 0
   shaders:
-    depthMaskShader: {fileID: 0}
+    depthMaskShader: {fileID: 4800000, guid: 1ce7eb78425fb1540838bc9d5d95857a, type: 3}
   videoBackground:
     numDivisions: 2
     videoBackgroundShader: {fileID: 4800000, guid: f40623b353e2f1943b1b3ba42975db7a,
       type: 3}
-    unlitShader: {fileID: 0}
+    unlitShader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
     videoBackgroundEnabled: 1
   deviceTracker:
     autoStartTracker: 1
