@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="spongebob-squarepants-png-7" size="10.000000 9.368750" />
+    <ImageTarget name="pikachu-icon-png-6" size="10.000000 10.000000" />
+    <ImageTarget name="Mallard2" size="10.000000 7.598103" />
+    <ImageTarget name="e747cd4c600a9e5cd55f3a59294a9219" size="10.000000 10.000000" />
+    <ImageTarget name="Die-Krone-des-Bieres-Wie-entsteht-der-Schaum-auf-dem-Bier" size="10.000000 10.000000" />
+    <ImageTarget name="dedkbnh-916bec39-98ca-4aec-881a-5aab77a542e9" size="10.000000 10.000000" />
+    <ImageTarget name="67df282a2ae3006bdf7d891cc69c16c6" size="10.000000 9.911190" />
+    <ImageTarget name="36d94dc1906fe6b08a9be6c39ebe089c" size="10.000000 9.968554" />
+    <ImageTarget name="05eb8920feaeea11115158fe2602d051" size="10.000000 11.326530" />
+    <ImageTarget name="1-2-kirby-png-image" size="10.000000 10.643016" />
+    <ImageTarget name="0b39b6ed2338f5402df42f2afcd931c2" size="10.000000 10.000000" />
+  </Tracking>
+</QCARConfig>
