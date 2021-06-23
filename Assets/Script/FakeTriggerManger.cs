@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class FakeTriggerManger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject[] triggerList;
+
+    void Awake()
     {
-        
+        triggerList = GameObject.FindGameObjectsWithTag("Trigger");
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
