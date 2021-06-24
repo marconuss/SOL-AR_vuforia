@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Card", menuName = "Card")]
-public partial class Card : ScriptableObject
+public partial class Card : MonoBehaviour
 {
     public cardType type;
-
+    [SerializeField]
+    GameObject prefab;
     public Sprite sprite;
     public int ID;
 
@@ -14,12 +14,12 @@ public partial class Card : ScriptableObject
 
     public void InstantiateCard(Vector3 pos)
     {
-        gameObject = GameObject.Instantiate(Resources.Load<GameObject>("Square"), pos, Quaternion.identity);
+        gameObject = Instantiate(prefab, pos, Quaternion.identity);
         gameObject.transform.localScale = new Vector3(1, 1, 1);
         gameObject.GetComponent<SpriteRenderer>().sprite = sprite;
     }
 
-    public void Remove()
+    public void RemoveCard()
     {
         if (gameObject) Destroy(gameObject);
     }

@@ -5,6 +5,8 @@ using System.Linq;
 
 public class TriggerGrid : MonoBehaviour
 {
+    public static TriggerGrid instance;
+
     [SerializeField]
     private GameObject[] triggers;
 
@@ -15,6 +17,13 @@ public class TriggerGrid : MonoBehaviour
 
     private void Awake()
     {
+        if (instance != null)
+        {
+            Destroy(this);
+        }
+
+        instance = this;
+
         triggers = GameObject.FindGameObjectsWithTag("Trigger");
         triggers = triggers.OrderBy(t => t.transform.GetSiblingIndex()).ToArray();
 
@@ -63,7 +72,7 @@ public class TriggerGrid : MonoBehaviour
         }
     }
 
-    private Vector2 GetTriggerGridPosition(GameObject trigger)
+    public Vector2 GetTriggerGridPosition(GameObject trigger)
     {
         Vector2 trigPos = new Vector2(0, 0);
 
