@@ -22,4 +22,9 @@ public class Trigger : MonoBehaviour
     {
         CardsOnTrigger.Remove(collision.gameObject);
     }
+
+    public List<GameObject> GetCardsOnTrigger()
+    {
+        return CardsOnTrigger;
+    }
 }
