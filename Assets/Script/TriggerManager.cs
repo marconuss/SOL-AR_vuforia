@@ -20,9 +20,10 @@ public class TriggerManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        //only for testing sorry
+        GridSystem grid = new GridSystem(3, 3, 10f);
     }
 
     public void UpdateCardList()
@@ -35,5 +36,6 @@ public class TriggerManager : MonoBehaviour
             }
         }
     }
+
 
 }
