@@ -1,0 +1,16 @@
+title: Start
+---
+
+
+// Before we start, wait two seconds to let the player see the environment
+// before starting the dialogue.
+<<wait 2>>
+
+// The start of our conversation!
+Sir Kit: Welcome to Sir Kit's Solar Power Trip. #line:kit_01
+Sir Kit: I, of course, am the magnanimous, eponymous Sir Kit. #line:kit_02
+Sir Kit: Play a card, will you? #line:kit_03
+<<wait 2>>
+<<quit>>
+===
+

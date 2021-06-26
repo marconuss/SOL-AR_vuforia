@@ -15,7 +15,7 @@ ScriptedImporter:
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 053561912b1654d80a424bb0696a74ae, type: 3}
   sourceScripts:
-  - {fileID: 6391573757903218779, guid: aa20c0d0a35724fbab9776c4c18234ba, type: 3}
+  - {fileID: 6391573757903218779, guid: c09e3170079acc84297f69e49fc28e38, type: 3}
   compileError: 
   serializedDeclarations:
   - name: $knows_anne_name
@@ -24,7 +24,8 @@ ScriptedImporter:
     defaultValueNumber: 0
     defaultValueString: 
     description: Does Tom know the name of the person he's talking to?
-    sourceYarnAsset: {fileID: 6391573757903218779, guid: aa20c0d0a35724fbab9776c4c18234ba, type: 3}
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: aa20c0d0a35724fbab9776c4c18234ba,
+      type: 3}
   defaultLanguage: en-AU
   languagesToSourceAssets:
   - languageID: en-AU

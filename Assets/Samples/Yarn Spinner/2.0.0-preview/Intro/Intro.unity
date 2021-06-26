@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -98,7 +98,8 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: f5715a94693314f2182d808995387ce9, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: f5715a94693314f2182d808995387ce9,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -5267,7 +5268,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 1
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -10286,7 +10287,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yarnProject: {fileID: 7545569452688597077, guid: 55636a520881a41289ff66b8d06e2a3f, type: 3}
+  yarnProject: {fileID: 7545569452688597077, guid: 55636a520881a41289ff66b8d06e2a3f,
+    type: 3}
   variableStorage: {fileID: 0}
   dialogueViews:
   - {fileID: 319993980}
@@ -15440,7 +15442,8 @@ MonoBehaviour:
   m_text: Option Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01329266931964dcd96abe5a67dac37d, type: 2}
-  m_sharedMaterial: {fileID: 5651634628456126433, guid: 01329266931964dcd96abe5a67dac37d, type: 2}
+  m_sharedMaterial: {fileID: 5651634628456126433, guid: 01329266931964dcd96abe5a67dac37d,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -15652,7 +15655,7 @@ MonoBehaviour:
   fadeOutTime: 0.05
   lineText: {fileID: 4935123091905265835}
   showCharacterNameInLineView: 0
-  characterNameText: {fileID: 0}
+  characterNameText: {fileID: 4935123091905265835}
   useTypewriterEffect: 1
   typewriterEffectSpeed: 120
   continueButton: {fileID: 0}
@@ -15879,7 +15882,8 @@ MonoBehaviour:
   m_text: Here's a big long line of dialogue, ready to be shown to the player.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01329266931964dcd96abe5a67dac37d, type: 2}
-  m_sharedMaterial: {fileID: 5651634628456126433, guid: 01329266931964dcd96abe5a67dac37d, type: 2}
+  m_sharedMaterial: {fileID: 5651634628456126433, guid: 01329266931964dcd96abe5a67dac37d,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
