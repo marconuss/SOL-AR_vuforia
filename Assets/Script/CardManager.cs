@@ -20,7 +20,8 @@ public class CardManager : MonoBehaviour
 
         instance = this;
 
-        grid = new GridSystem(3, 3, 10f);
+        grid = new GridSystem(2, 2, 6f);
+        Debug.Log("Card Grid Setup!");
     }
 
     // Update is called once per frame
@@ -40,7 +41,6 @@ public class CardManager : MonoBehaviour
     {
         grid.gridArray[x, y].placedCards.Remove(_card);
         _card.RemoveCard();
-        //grid.gridArray[x, y].hasCard = true;
         
     }
 }

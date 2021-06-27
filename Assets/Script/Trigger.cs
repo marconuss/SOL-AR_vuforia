@@ -7,26 +7,26 @@ public class Trigger : MonoBehaviour
     [SerializeField]
     private List<GameObject> CardsOnTrigger;
 
-    public Vector2 posInGrid;
-
     public List<GameObject> GetCardsOnTrigger()
     {
         return CardsOnTrigger;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Cards")
+        if (other.gameObject.tag == "Cards")
         {
-            Debug.Log(collision.gameObject.name + " on " + this.gameObject.name);
-            CardsOnTrigger.Add(collision.gameObject);
-            CardManager.instance.PlaceCard((int)TriggerGrid.instance.GetTriggerGridPosition(this.gameObject).x, (int)TriggerGrid.instance.GetTriggerGridPosition(this.gameObject).y, collision.gameObject.GetComponent<Card>());
-            
+            Debug.Log(other.gameObject.name + " on " + this.gameObject.name);
+            CardsOnTrigger.Add(other.gameObject);
+            CardManager.instance.PlaceCard((int)TriggerGrid.instance.GetTriggerGridPosition(this.gameObject).x, (int)TriggerGrid.instance.GetTriggerGridPosition(this.gameObject).y, other.gameObject.GetComponent<Card>());
+
         }
     }
-    private void OnTriggerExit2D(Collider2D collision)
+
+    private void OnTriggerExit(Collider other)
     {
-        CardsOnTrigger.Remove(collision.gameObject);
-        CardManager.instance.RemoveCard((int)TriggerGrid.instance.GetTriggerGridPosition(this.gameObject).x,(int) TriggerGrid.instance.GetTriggerGridPosition(this.gameObject).y, collision.gameObject.GetComponent<Card>());
+        CardsOnTrigger.Remove(other.gameObject);
+        CardManager.instance.RemoveCard((int)TriggerGrid.instance.GetTriggerGridPosition(this.gameObject).x, (int)TriggerGrid.instance.GetTriggerGridPosition(this.gameObject).y, other.gameObject.GetComponent<Card>());
+       
     }
 }

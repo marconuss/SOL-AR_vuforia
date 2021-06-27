@@ -70,6 +70,8 @@ public class TriggerGrid : MonoBehaviour
                 triggerIndex++;
             }
         }
+
+        Debug.Log("Trigger Grid Setup!");
     }
 
     public Vector2 GetTriggerGridPosition(GameObject trigger)
