@@ -16,8 +16,8 @@ public partial class Card : MonoBehaviour
     public void InstantiateCard(Vector3 pos)
     {
         newGameObject = Instantiate(prefab, pos, Quaternion.identity);
-        gameObject.transform.localScale = new Vector3(0.3f, 0.3f, 0);
-        //newGameObject.transform.localScale = new Vector3(1.8f, 1.8f, 0);
+        //newGameObject.transform.localScale = new Vector3(0.3f, 0.3f, 0);
+        newGameObject.transform.localScale = new Vector3(1.8f, 1.8f, 0);
         spriteRenderer = newGameObject.GetComponent<SpriteRenderer>();
 
         switch (type)

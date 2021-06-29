@@ -23,15 +23,15 @@ public class GridSystem
             {
                 gridArray[x, y] = new CardSlot();
                 Debug.Log(x + "," + y);
-                Debug.DrawLine(CellToWorldPosition(x, y), CellToWorldPosition(x + 1, y), Color.red, 100f);
-                Debug.DrawLine(CellToWorldPosition(x, y), CellToWorldPosition(x, y + 1), Color.red, 100f);
+                //Debug.DrawLine(CellToWorldPosition(x, y), CellToWorldPosition(x + 1, y), Color.red, 10f);
+                //Debug.DrawLine(CellToWorldPosition(x, y), CellToWorldPosition(x, y + 1), Color.red, 10f);
                 GameObject.CreatePrimitive(PrimitiveType.Sphere).transform.position = GetCellCenter(x, y);
             }
 
         }
 
-        Debug.DrawLine(CellToWorldPosition(0, height), CellToWorldPosition(width, height), Color.red, 100f);
-        Debug.DrawLine(CellToWorldPosition(width, 0), CellToWorldPosition(width, height), Color.red, 100f);
+        //Debug.DrawLine(CellToWorldPosition(0, height), CellToWorldPosition(width, height), Color.red, 100f);
+        //Debug.DrawLine(CellToWorldPosition(width, 0), CellToWorldPosition(width, height), Color.red, 100f);
     }
 
     public Vector3 CellToWorldPosition(int x, int y)
