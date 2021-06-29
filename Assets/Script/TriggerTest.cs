@@ -11,9 +11,10 @@ public class TriggerTest : MonoBehaviour
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Card placed");
         if(cardPlaced == false)
         cardPlaced = true;
-        TriggerManager.instance.UpdateCardList();
+        //TriggerManager.instance.UpdateCardList();
         
     }
 

@@ -123,52 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &28386699
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 28386700}
-  - component: {fileID: 28386701}
-  m_Layer: 0
-  m_Name: TriggerManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &28386700
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 28386699}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.187913, y: 0.2533064, z: -3.148147}
-  m_LocalScale: {x: 0.5, y: 0.6666667, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1583917507}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &28386701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 28386699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f176fe549e9b76c409590a69c070ef3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggers: []
-  rows: 6
-  collumns: 2
 --- !u!1 &60782529
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,7 +247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardsOnTrigger: []
-  posInGrid: {x: 2, y: 3}
+  cardPlaced: 0
 --- !u!1 &169263787
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,7 +377,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -453,7 +407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: f18ff4ea77fdb85419a2490a7069759b, type: 3}
+  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
   ID: 0
 --- !u!1 &211306184
 GameObject:
@@ -584,7 +538,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -614,7 +568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: f18ff4ea77fdb85419a2490a7069759b, type: 3}
+  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
   ID: 0
 --- !u!1 &299654764
 GameObject:
@@ -838,7 +792,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -868,7 +822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: f18ff4ea77fdb85419a2490a7069759b, type: 3}
+  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
   ID: 0
 --- !u!1 &435143603
 GameObject:
@@ -994,7 +948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardsOnTrigger: []
-  posInGrid: {x: 2, y: 6}
+  cardPlaced: 0
 --- !u!1 &505183403
 GameObject:
   m_ObjectHideFlags: 0
@@ -1124,7 +1078,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1154,7 +1108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: f18ff4ea77fdb85419a2490a7069759b, type: 3}
+  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
   ID: 0
 --- !u!1 &506661107
 GameObject:
@@ -1280,7 +1234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardsOnTrigger: []
-  posInGrid: {x: 1, y: 1}
+  cardPlaced: 0
 --- !u!1 &612915913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1405,7 +1359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardsOnTrigger: []
-  posInGrid: {x: 1, y: 4}
+  cardPlaced: 0
 --- !u!1 &658545606
 GameObject:
   m_ObjectHideFlags: 0
@@ -1530,7 +1484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardsOnTrigger: []
-  posInGrid: {x: 1, y: 3}
+  cardPlaced: 0
 --- !u!1 &700942830
 GameObject:
   m_ObjectHideFlags: 0
@@ -1700,7 +1654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardsOnTrigger: []
-  posInGrid: {x: 2, y: 4}
+  cardPlaced: 0
 --- !u!1 &807719574
 GameObject:
   m_ObjectHideFlags: 0
@@ -1830,7 +1784,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1860,7 +1814,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: f18ff4ea77fdb85419a2490a7069759b, type: 3}
+  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
   ID: 0
 --- !u!1 &858727710
 GameObject:
@@ -1991,7 +1945,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2021,7 +1975,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: f18ff4ea77fdb85419a2490a7069759b, type: 3}
+  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
   ID: 0
 --- !u!1 &1115113121
 GameObject:
@@ -2230,7 +2184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardsOnTrigger: []
-  posInGrid: {x: 2, y: 2}
+  cardPlaced: 0
 --- !u!1 &1142215529
 GameObject:
   m_ObjectHideFlags: 0
@@ -2355,7 +2309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardsOnTrigger: []
-  posInGrid: {x: 1, y: 2}
+  cardPlaced: 0
 --- !u!1 &1204165955
 GameObject:
   m_ObjectHideFlags: 0
@@ -2485,7 +2439,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2515,7 +2469,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: f18ff4ea77fdb85419a2490a7069759b, type: 3}
+  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
   ID: 0
 --- !u!1 &1229521818
 GameObject:
@@ -2646,7 +2600,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2676,7 +2630,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: f18ff4ea77fdb85419a2490a7069759b, type: 3}
+  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
   ID: 0
 --- !u!1 &1270822445
 GameObject:
@@ -2802,7 +2756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardsOnTrigger: []
-  posInGrid: {x: 2, y: 1}
+  cardPlaced: 0
 --- !u!1 &1320924314
 GameObject:
   m_ObjectHideFlags: 0
@@ -2932,7 +2886,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2962,7 +2916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: f18ff4ea77fdb85419a2490a7069759b, type: 3}
+  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
   ID: 0
 --- !u!1 &1400892235
 GameObject:
@@ -3088,7 +3042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardsOnTrigger: []
-  posInGrid: {x: 1, y: 6}
+  cardPlaced: 0
 --- !u!1 &1409820092
 GameObject:
   m_ObjectHideFlags: 0
@@ -3218,7 +3172,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3248,7 +3202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: f18ff4ea77fdb85419a2490a7069759b, type: 3}
+  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
   ID: 0
 --- !u!1 &1488376861
 GameObject:
@@ -3379,7 +3333,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3409,7 +3363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: f18ff4ea77fdb85419a2490a7069759b, type: 3}
+  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
   ID: 0
 --- !u!1 &1493451865
 GameObject:
@@ -3540,7 +3494,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3570,7 +3524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: f18ff4ea77fdb85419a2490a7069759b, type: 3}
+  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
   ID: 0
 --- !u!1 &1555186473
 GameObject:
@@ -3779,7 +3733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardsOnTrigger: []
-  posInGrid: {x: 1, y: 5}
+  cardPlaced: 0
 --- !u!1 &1583917506
 GameObject:
   m_ObjectHideFlags: 0
@@ -3789,7 +3743,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1583917507}
-  - component: {fileID: 1583917508}
   - component: {fileID: 1583917509}
   m_Layer: 0
   m_Name: Playfield
@@ -3822,24 +3775,9 @@ Transform:
   - {fileID: 60782531}
   - {fileID: 1127941106}
   - {fileID: 1270822447}
-  - {fileID: 28386700}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1583917508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583917506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11ef82412fab5f24899191e72eda856e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: []
-  triggerList2: []
 --- !u!114 &1583917509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3854,7 +3792,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggers: []
   rows: 6
-  collumns: 2
+  collumns: 1
 --- !u!1 &1765964973
 GameObject:
   m_ObjectHideFlags: 0
@@ -3984,7 +3922,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4014,7 +3952,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: f18ff4ea77fdb85419a2490a7069759b, type: 3}
+  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
   ID: 0
 --- !u!1 &1805681796
 GameObject:
@@ -4145,7 +4083,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4175,7 +4113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: f18ff4ea77fdb85419a2490a7069759b, type: 3}
+  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
   ID: 0
 --- !u!1 &1847735117
 GameObject:
@@ -4301,7 +4239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardsOnTrigger: []
-  posInGrid: {x: 2, y: 5}
+  cardPlaced: 0
 --- !u!1 &1887074848
 GameObject:
   m_ObjectHideFlags: 0
@@ -4431,7 +4369,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4461,5 +4399,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: f18ff4ea77fdb85419a2490a7069759b, type: 3}
+  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
   ID: 0

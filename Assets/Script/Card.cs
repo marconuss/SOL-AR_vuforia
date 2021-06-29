@@ -10,18 +10,45 @@ public partial class Card : MonoBehaviour
     public Sprite sprite;
     public int ID;
 
-    GameObject gameObject;
+    GameObject newGameObject;
+    SpriteRenderer spriteRenderer;
 
     public void InstantiateCard(Vector3 pos)
     {
-        gameObject = Instantiate(prefab, pos, Quaternion.identity);
-        gameObject.transform.localScale = new Vector3(0.6f, 0.6f, 1);
-        gameObject.GetComponent<SpriteRenderer>().sprite = sprite;
+        newGameObject = Instantiate(prefab, pos, Quaternion.identity);
+        //gameObject.transform.localScale = new Vector3(0.3f, 0.3f, 0);
+        newGameObject.transform.localScale = new Vector3(1.8f, 1.8f, 0);
+        spriteRenderer = newGameObject.GetComponent<SpriteRenderer>();
+
+        switch (type)
+        {
+            case cardType.Reflector:
+                spriteRenderer.sprite = CardManager.instance.ReflectorSprite;
+                break;
+            case cardType.Glass:
+                spriteRenderer.sprite = CardManager.instance.GlassSprite;
+                break;
+            case cardType.Conductor:
+                spriteRenderer.sprite = CardManager.instance.ConductorSprite;
+                break;
+            case cardType.GridConductor:
+                spriteRenderer.sprite = CardManager.instance.ConductorGridSprite;
+                break;
+            case cardType.NTypeSilicon:
+                spriteRenderer.sprite = CardManager.instance.NTypeSiliconSprite;
+                break;
+            case cardType.PTypeSilicon:
+                spriteRenderer.sprite = CardManager.instance.PTypeSiliconSprite;
+                break;
+            default:
+                Debug.LogWarning("No fitting sprite found");
+                break;
+        }
     }
 
     public void RemoveCard()
     {
-        if (gameObject) Destroy(gameObject);
+        if (newGameObject) Destroy(newGameObject);
     }
 
 }

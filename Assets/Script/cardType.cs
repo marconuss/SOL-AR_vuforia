@@ -1,5 +1,5 @@
 ﻿public partial class Card
 {
-    public enum cardType {Silicon, Reflector}; //pack des in ne klasse
+    public enum cardType {Reflector, Glass, Conductor, GridConductor, NTypeSilicon, PTypeSilicon}; 
 
 }

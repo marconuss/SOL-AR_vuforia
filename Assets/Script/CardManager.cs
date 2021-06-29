@@ -5,8 +5,15 @@ using UnityEngine;
 public class CardManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] GameObject cardPrefab;
-
+    public Sprite ReflectorSprite;
+    public Sprite ConductorSprite;
+    public Sprite ConductorGridSprite;
+    public Sprite NTypeSiliconSprite;
+    public Sprite PTypeSiliconSprite;
+    public Sprite GlassSprite;
+    
+    public int rows, columns;
+    public float cellSize;
     public static CardManager instance;
 
     GridSystem grid;
@@ -20,7 +27,7 @@ public class CardManager : MonoBehaviour
 
         instance = this;
 
-        grid = new GridSystem(2, 2, 6f);
+        grid = new GridSystem(columns, rows, cellSize);
         Debug.Log("Card Grid Setup!");
     }
 
