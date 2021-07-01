@@ -2,6 +2,7 @@
 [Tt]emp/
 [Oo]bj/
 [Bb]uild/
+[Ll]ogs/
 [Bb]uilds/
 Assets/AssetStoreTools*
 
@@ -24,6 +25,7 @@ ExportedObj/
 *.pdb
 *.opendb
 *.VC.db
+*.log
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -41,3 +43,5 @@ Logs/shadercompiler-UnityShaderCompiler.exe1.log
 Logs/shadercompiler-UnityShaderCompiler.exe2.log
 Logs/shadercompiler-UnityShaderCompiler.exe3.log
 Logs/shadercompiler-UnityShaderCompiler.exe4.log
+
+UserSettings/EditorUserSettings.asset
