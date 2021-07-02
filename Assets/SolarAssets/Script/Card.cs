@@ -10,6 +10,8 @@ public partial class Card : MonoBehaviour
 
     public Card[] neighbourCards;
 
+    public Vector2Int gridPosition;
+
     GameObject newGameObject;
     SpriteRenderer spriteRenderer;
 
@@ -61,6 +63,11 @@ public partial class Card : MonoBehaviour
     public void RemoveCard()
     {
         if (newGameObject) Destroy(newGameObject);
+
+        for (int i = 0; i < neighbourCards.Length; i++)
+        {
+            neighbourCards[i] = null;
+        }
     }
 
 }
