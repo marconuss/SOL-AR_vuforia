@@ -7,11 +7,16 @@ public partial class Card : MonoBehaviour
     public cardType type;
     [SerializeField]
     GameObject prefab;
-    public Sprite sprite;
-    public int ID;
+
+    public Card[] neighbourCards;
 
     GameObject newGameObject;
     SpriteRenderer spriteRenderer;
+
+    private void Start()
+    {
+        neighbourCards = new Card[4];
+    }
 
     public void InstantiateCard(Vector3 pos)
     {
@@ -19,6 +24,12 @@ public partial class Card : MonoBehaviour
         //newGameObject.transform.localScale = new Vector3(0.3f, 0.3f, 0);
         newGameObject.transform.localScale = new Vector3(1.8f, 1.8f, 0);
         spriteRenderer = newGameObject.GetComponent<SpriteRenderer>();
+
+        for (int i = 0; i < neighbourCards.Length; i++)
+        {
+            if(neighbourCards[i])
+            Debug.LogWarning(neighbourCards[i].gameObject.name);
+        }
 
         switch (type)
         {

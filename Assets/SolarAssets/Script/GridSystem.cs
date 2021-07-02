@@ -9,6 +9,9 @@ public class GridSystem
     public CardSlot[,] gridArray;
     float cellSize;
 
+    public int Width { get => width;}
+    public int Height { get => height;}
+
     public GridSystem(int width, int height, float cellSize)
     {
         this.width = width;
