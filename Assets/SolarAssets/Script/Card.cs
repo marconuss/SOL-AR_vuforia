@@ -15,6 +15,7 @@ public partial class Card : MonoBehaviour
     GameObject newGameObject;
     SpriteRenderer spriteRenderer;
 
+
     private void Start()
     {
         neighbourCards = new Card[4];
@@ -36,29 +37,44 @@ public partial class Card : MonoBehaviour
         switch (type)
         {
             case cardType.Reflector:
-                spriteRenderer.sprite = CardManager.instance.ReflectorSprite;
+                spriteRenderer.sprite = GameManager.instance.ReflectorSprite;
                 break;
+
             case cardType.Glass:
-                spriteRenderer.sprite = CardManager.instance.GlassSprite;
+                spriteRenderer.sprite = GameManager.instance.GlassSprite;
                 break;
+
             case cardType.Conductor:
-                spriteRenderer.sprite = CardManager.instance.ConductorSprite;
+                spriteRenderer.sprite = GameManager.instance.ConductorSprite;
                 break;
+
             case cardType.GridConductor:
-                spriteRenderer.sprite = CardManager.instance.ConductorGridSprite;
+                spriteRenderer.sprite = GameManager.instance.ConductorGridSprite;
                 break;
+
             case cardType.NTypeSilicon:
-                spriteRenderer.sprite = CardManager.instance.NTypeSiliconSprite;
+                spriteRenderer.sprite = GameManager.instance.NTypeSiliconSprite;
                 break;
+
             case cardType.PTypeSilicon:
-                spriteRenderer.sprite = CardManager.instance.PTypeSiliconSprite;
+                spriteRenderer.sprite = GameManager.instance.PTypeSiliconSprite;
                 break;
+
             default:
-                spriteRenderer.sprite = CardManager.instance.ReflectorSprite;
+                spriteRenderer.sprite = GameManager.instance.ReflectorSprite;
                 Debug.LogWarning("No fitting sprite found");
                 break;
         }
+
     }
+
+    bool CheckNeighbourType(int direction, cardType type)
+    {
+        if (neighbourCards[direction].type == type) return true;
+        else return false;
+    }
+
+  
 
     public void RemoveCard()
     {

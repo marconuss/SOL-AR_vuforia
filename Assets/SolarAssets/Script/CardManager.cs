@@ -5,20 +5,16 @@ using System.Linq;
 
 public class CardManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public Sprite ReflectorSprite;
-    public Sprite ConductorSprite;
-    public Sprite ConductorGridSprite;
-    public Sprite NTypeSiliconSprite;
-    public Sprite PTypeSiliconSprite;
-    public Sprite GlassSprite;
-    
     public int rows, columns;
     public float cellSize;
 
     public List<Card> cardsOnField;
 
     public static CardManager instance;
+
+    //event that gets called when card is placed
+    public delegate void CardPlace();
+    public static event CardPlace OnCardPlaced;
 
     GridSystem grid;
 
@@ -44,9 +40,9 @@ public class CardManager : MonoBehaviour
 
     public void PlaceCard(int x, int y, Card _card)
     {
+        cardsOnField.Add(_card);
         grid.gridArray[x, y].placedCards.Add(_card);
         grid.gridArray[x, y].hasCard = true;
-        cardsOnField.Add(_card);
         _card.gridPosition = new Vector2Int(x, y);
         _card.InstantiateCard(grid.GetCellCenter(x, y));
 
@@ -54,18 +50,25 @@ public class CardManager : MonoBehaviour
         {
             UpdateNeighbours(card.gridPosition.x, card.gridPosition.y, card);     
         }
+
+        if(OnCardPlaced != null)
+        {
+            OnCardPlaced();
+        }
     }
 
     public void RemoveCard(int x, int y, Card _card)
     {
+        cardsOnField.Remove(_card);
         grid.gridArray[x, y].placedCards.Remove(_card);
         _card.RemoveCard();
-        cardsOnField.Remove(_card);
+
 
         foreach (Card card in cardsOnField)
         {
             UpdateNeighbours(card.gridPosition.x, card.gridPosition.y, card);
         }
+
     }
 
     public void UpdateNeighbours(int x, int y, Card _card)

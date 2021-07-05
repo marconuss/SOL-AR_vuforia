@@ -407,8 +407,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
-  ID: 0
+  neighbourCards: []
+  gridPosition: {x: 0, y: 0}
 --- !u!1 &211306184
 GameObject:
   m_ObjectHideFlags: 0
@@ -568,8 +568,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
-  ID: 0
+  neighbourCards: []
+  gridPosition: {x: 0, y: 0}
 --- !u!1 &299654764
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,8 +822,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
-  ID: 0
+  neighbourCards: []
+  gridPosition: {x: 0, y: 0}
 --- !u!1 &435143603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1108,8 +1108,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
-  ID: 0
+  neighbourCards: []
+  gridPosition: {x: 0, y: 0}
 --- !u!1 &506661107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,8 +1814,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
-  ID: 0
+  neighbourCards: []
+  gridPosition: {x: 0, y: 0}
 --- !u!1 &858727710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1975,8 +1975,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
-  ID: 0
+  neighbourCards: []
+  gridPosition: {x: 0, y: 0}
 --- !u!1 &1115113121
 GameObject:
   m_ObjectHideFlags: 0
@@ -2469,8 +2469,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
-  ID: 0
+  neighbourCards: []
+  gridPosition: {x: 0, y: 0}
 --- !u!1 &1229521818
 GameObject:
   m_ObjectHideFlags: 0
@@ -2630,8 +2630,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
-  ID: 0
+  neighbourCards: []
+  gridPosition: {x: 0, y: 0}
 --- !u!1 &1270822445
 GameObject:
   m_ObjectHideFlags: 0
@@ -2916,8 +2916,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
-  ID: 0
+  neighbourCards: []
+  gridPosition: {x: 0, y: 0}
 --- !u!1 &1400892235
 GameObject:
   m_ObjectHideFlags: 0
@@ -3202,8 +3202,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
-  ID: 0
+  neighbourCards: []
+  gridPosition: {x: 0, y: 0}
 --- !u!1 &1488376861
 GameObject:
   m_ObjectHideFlags: 0
@@ -3363,8 +3363,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
-  ID: 0
+  neighbourCards: []
+  gridPosition: {x: 0, y: 0}
 --- !u!1 &1493451865
 GameObject:
   m_ObjectHideFlags: 0
@@ -3524,8 +3524,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
-  ID: 0
+  neighbourCards: []
+  gridPosition: {x: 0, y: 0}
+--- !u!1 &1534738443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1534738444}
+  - component: {fileID: 1534738445}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1534738444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534738443}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.061563, y: 15.318577, z: -2.373931}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1534738445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534738443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a7dcf16a86db2149893162610fd8cd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReflectorSprite: {fileID: 21300000, guid: c3662c2aa72f5da45b9ac2964198b50d, type: 3}
+  ConductorSprite: {fileID: 21300000, guid: 41ef4b7fdafc6f04c82a7a3f50ce084b, type: 3}
+  ConductorGridSprite: {fileID: 21300000, guid: ba21a2fafbe41f54a9b15e9c463b18c3,
+    type: 3}
+  NTypeSiliconSprite: {fileID: 21300000, guid: 9b5ae649e776f754fa8f6b5fdd458ddc, type: 3}
+  PTypeSiliconSprite: {fileID: 21300000, guid: 1185795c5ea5cdb418eaa6a26659614a, type: 3}
+  GlassSprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
 --- !u!1 &1555186473
 GameObject:
   m_ObjectHideFlags: 0
@@ -3952,8 +4002,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
-  ID: 0
+  neighbourCards: []
+  gridPosition: {x: 0, y: 0}
 --- !u!1 &1805681796
 GameObject:
   m_ObjectHideFlags: 0
@@ -4113,8 +4163,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
-  ID: 0
+  neighbourCards: []
+  gridPosition: {x: 0, y: 0}
 --- !u!1 &1847735117
 GameObject:
   m_ObjectHideFlags: 0
@@ -4399,5 +4449,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
-  ID: 0
+  neighbourCards: []
+  gridPosition: {x: 0, y: 0}
