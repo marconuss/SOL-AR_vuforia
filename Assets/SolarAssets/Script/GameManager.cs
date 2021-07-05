@@ -39,21 +39,39 @@ public class GameManager : MonoBehaviour
         {
             if(card.type == Card.cardType.Conductor)
             {
-                
-                
-                    if (card.neighbourCards[1].type == Card.cardType.NTypeSilicon || card.neighbourCards[3].type == Card.cardType.NTypeSilicon ||
-                        card.neighbourCards[1].type == Card.cardType.PTypeSilicon || card.neighbourCards[3].type == Card.cardType.PTypeSilicon)
+                if (card.neighbourCards[1])
+                {
+                    if (card.neighbourCards[1].type == Card.cardType.NTypeSilicon || card.neighbourCards[1].type == Card.cardType.PTypeSilicon)
                     {
                         ActivateCircuit();
                     }
-                
+                }
+
+                if (card.neighbourCards[3])
+                {
+                    if (card.neighbourCards[3].type == Card.cardType.NTypeSilicon || card.neighbourCards[3].type == Card.cardType.PTypeSilicon)
+                    {
+                        ActivateCircuit();
+                    }
+                }
+
             }
             if (card.type == Card.cardType.GridConductor)
             {
-                if (card.neighbourCards[1].type == Card.cardType.NTypeSilicon || card.neighbourCards[3].type == Card.cardType.NTypeSilicon ||
-                   card.neighbourCards[1].type == Card.cardType.PTypeSilicon || card.neighbourCards[3].type == Card.cardType.PTypeSilicon)
+                if (card.neighbourCards[1])
                 {
-                    ActivateCircuit();
+                    if (card.neighbourCards[1].type == Card.cardType.NTypeSilicon || card.neighbourCards[1].type == Card.cardType.PTypeSilicon)
+                    {
+                        ActivateCircuit();
+                    }
+                }
+
+                if (card.neighbourCards[3])
+                {
+                    if (card.neighbourCards[3].type == Card.cardType.NTypeSilicon || card.neighbourCards[3].type == Card.cardType.PTypeSilicon)
+                    {
+                        ActivateCircuit();
+                    }
                 }
             }
             if (card.type == Card.cardType.NTypeSilicon)
