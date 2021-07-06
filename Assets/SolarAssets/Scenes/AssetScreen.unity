@@ -188,7 +188,7 @@ SpriteRenderer:
   m_Size: {x: 38.399998, y: 21.599998}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &48405896
@@ -492,7 +492,7 @@ SpriteRenderer:
   m_Size: {x: 7.31, y: 10.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1521241376
@@ -628,6 +628,9 @@ MonoBehaviour:
   NTypeSiliconSprite: {fileID: 21300000, guid: 9b5ae649e776f754fa8f6b5fdd458ddc, type: 3}
   PTypeSiliconSprite: {fileID: 21300000, guid: 1185795c5ea5cdb418eaa6a26659614a, type: 3}
   GlassSprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
+  fungusManager: {fileID: 0}
+  fungusVariables: []
+  solution: 020000000500000004000000030000000000000001000000
 --- !u!4 &1952345208
 Transform:
   m_ObjectHideFlags: 0

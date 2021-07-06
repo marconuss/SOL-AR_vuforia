@@ -12,17 +12,20 @@ public class GameManager : MonoBehaviour
     public Sprite PTypeSiliconSprite;
     public Sprite GlassSprite;
 
-    public VariableReference[] funugsVariables;
-
     public Flowchart fungusManager;
+    public VariableReference[] fungusVariables;
 
+    public List<Card.cardType> solution;
 
-    public enum photonState {Pass, Blocked, Reflected}
+    public enum photonState { Pass, Blocked, Reflected }
 
     public static GameManager instance;
 
     bool circuitActive = false;
     bool electricFieldActive = false;
+
+    int correctTiles;
+    bool secondPhase;
 
     void Start()
     {
@@ -32,18 +35,24 @@ public class GameManager : MonoBehaviour
         }
 
         instance = this;
+
+        correctTiles = 0;
+        secondPhase = false;
     }
 
     private void OnEnable()
     {
         CardManager.OnCardPlaced += UpdateInteraction;
+        CardManager.OnCardPlaced += CheckSolution;
+        CardManager.OnCardRemoved += UpdateInteraction;
+        CardManager.OnCardRemoved += CheckSolution;
     }
 
     public void UpdateInteraction()
     {
         foreach (Card card in CardManager.instance.cardsOnField)
         {
-            if(card.type == Card.cardType.Conductor)
+            if (card.type == Card.cardType.Conductor)
             {
                 if (card.neighbourCards[1])
                 {
@@ -82,7 +91,7 @@ public class GameManager : MonoBehaviour
             }
             if (card.type == Card.cardType.NTypeSilicon)
             {
-                if(card.neighbourCards[1] != null && card.neighbourCards[1].type == Card.cardType.PTypeSilicon) ActivateElectricField();
+                if (card.neighbourCards[1] != null && card.neighbourCards[1].type == Card.cardType.PTypeSilicon) ActivateElectricField();
                 if (card.neighbourCards[3] != null && card.neighbourCards[3].type == Card.cardType.PTypeSilicon) ActivateElectricField();
 
 
@@ -96,9 +105,49 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void CheckSolution()
+    {
+        correctTiles = 0; 
+
+        foreach (Card card in CardManager.instance.cardsOnField)
+        {
+            if (card.type == solution[card.gridPosition.y])
+            {
+                correctTiles++;
+
+                if (correctTiles == 6 && secondPhase == false)
+                {
+                    ActivateSecondPhase();
+                }
+
+                if (correctTiles == 6 && secondPhase == true)
+                {
+                    Win();
+                }
+
+            }
+        }
+
+    }
+
+
+
+    void ActivateSecondPhase()
+    {
+        secondPhase = true;
+        correctTiles = 0;
+        Debug.Log("Second Phase started");
+
+    }
+
+    void Win()
+    {
+
+    }
+
     public void ActivateCircuit()
     {
-        if(circuitActive == false) circuitActive = true;
+        if (circuitActive == false) circuitActive = true;
 
         Debug.Log("Circuit Activated");
     }
@@ -106,8 +155,6 @@ public class GameManager : MonoBehaviour
     public void ActivateElectricField()
     {
         if (electricFieldActive == false) electricFieldActive = true;
-        fungusManager.SetBooleanVariable("Var", false);
-        //funugsVariables[0].Set(false);
         Debug.Log("Electric Field activated");
     }
 
@@ -119,11 +166,11 @@ public class GameManager : MonoBehaviour
     public void ChangeElectronState()
     {
         if (electricFieldActive == false) { }
-            //electrons loose
+        //electrons loose
         if (electricFieldActive && circuitActive == false) { }
-                // electrons move and then realign
+        // electrons move and then realign
         if (electricFieldActive && circuitActive) { }
-            //electrons travel to P type layer
+        //electrons travel to P type layer
     }
 
     private void OnDisable()
@@ -131,3 +178,4 @@ public class GameManager : MonoBehaviour
         CardManager.OnCardPlaced -= UpdateInteraction;
     }
 }
+

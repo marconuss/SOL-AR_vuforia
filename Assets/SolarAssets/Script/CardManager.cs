@@ -15,6 +15,8 @@ public class CardManager : MonoBehaviour
     //event that gets called when card is placed
     public delegate void CardPlace();
     public static event CardPlace OnCardPlaced;
+    public delegate void CardRemove();
+    public static event CardPlace OnCardRemoved;
 
     GridSystem grid;
 
@@ -36,6 +38,11 @@ public class CardManager : MonoBehaviour
     void Update()
     {
        
+    }
+
+    public Card GetLastCardOnCell(int x, int y)
+    {
+        return grid.gridArray[x, y].placedCards.Last<Card>();
     }
 
     public void PlaceCard(int x, int y, Card _card)
@@ -69,6 +76,10 @@ public class CardManager : MonoBehaviour
             UpdateNeighbours(card.gridPosition.x, card.gridPosition.y, card);
         }
 
+        if (OnCardRemoved != null)
+        {
+            OnCardRemoved();
+        }
     }
 
     public void UpdateNeighbours(int x, int y, Card _card)
@@ -147,4 +158,6 @@ public class CardManager : MonoBehaviour
         }
 
     }
+
+
 }

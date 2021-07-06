@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 77238471}
   - component: {fileID: 77238470}
   m_Layer: 0
-  m_Name: Card1 (1)
+  m_Name: Glass
   m_TagString: Cards
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -172,8 +172,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
-  ID: 0
+  neighbourCards: []
+  gridPosition: {x: 0, y: 0}
 --- !u!114 &77238471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -767,7 +767,7 @@ GameObject:
   - component: {fileID: 505098045}
   - component: {fileID: 505098044}
   m_Layer: 0
-  m_Name: Card1 (2)
+  m_Name: Grid Conductor
   m_TagString: Cards
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -801,8 +801,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 3
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
-  ID: 0
+  neighbourCards: []
+  gridPosition: {x: 0, y: 0}
 --- !u!114 &505098045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2068,7 +2068,7 @@ Camera:
   far clip plane: 10
   field of view: 60
   orthographic: 1
-  orthographic size: 40.249928
+  orthographic size: 27.514866
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -2238,7 +2238,7 @@ GameObject:
   - component: {fileID: 1239568427}
   - component: {fileID: 1239568426}
   m_Layer: 0
-  m_Name: Card1 (4)
+  m_Name: PType Silicon
   m_TagString: Cards
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2272,8 +2272,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 5
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
-  ID: 0
+  neighbourCards: []
+  gridPosition: {x: 0, y: 0}
 --- !u!114 &1239568427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2899,7 +2899,7 @@ GameObject:
   - component: {fileID: 1488376865}
   - component: {fileID: 1488376867}
   m_Layer: 0
-  m_Name: Card1
+  m_Name: Conductor
   m_TagString: Cards
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3043,8 +3043,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 2
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
-  ID: 0
+  neighbourCards: []
+  gridPosition: {x: 0, y: 0}
 --- !u!1 &1523494545
 GameObject:
   m_ObjectHideFlags: 0
@@ -3332,7 +3332,7 @@ GameObject:
   - component: {fileID: 1643467395}
   - component: {fileID: 1643467394}
   m_Layer: 0
-  m_Name: Card1 (5)
+  m_Name: Reflector
   m_TagString: Cards
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3366,8 +3366,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
-  ID: 0
+  neighbourCards: []
+  gridPosition: {x: 0, y: 0}
 --- !u!114 &1643467395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3493,7 +3493,7 @@ GameObject:
   - component: {fileID: 1688551163}
   - component: {fileID: 1688551162}
   m_Layer: 0
-  m_Name: Card1 (3)
+  m_Name: NType Silicon
   m_TagString: Cards
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3527,8 +3527,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 4
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
-  sprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
-  ID: 0
+  neighbourCards: []
+  gridPosition: {x: 0, y: 0}
 --- !u!114 &1688551163
 MonoBehaviour:
   m_ObjectHideFlags: 0
