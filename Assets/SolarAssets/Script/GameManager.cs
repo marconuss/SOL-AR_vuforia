@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +11,11 @@ public class GameManager : MonoBehaviour
     public Sprite NTypeSiliconSprite;
     public Sprite PTypeSiliconSprite;
     public Sprite GlassSprite;
+
+    public VariableReference[] funugsVariables;
+
+    public Flowchart fungusManager;
+
 
     public enum photonState {Pass, Blocked, Reflected}
 
@@ -100,6 +106,8 @@ public class GameManager : MonoBehaviour
     public void ActivateElectricField()
     {
         if (electricFieldActive == false) electricFieldActive = true;
+        fungusManager.SetBooleanVariable("Var", false);
+        //funugsVariables[0].Set(false);
         Debug.Log("Electric Field activated");
     }
 
