@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using Fungus;
 
 public class CardManager : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class CardManager : MonoBehaviour
     public static event CardPlace OnCardPlaced;
     public delegate void CardRemove();
     public static event CardPlace OnCardRemoved;
+
+    public Flowchart fungusManager;
 
     GridSystem grid;
 
@@ -63,6 +66,9 @@ public class CardManager : MonoBehaviour
         grid.gridArray[x, y].hasCard = true;
         _card.gridPosition = new Vector2Int(x, y);
         _card.InstantiateCard(grid.GetCellCenter(x, y));
+
+        //call fungus flowchart block
+        fungusManager.ExecuteBlock(_card.type.ToString());
 
         foreach (Card card in cardsOnField)
         {
