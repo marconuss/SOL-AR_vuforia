@@ -442,7 +442,7 @@ GameObject:
   - component: {fileID: 97500710}
   - component: {fileID: 97500709}
   m_Layer: 0
-  m_Name: Card1 (1)
+  m_Name: Glass
   m_TagString: Cards
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -981,7 +981,7 @@ GameObject:
   - component: {fileID: 313932169}
   - component: {fileID: 313932168}
   m_Layer: 0
-  m_Name: Card1
+  m_Name: Conductor
   m_TagString: Cards
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1683,7 +1683,7 @@ GameObject:
   - component: {fileID: 569086440}
   - component: {fileID: 569086439}
   m_Layer: 0
-  m_Name: Card1 (2)
+  m_Name: GridConductor
   m_TagString: Cards
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1844,12 +1844,12 @@ PrefabInstance:
     - target: {fileID: 8332668363061268109, guid: 9422c90dbe576d249bd5b444acaa98ff,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 36.6
       objectReference: {fileID: 0}
     - target: {fileID: 8332668363061268109, guid: 9422c90dbe576d249bd5b444acaa98ff,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 23.9
       objectReference: {fileID: 0}
     - target: {fileID: 8332668363061268109, guid: 9422c90dbe576d249bd5b444acaa98ff,
         type: 3}
@@ -1896,20 +1896,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: SirKit_Character
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1849970079483338580, guid: 9422c90dbe576d249bd5b444acaa98ff, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9422c90dbe576d249bd5b444acaa98ff, type: 3}
---- !u!114 &670640554 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1849970079483338580, guid: 9422c90dbe576d249bd5b444acaa98ff,
-    type: 3}
-  m_PrefabInstance: {fileID: 670640553}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &737273967
 GameObject:
   m_ObjectHideFlags: 0
@@ -2180,6 +2169,9 @@ GameObject:
   - component: {fileID: 979967761}
   - component: {fileID: 979967760}
   - component: {fileID: 979967762}
+  - component: {fileID: 979967713}
+  - component: {fileID: 979967717}
+  - component: {fileID: 979967718}
   m_Layer: 0
   m_Name: FungusManager
   m_TagString: Untagged
@@ -2187,6 +2179,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &979967713
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979967712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5316d953c7abe498799575550c973535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 63
+  indentLevel: 0
+  animator:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 1920102242}
+  stateName:
+    stringRef: {fileID: 0}
+    stringVal: Pose6
+  layer:
+    integerRef: {fileID: 0}
+    integerVal: -1
+  time:
+    floatRef: {fileID: 0}
+    floatVal: 0
 --- !u!114 &979967714
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2238,7 +2256,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 979967723}
+  - {fileID: 979967735}
   selectedCommands: []
   variables:
   - {fileID: 979967746}
@@ -2267,6 +2285,56 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &979967717
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979967712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76641c2c16481448eb6c0c1184fcdebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 64
+  indentLevel: 0
+  _animator:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 1920102242}
+  _parameterName:
+    stringRef: {fileID: 0}
+    stringVal: PoseNum
+  value:
+    integerRef: {fileID: 0}
+    integerVal: 2
+  animatorOLD: {fileID: 0}
+  parameterNameOLD: 
+--- !u!114 &979967718
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979967712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76641c2c16481448eb6c0c1184fcdebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 65
+  indentLevel: 0
+  _animator:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 1920102242}
+  _parameterName:
+    stringRef: {fileID: 0}
+    stringVal: PoseNum
+  value:
+    integerRef: {fileID: 0}
+    integerVal: 5
+  animatorOLD: {fileID: 0}
+  parameterNameOLD: 
 --- !u!114 &979967719
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2298,7 +2366,7 @@ MonoBehaviour:
   indentLevel: 1
   storyText: "What is glass, you ask? Let\u2019s have a look."
   description: 
-  character: {fileID: 670640554}
+  character: {fileID: 0}
   portrait: {fileID: 21300000, guid: 2c1bdb546b7645941accce66b32e70fa, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2323,8 +2391,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 378.15024
-    y: 119.99022
+    x: 379.78958
+    y: 118.350876
     width: 81.14753
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2381,6 +2449,7 @@ MonoBehaviour:
   - {fileID: 979967729}
   - {fileID: 979967728}
   - {fileID: 979967744}
+  - {fileID: 979967713}
   suppressAllAutoSelections: 0
 --- !u!114 &979967725
 MonoBehaviour:
@@ -2445,7 +2514,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Here is a reflector!
   description: 
-  character: {fileID: 670640554}
+  character: {fileID: 0}
   portrait: {fileID: 21300000, guid: 63ab9c05199482844a1ce7c74fa098ab, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2490,7 +2559,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Here is a P-type silicon layer!
   description: 
-  character: {fileID: 670640554}
+  character: {fileID: 0}
   portrait: {fileID: 21300000, guid: 0d3697e559510dc48bac3a071841ec92, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2535,7 +2604,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Here is a grid conductor!
   description: 
-  character: {fileID: 670640554}
+  character: {fileID: 0}
   portrait: {fileID: 21300000, guid: 4f710c484184bda45bf903af9ff60d91, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2609,7 +2678,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Here is a conductor!
   description: 
-  character: {fileID: 670640554}
+  character: {fileID: 0}
   portrait: {fileID: 21300000, guid: c6e3c9876357e8a4d82d1bf359c57470, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2635,7 +2704,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 736.38165
-    y: 123.55116
+    y: 116.99379
     width: 104.09834
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2648,6 +2717,7 @@ MonoBehaviour:
   - {fileID: 979967734}
   - {fileID: 979967733}
   - {fileID: 979967743}
+  - {fileID: 979967718}
   suppressAllAutoSelections: 0
 --- !u!114 &979967736
 MonoBehaviour:
@@ -2682,7 +2752,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 1011.2389
-    y: 118.71466
+    y: 120.354004
     width: 123.77046
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2695,6 +2765,7 @@ MonoBehaviour:
   - {fileID: 979967739}
   - {fileID: 979967738}
   - {fileID: 979967745}
+  - {fileID: 979967717}
   suppressAllAutoSelections: 0
 --- !u!114 &979967738
 MonoBehaviour:
@@ -2730,7 +2801,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Here is an N-type silicon layer!
   description: 
-  character: {fileID: 670640554}
+  character: {fileID: 0}
   portrait: {fileID: 21300000, guid: d38af2fad758f2c47a6b0326036e7f46, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -3243,7 +3314,7 @@ MonoBehaviour:
   indentLevel: 1
   storyText: A layer of glass on top protects the cell. Good work.
   description: 
-  character: {fileID: 670640554}
+  character: {fileID: 0}
   portrait: {fileID: 21300000, guid: 2c1bdb546b7645941accce66b32e70fa, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -4310,7 +4381,7 @@ MonoBehaviour:
   storyText: Glass might be able to better protect the components from a higher vantage
     point.
   description: 
-  character: {fileID: 670640554}
+  character: {fileID: 0}
   portrait: {fileID: 21300000, guid: 2c1bdb546b7645941accce66b32e70fa, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -4356,7 +4427,7 @@ MonoBehaviour:
   storyText: A glass sheet lets the precious photons through while protecting the
     other components from environmental damage, much like a knight protecting royalty.
   description: 
-  character: {fileID: 670640554}
+  character: {fileID: 0}
   portrait: {fileID: 21300000, guid: 2c1bdb546b7645941accce66b32e70fa, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -4595,7 +4666,7 @@ GameObject:
   - component: {fileID: 1191927823}
   - component: {fileID: 1191927822}
   m_Layer: 0
-  m_Name: Card1 (5)
+  m_Name: Reflector
   m_TagString: Cards
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5213,7 +5284,7 @@ GameObject:
   - component: {fileID: 1405876043}
   - component: {fileID: 1405876042}
   m_Layer: 0
-  m_Name: Card1 (3)
+  m_Name: NTypeConductor
   m_TagString: Cards
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5499,7 +5570,7 @@ GameObject:
   - component: {fileID: 1646275003}
   - component: {fileID: 1646275002}
   m_Layer: 0
-  m_Name: Card1 (4)
+  m_Name: PTypeConductor
   m_TagString: Cards
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6381,6 +6452,82 @@ Transform:
   m_Father: {fileID: 294853032}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1920102241 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8765804713128502321, guid: 9422c90dbe576d249bd5b444acaa98ff,
+    type: 3}
+  m_PrefabInstance: {fileID: 670640553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1920102242
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920102241}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d843a046886027540819f95be5dd04f3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &1920102243
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920102241}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1423832017
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: d38af2fad758f2c47a6b0326036e7f46, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 15.53, y: 20.01}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1966503725
 GameObject:
   m_ObjectHideFlags: 0
