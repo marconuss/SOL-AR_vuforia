@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8765804713128502321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8332668363061268109}
+  - component: {fileID: 1849970079483338580}
+  m_Layer: 0
+  m_Name: SirKit_Character
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8332668363061268109
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8765804713128502321}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1849970079483338580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8765804713128502321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: Sir Kit
+  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  soundEffect: {fileID: 0}
+  portraits:
+  - {fileID: 21300000, guid: f55894f47bfcaec46a07c1081dea1456, type: 3}
+  - {fileID: 21300000, guid: 2c1bdb546b7645941accce66b32e70fa, type: 3}
+  - {fileID: 21300000, guid: 63ab9c05199482844a1ce7c74fa098ab, type: 3}
+  - {fileID: 21300000, guid: 4f710c484184bda45bf903af9ff60d91, type: 3}
+  - {fileID: 21300000, guid: 4e83bff98e92de240b6bec29acd6271c, type: 3}
+  - {fileID: 21300000, guid: c6e3c9876357e8a4d82d1bf359c57470, type: 3}
+  - {fileID: 21300000, guid: 0d3697e559510dc48bac3a071841ec92, type: 3}
+  - {fileID: 21300000, guid: b7a733df47a904f4c9f5fcd01a6530e5, type: 3}
+  - {fileID: 21300000, guid: d38af2fad758f2c47a6b0326036e7f46, type: 3}
+  portraitsFace: 1
+  setSayDialog: {fileID: 0}
+  description: 
