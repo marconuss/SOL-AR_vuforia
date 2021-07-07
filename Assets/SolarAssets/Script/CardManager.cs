@@ -6,7 +6,7 @@ using System.Linq;
 public class CardManager : MonoBehaviour
 {
     public int rows, columns;
-    public float cellSize;
+    public Vector2 cellSize;
 
     public List<Card> cardsOnField;
 
@@ -29,7 +29,7 @@ public class CardManager : MonoBehaviour
 
         instance = this;
 
-        grid = new GridSystem(columns, rows, cellSize);
+        CreateNewGrid(columns, rows, cellSize);
         Debug.Log("Card Grid Setup!");
         cardsOnField = new List<Card>();
     }
@@ -38,6 +38,17 @@ public class CardManager : MonoBehaviour
     void Update()
     {
        
+    }
+
+    public void CreateNewGrid(int _columns, int _rows, Vector2 _cellSize)
+    {
+        if (grid != null) grid = null;
+        grid = new GridSystem(_columns, _rows, _cellSize);
+    }
+
+    public void CreateNewGrid(int _columns, int _rows, Vector2 _cellSize, Vector3 _startPos)
+    {
+        grid = new GridSystem(_columns, _rows, _cellSize, _startPos);
     }
 
     public Card GetLastCardOnCell(int x, int y)
@@ -79,6 +90,14 @@ public class CardManager : MonoBehaviour
         if (OnCardRemoved != null)
         {
             OnCardRemoved();
+        }
+    }
+
+    public void RemoveAllCards()
+    {
+        foreach (Card card in cardsOnField)
+        {
+            card.RemoveCard();
         }
     }
 

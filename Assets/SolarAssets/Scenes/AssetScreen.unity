@@ -180,15 +180,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6661a32e563f0724480f3ddbf8035cf8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ac636e088d3de2e43801c9e60ebcb64d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 38.399998, y: 21.599998}
+  m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &48405896
@@ -199,8 +199,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 48405894}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.2, y: 13.400001, z: 0}
-  m_LocalScale: {x: 1.8489, y: 1.8489, z: 1.8489}
+  m_LocalPosition: {x: 25, y: 17, z: 0}
+  m_LocalScale: {x: 3.972719, y: 3.972719, z: 3.972719}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -374,7 +374,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 409110487}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.4, y: 14.5, z: 0}
+  m_LocalPosition: {x: 31.4, y: 17, z: 0}
   m_LocalScale: {x: 1.8582, y: 1.8582, z: 1.8582}
   m_Children: []
   m_Father: {fileID: 0}
@@ -411,7 +411,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rows: 6
   columns: 1
-  cellSize: 5
+  cellSize: {x: 48, y: 5.5}
   cardsOnField: []
 --- !u!4 &950562945
 Transform:
@@ -503,7 +503,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1521241374}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 36.3, y: 21.2, z: 0}
+  m_LocalPosition: {x: 40.5, y: 23.5, z: 0}
   m_LocalScale: {x: 2.2242987, y: 2.2242987, z: 2.2242987}
   m_Children: []
   m_Father: {fileID: 0}
@@ -562,7 +562,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 25.67186
+  orthographic size: 22.341175
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -586,7 +586,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1659361942}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.9, y: 13.3, z: -1}
+  m_LocalPosition: {x: 24.8, y: 16.6, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -628,9 +628,10 @@ MonoBehaviour:
   NTypeSiliconSprite: {fileID: 21300000, guid: 9b5ae649e776f754fa8f6b5fdd458ddc, type: 3}
   PTypeSiliconSprite: {fileID: 21300000, guid: 1185795c5ea5cdb418eaa6a26659614a, type: 3}
   GlassSprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
+  solution: 020000000500000004000000030000000000000001000000
+  secondPhase: 0
   fungusManager: {fileID: 0}
   fungusVariables: []
-  solution: 020000000500000004000000030000000000000001000000
 --- !u!4 &1952345208
 Transform:
   m_ObjectHideFlags: 0

@@ -12,10 +12,12 @@ public class GameManager : MonoBehaviour
     public Sprite PTypeSiliconSprite;
     public Sprite GlassSprite;
 
+    public List<Card.cardType> solution;
+    public bool secondPhase;
+
     public Flowchart fungusManager;
     public VariableReference[] fungusVariables;
 
-    public List<Card.cardType> solution;
 
     public enum photonState { Pass, Blocked, Reflected }
 
@@ -25,7 +27,7 @@ public class GameManager : MonoBehaviour
     bool electricFieldActive = false;
 
     int correctTiles;
-    bool secondPhase;
+
 
     void Start()
     {
@@ -130,19 +132,19 @@ public class GameManager : MonoBehaviour
 
     }
 
-
-
     void ActivateSecondPhase()
     {
         secondPhase = true;
         correctTiles = 0;
         Debug.Log("Second Phase started");
 
+        CardManager.instance.RemoveAllCards();
+        CardManager.instance.CreateNewGrid(CardManager.instance.columns + 1, CardManager.instance.rows, new Vector3(CardManager.instance.cellSize.x / 2, CardManager.instance.cellSize.y));
     }
 
     void Win()
     {
-
+        Debug.Log("You won the game wohoo!");
     }
 
     public void ActivateCircuit()
@@ -176,6 +178,10 @@ public class GameManager : MonoBehaviour
     private void OnDisable()
     {
         CardManager.OnCardPlaced -= UpdateInteraction;
+        CardManager.OnCardPlaced -= UpdateInteraction;
+        CardManager.OnCardPlaced -= CheckSolution;
+        CardManager.OnCardRemoved -= UpdateInteraction;
+        CardManager.OnCardRemoved -= CheckSolution;
     }
 }
 

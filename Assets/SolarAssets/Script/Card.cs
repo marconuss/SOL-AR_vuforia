@@ -72,9 +72,7 @@ public partial class Card : MonoBehaviour
     {
         if (neighbourCards[direction].type == type) return true;
         else return false;
-    }
-
-  
+    } 
 
     public void RemoveCard()
     {
