@@ -75,7 +75,7 @@ public class CardManager : MonoBehaviour
         _card.InstantiateCard(grid.GetCellCenter(x, y), smallCardPrefab);
 
         //call fungus flowchart block
-        //fungusManager.ExecuteBlock(_card.type.ToString());
+        fungusManager.ExecuteBlock(_card.type.ToString());
 
         foreach (Card card in cardsOnField)
         {
