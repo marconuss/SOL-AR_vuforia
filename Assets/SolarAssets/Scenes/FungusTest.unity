@@ -291,13 +291,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a7dcf16a86db2149893162610fd8cd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GlassSprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
   ReflectorSprite: {fileID: 21300000, guid: c3662c2aa72f5da45b9ac2964198b50d, type: 3}
-  ConductorSprite: {fileID: 21300000, guid: 41ef4b7fdafc6f04c82a7a3f50ce084b, type: 3}
   ConductorGridSprite: {fileID: 21300000, guid: ba21a2fafbe41f54a9b15e9c463b18c3,
     type: 3}
   NTypeSiliconSprite: {fileID: 21300000, guid: 9b5ae649e776f754fa8f6b5fdd458ddc, type: 3}
   PTypeSiliconSprite: {fileID: 21300000, guid: 1185795c5ea5cdb418eaa6a26659614a, type: 3}
-  GlassSprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
+  ConductorSprite: {fileID: 21300000, guid: 41ef4b7fdafc6f04c82a7a3f50ce084b, type: 3}
   solution: 020000000500000004000000030000000000000001000000
   secondPhase: 0
   fungusManager: {fileID: 979967715}
@@ -2113,6 +2113,10 @@ MonoBehaviour:
   rows: 6
   columns: 1
   cellSize: {x: 0, y: 0}
+  cardPrefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4,
+    type: 3}
+  smallCardPrefab: {fileID: 682462182018053093, guid: e9cd90ff5b89e0d4fbf9846a03e89d20,
+    type: 3}
   cardsOnField: []
   fungusManager: {fileID: 979967715}
 --- !u!1 &979967712
@@ -2342,7 +2346,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 680.3198
     y: -17.31337
-    width: 111.714264
+    width: 114.615326
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2365,21 +2369,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -209.81638, y: 186.25723}
+  scrollPos: {x: 27.147854, y: 257.50583}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.7000003
+  zoom: 0.52000046
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 979967723}
-  selectedCommands:
-  - {fileID: 979967762}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 979967857}
   - {fileID: 979967746}
@@ -2579,7 +2581,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 335.18115
     y: 116.9223
-    width: 80.85713
+    width: 82.30766
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3301,7 +3303,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1014.79126
     y: 121.378235
-    width: 126.571396
+    width: 129.99994
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3412,7 +3414,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 451.43225
     y: 121.89844
-    width: 102.57141
+    width: 105.38457
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8501,7 +8503,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 575.43225
     y: 122.89844
-    width: 133.42853
+    width: 139.23068
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10245,7 +10247,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 731.2518
     y: 118.020386
-    width: 109.42854
+    width: 114.615326
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11759,7 +11761,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 877.04865
     y: 118.62172
-    width: 125.42854
+    width: 128.46147
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
