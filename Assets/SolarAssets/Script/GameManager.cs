@@ -5,12 +5,12 @@ using Fungus;
 
 public class GameManager : MonoBehaviour
 {
+    public Sprite GlassSprite;
     public Sprite ReflectorSprite;
-    public Sprite ConductorSprite;
     public Sprite ConductorGridSprite;
     public Sprite NTypeSiliconSprite;
     public Sprite PTypeSiliconSprite;
-    public Sprite GlassSprite;
+    public Sprite ConductorSprite;
 
     public List<Card.cardType> solution;
     public bool secondPhase;
@@ -109,26 +109,56 @@ public class GameManager : MonoBehaviour
 
     public void CheckSolution()
     {
-        correctTiles = 0; 
+        correctTiles = 0;
 
-        foreach (Card card in CardManager.instance.cardsOnField)
+        if (!secondPhase)
         {
-            if (card.type == solution[card.gridPosition.y])
+            foreach (Card card in CardManager.instance.cardsOnField)
             {
-                correctTiles++;
-
-                if (correctTiles == 6 && secondPhase == false)
+                if (card.type == solution[card.gridPosition.y] && card.gridPosition.x == 0)
                 {
-                    ActivateSecondPhase();
-                }
+                    correctTiles++;
 
-                if (correctTiles == 6 && secondPhase == true)
-                {
-                    Win();
-                }
+                    if (correctTiles == 6 && secondPhase == false)
+                    {
+                        ActivateSecondPhase();
+                        return;
+                    }
 
+                    if (correctTiles == 6 && secondPhase == true)
+                    {
+                        Win();
+                        return;
+                    }
+
+                }
             }
         }
+
+        if (secondPhase)
+        {
+            foreach (Card card in CardManager.instance.cardsOnField)
+            {
+                if (card.type == solution[card.gridPosition.y] && card.gridPosition.x == 1)
+                {
+                    correctTiles++;
+
+                    if (correctTiles == 6 && secondPhase == false)
+                    {
+                        ActivateSecondPhase();
+                        return;
+                    }
+
+                    if (correctTiles == 6 && secondPhase == true)
+                    {
+                        Win();
+                        return;
+                    }
+
+                }
+            }
+        }
+
 
     }
 
@@ -138,8 +168,22 @@ public class GameManager : MonoBehaviour
         correctTiles = 0;
         Debug.Log("Second Phase started");
 
-        CardManager.instance.RemoveAllCards();
+ 
         CardManager.instance.CreateNewGrid(CardManager.instance.columns + 1, CardManager.instance.rows, new Vector3(CardManager.instance.cellSize.x / 2, CardManager.instance.cellSize.y));
+        CardManager.instance.RemoveAllCards();
+        SolveFirstColumn();
+
+    }
+
+    void SolveFirstColumn()
+    {
+        for (int i = 0; i < solution.Count; i++)
+        {
+            Card newCard = Instantiate(new GameObject()).AddComponent<Card>();
+            newCard.type = solution[i];
+
+            CardManager.instance.PlaceCard(0, i, newCard);
+        }
     }
 
     void Win()

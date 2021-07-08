@@ -9,6 +9,9 @@ public class CardManager : MonoBehaviour
     public int rows, columns;
     public Vector2 cellSize;
 
+    public GameObject cardPrefab;
+    public GameObject smallCardPrefab;
+
     public List<Card> cardsOnField;
 
     public static CardManager instance;
@@ -65,10 +68,14 @@ public class CardManager : MonoBehaviour
         grid.gridArray[x, y].placedCards.Add(_card);
         grid.gridArray[x, y].hasCard = true;
         _card.gridPosition = new Vector2Int(x, y);
-        _card.InstantiateCard(grid.GetCellCenter(x, y));
+
+        if(!GameManager.instance.secondPhase)
+        _card.InstantiateCard(grid.GetCellCenter(x, y), cardPrefab);
+        else if(GameManager.instance.secondPhase)
+        _card.InstantiateCard(grid.GetCellCenter(x, y), smallCardPrefab);
 
         //call fungus flowchart block
-        fungusManager.ExecuteBlock(_card.type.ToString());
+        //fungusManager.ExecuteBlock(_card.type.ToString());
 
         foreach (Card card in cardsOnField)
         {
