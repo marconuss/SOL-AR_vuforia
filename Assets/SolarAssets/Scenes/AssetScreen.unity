@@ -412,7 +412,12 @@ MonoBehaviour:
   rows: 6
   columns: 1
   cellSize: {x: 48, y: 5.5}
+  cardPrefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4,
+    type: 3}
+  smallCardPrefab: {fileID: 682462182018053093, guid: ee665ca19cb665d45a4c3e3bab6a4373,
+    type: 3}
   cardsOnField: []
+  fungusManager: {fileID: 0}
 --- !u!4 &950562945
 Transform:
   m_ObjectHideFlags: 0
@@ -621,13 +626,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a7dcf16a86db2149893162610fd8cd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GlassSprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
   ReflectorSprite: {fileID: 21300000, guid: c3662c2aa72f5da45b9ac2964198b50d, type: 3}
-  ConductorSprite: {fileID: 21300000, guid: 41ef4b7fdafc6f04c82a7a3f50ce084b, type: 3}
   ConductorGridSprite: {fileID: 21300000, guid: ba21a2fafbe41f54a9b15e9c463b18c3,
     type: 3}
   NTypeSiliconSprite: {fileID: 21300000, guid: 9b5ae649e776f754fa8f6b5fdd458ddc, type: 3}
   PTypeSiliconSprite: {fileID: 21300000, guid: 1185795c5ea5cdb418eaa6a26659614a, type: 3}
-  GlassSprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
+  ConductorSprite: {fileID: 21300000, guid: 41ef4b7fdafc6f04c82a7a3f50ce084b, type: 3}
   solution: 020000000500000004000000030000000000000001000000
   secondPhase: 0
   fungusManager: {fileID: 0}

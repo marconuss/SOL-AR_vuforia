@@ -21,18 +21,13 @@ public partial class Card : MonoBehaviour
         neighbourCards = new Card[4];
     }
 
-    public void InstantiateCard(Vector3 pos)
+    public void InstantiateCard(Vector3 pos, GameObject prefab)
     {
         newGameObject = Instantiate(prefab, pos, Quaternion.identity);
         //newGameObject.transform.localScale = new Vector3(0.3f, 0.3f, 0);
-        newGameObject.transform.localScale = new Vector3(1.8f, 1.8f, 0);
+        //newGameObject.transform.localScale = new Vector3(1.8f, 1.8f, 0);
         spriteRenderer = newGameObject.GetComponent<SpriteRenderer>();
-
-        for (int i = 0; i < neighbourCards.Length; i++)
-        {
-            if(neighbourCards[i])
-            Debug.LogWarning(neighbourCards[i].gameObject.name);
-        }
+        neighbourCards = new Card[4];
 
         switch (type)
         {
@@ -68,11 +63,46 @@ public partial class Card : MonoBehaviour
 
     }
 
-    bool CheckNeighbourType(int direction, cardType type)
+    public void InstatiateCardSprite(Vector3 pos, cardType _type)
     {
-        if (neighbourCards[direction].type == type) return true;
-        else return false;
-    } 
+        newGameObject = Instantiate(prefab, pos, Quaternion.identity);
+        newGameObject.transform.localScale = new Vector3(1.8f, 1.8f, 0);
+        spriteRenderer = newGameObject.GetComponent<SpriteRenderer>();
+
+        switch (_type)
+        {
+            case cardType.Reflector:
+                spriteRenderer.sprite = GameManager.instance.ReflectorSprite;
+                break;
+
+            case cardType.Glass:
+                spriteRenderer.sprite = GameManager.instance.GlassSprite;
+                break;
+
+            case cardType.Conductor:
+                spriteRenderer.sprite = GameManager.instance.ConductorSprite;
+                break;
+
+            case cardType.GridConductor:
+                spriteRenderer.sprite = GameManager.instance.ConductorGridSprite;
+                break;
+
+            case cardType.NTypeSilicon:
+                spriteRenderer.sprite = GameManager.instance.NTypeSiliconSprite;
+                break;
+
+            case cardType.PTypeSilicon:
+                spriteRenderer.sprite = GameManager.instance.PTypeSiliconSprite;
+                break;
+
+            default:
+                spriteRenderer.sprite = GameManager.instance.ReflectorSprite;
+                Debug.LogWarning("No fitting sprite found");
+                break;
+        }
+
+    }
+
 
     public void RemoveCard()
     {
