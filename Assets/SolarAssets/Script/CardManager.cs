@@ -74,8 +74,6 @@ public class CardManager : MonoBehaviour
         else if(GameManager.instance.secondPhase)
         _card.InstantiateCard(grid.GetCellCenter(x, y), smallCardPrefab);
 
-        //call fungus flowchart block
-        fungusManager.ExecuteBlock(_card.type.ToString());
 
         foreach (Card card in cardsOnField)
         {
@@ -86,6 +84,10 @@ public class CardManager : MonoBehaviour
         {
             OnCardPlaced();
         }
+
+
+        //call fungus flowchart block
+        //fungusManager.ExecuteBlock(_card.type.ToString());
     }
 
     public void RemoveCard(int x, int y, Card _card)
