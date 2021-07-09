@@ -10,7 +10,6 @@ public class CardManager : MonoBehaviour
     public Vector2 cellSize;
 
     public GameObject cardPrefab;
-    public GameObject smallCardPrefab;
 
     public List<Card> cardsOnField;
 
@@ -68,11 +67,7 @@ public class CardManager : MonoBehaviour
         grid.gridArray[x, y].placedCards.Add(_card);
         grid.gridArray[x, y].hasCard = true;
         _card.gridPosition = new Vector2Int(x, y);
-
-        if(!GameManager.instance.secondPhase)
         _card.InstantiateCard(grid.GetCellCenter(x, y), cardPrefab);
-        else if(GameManager.instance.secondPhase)
-        _card.InstantiateCard(grid.GetCellCenter(x, y), smallCardPrefab);
 
 
         foreach (Card card in cardsOnField)

@@ -5,12 +5,12 @@ using Fungus;
 
 public class GameManager : MonoBehaviour
 {
-    public Sprite GlassSprite;
-    public Sprite ReflectorSprite;
-    public Sprite ConductorGridSprite;
-    public Sprite NTypeSiliconSprite;
-    public Sprite PTypeSiliconSprite;
-    public Sprite ConductorSprite;
+    public Sprite[] GlassSprite;
+    public Sprite[] ReflectorSprite;
+    public Sprite[] ConductorGridSprite;
+    public Sprite[] NTypeSiliconSprite;
+    public Sprite[] PTypeSiliconSprite;
+    public Sprite[] ConductorSprite;
 
     public List<Card.cardType> solution;
     public bool secondPhase;
@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
 
         correctTiles = 0;
         secondPhase = false;
+
     }
 
     private void OnEnable()

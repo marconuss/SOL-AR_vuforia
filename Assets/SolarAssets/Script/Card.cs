@@ -32,31 +32,38 @@ public partial class Card : MonoBehaviour
         switch (type)
         {
             case cardType.Reflector:
-                spriteRenderer.sprite = GameManager.instance.ReflectorSprite;
+                if (!GameManager.instance.secondPhase) spriteRenderer.sprite = GameManager.instance.ReflectorSprite[0];
+                else spriteRenderer.sprite = GameManager.instance.ReflectorSprite[1];
+
                 break;
 
             case cardType.Glass:
-                spriteRenderer.sprite = GameManager.instance.GlassSprite;
+                if (!GameManager.instance.secondPhase) spriteRenderer.sprite = GameManager.instance.GlassSprite[0];
+                else spriteRenderer.sprite = GameManager.instance.GlassSprite[1];
                 break;
 
             case cardType.Conductor:
-                spriteRenderer.sprite = GameManager.instance.ConductorSprite;
+                if (!GameManager.instance.secondPhase) spriteRenderer.sprite = GameManager.instance.ConductorSprite[0];
+                else spriteRenderer.sprite = GameManager.instance.ConductorSprite[1];
                 break;
 
             case cardType.GridConductor:
-                spriteRenderer.sprite = GameManager.instance.ConductorGridSprite;
+                if (!GameManager.instance.secondPhase) spriteRenderer.sprite = GameManager.instance.ConductorGridSprite[0];
+                else spriteRenderer.sprite = GameManager.instance.ConductorGridSprite[1];
                 break;
 
             case cardType.NTypeSilicon:
-                spriteRenderer.sprite = GameManager.instance.NTypeSiliconSprite;
+                if (!GameManager.instance.secondPhase) spriteRenderer.sprite = GameManager.instance.NTypeSiliconSprite[0];
+                else spriteRenderer.sprite = GameManager.instance.NTypeSiliconSprite[1];
                 break;
 
             case cardType.PTypeSilicon:
-                spriteRenderer.sprite = GameManager.instance.PTypeSiliconSprite;
+                if (!GameManager.instance.secondPhase) spriteRenderer.sprite = GameManager.instance.PTypeSiliconSprite[0];
+                else spriteRenderer.sprite = GameManager.instance.PTypeSiliconSprite[1];
                 break;
 
             default:
-                spriteRenderer.sprite = GameManager.instance.ReflectorSprite;
+                spriteRenderer.sprite = GameManager.instance.ReflectorSprite[0];
                 Debug.LogWarning("No fitting sprite found");
                 break;
         }
@@ -72,31 +79,31 @@ public partial class Card : MonoBehaviour
         switch (_type)
         {
             case cardType.Reflector:
-                spriteRenderer.sprite = GameManager.instance.ReflectorSprite;
+                spriteRenderer.sprite = GameManager.instance.ReflectorSprite[0];
                 break;
 
             case cardType.Glass:
-                spriteRenderer.sprite = GameManager.instance.GlassSprite;
+                spriteRenderer.sprite = GameManager.instance.GlassSprite[0];
                 break;
 
             case cardType.Conductor:
-                spriteRenderer.sprite = GameManager.instance.ConductorSprite;
+                spriteRenderer.sprite = GameManager.instance.ConductorSprite[0];
                 break;
 
             case cardType.GridConductor:
-                spriteRenderer.sprite = GameManager.instance.ConductorGridSprite;
+                spriteRenderer.sprite = GameManager.instance.ConductorGridSprite[0];
                 break;
 
             case cardType.NTypeSilicon:
-                spriteRenderer.sprite = GameManager.instance.NTypeSiliconSprite;
+                spriteRenderer.sprite = GameManager.instance.NTypeSiliconSprite[0];
                 break;
 
             case cardType.PTypeSilicon:
-                spriteRenderer.sprite = GameManager.instance.PTypeSiliconSprite;
+                spriteRenderer.sprite = GameManager.instance.PTypeSiliconSprite[0];
                 break;
 
             default:
-                spriteRenderer.sprite = GameManager.instance.ReflectorSprite;
+                spriteRenderer.sprite = GameManager.instance.ReflectorSprite[0];
                 Debug.LogWarning("No fitting sprite found");
                 break;
         }
