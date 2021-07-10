@@ -28,6 +28,7 @@ public partial class Card : MonoBehaviour
         //newGameObject.transform.localScale = new Vector3(1.8f, 1.8f, 0);
         spriteRenderer = newGameObject.GetComponent<SpriteRenderer>();
         neighbourCards = new Card[4];
+        newGameObject.tag = type.ToString();
 
         switch (type)
         {

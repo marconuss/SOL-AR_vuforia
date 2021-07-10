@@ -7,6 +7,10 @@ TagManager:
   - Cards
   - Trigger
   - ZoomImage
+  - Conductor
+  - GridConductor
+  - NTypeSilicon
+  - PTypeSilicon
   layers:
   - Default
   - TransparentFX
