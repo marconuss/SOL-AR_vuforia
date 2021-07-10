@@ -2018,6 +2018,71 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &593472480
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 593472481}
+  - component: {fileID: 593472482}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &593472481
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593472480}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 85.26918, y: 12.401972, z: -1.6903601}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1815552944}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &593472482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593472480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a7dcf16a86db2149893162610fd8cd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlassSprite:
+  - {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
+  - {fileID: 21300000, guid: d2dfa706f66353a48b050be63441f0da, type: 3}
+  ReflectorSprite:
+  - {fileID: 21300000, guid: c3662c2aa72f5da45b9ac2964198b50d, type: 3}
+  - {fileID: 21300000, guid: b5953f0cc641ad5478e4328e8ccc81d6, type: 3}
+  ConductorGridSprite:
+  - {fileID: 21300000, guid: ba21a2fafbe41f54a9b15e9c463b18c3, type: 3}
+  - {fileID: 21300000, guid: ba57db74fbf04dd4bae673734902fb20, type: 3}
+  NTypeSiliconSprite:
+  - {fileID: 21300000, guid: 9b5ae649e776f754fa8f6b5fdd458ddc, type: 3}
+  - {fileID: 21300000, guid: 701a9725530153f409adb42cb9192afd, type: 3}
+  PTypeSiliconSprite:
+  - {fileID: 21300000, guid: 1185795c5ea5cdb418eaa6a26659614a, type: 3}
+  - {fileID: 21300000, guid: f5ce4c7153076ca4fa9b3aba9ab4950e, type: 3}
+  ConductorSprite:
+  - {fileID: 21300000, guid: 41ef4b7fdafc6f04c82a7a3f50ce084b, type: 3}
+  - {fileID: 21300000, guid: 5b42d0fcaf6e9dd4db0b9d0928a0eaa6, type: 3}
+  solution: 020000000500000004000000030000000000000001000000
+  secondPhase: 0
+  fungusManager: {fileID: 0}
+  fungusVariables: []
 --- !u!1 &737273967
 GameObject:
   m_ObjectHideFlags: 0
@@ -14750,60 +14815,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1447497904
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1447497905}
-  - component: {fileID: 1447497906}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1447497905
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1447497904}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 85.26918, y: 12.401972, z: -1.6903601}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1815552944}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1447497906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1447497904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a7dcf16a86db2149893162610fd8cd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GlassSprite: {fileID: 21300000, guid: a6821aa98cd9d844f94d723ade3b0eda, type: 3}
-  ReflectorSprite: {fileID: 21300000, guid: c3662c2aa72f5da45b9ac2964198b50d, type: 3}
-  ConductorGridSprite: {fileID: 21300000, guid: ba21a2fafbe41f54a9b15e9c463b18c3,
-    type: 3}
-  NTypeSiliconSprite: {fileID: 21300000, guid: 9b5ae649e776f754fa8f6b5fdd458ddc, type: 3}
-  PTypeSiliconSprite: {fileID: 21300000, guid: 1185795c5ea5cdb418eaa6a26659614a, type: 3}
-  ConductorSprite: {fileID: 21300000, guid: 41ef4b7fdafc6f04c82a7a3f50ce084b, type: 3}
-  solution: 020000000500000004000000030000000000000001000000
-  secondPhase: 0
-  fungusManager: {fileID: 0}
-  fungusVariables: []
 --- !u!1 &1532517363
 GameObject:
   m_ObjectHideFlags: 0
@@ -15927,7 +15938,7 @@ Transform:
   m_Children:
   - {fileID: 539658118}
   - {fileID: 2108814686}
-  - {fileID: 1447497905}
+  - {fileID: 593472481}
   - {fileID: 1377630501}
   - {fileID: 125745332}
   m_Father: {fileID: 0}
@@ -16558,8 +16569,6 @@ MonoBehaviour:
   columns: 1
   cellSize: {x: 48, y: 5.5}
   cardPrefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4,
-    type: 3}
-  smallCardPrefab: {fileID: 682462182018053093, guid: ee665ca19cb665d45a4c3e3bab6a4373,
     type: 3}
   cardsOnField: []
   fungusManager: {fileID: 0}
