@@ -82,7 +82,7 @@ public class CardManager : MonoBehaviour
 
 
         //call fungus flowchart block
-        //fungusManager.ExecuteBlock(_card.type.ToString());
+        fungusManager.ExecuteBlock(_card.type.ToString());
     }
 
     public void RemoveCard(int x, int y, Card _card)

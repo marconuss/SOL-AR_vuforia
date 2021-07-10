@@ -16571,4 +16571,4 @@ MonoBehaviour:
   cardPrefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4,
     type: 3}
   cardsOnField: []
-  fungusManager: {fileID: 0}
+  fungusManager: {fileID: 916890300}
