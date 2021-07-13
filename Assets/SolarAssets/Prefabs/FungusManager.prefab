@@ -26,7 +26,6 @@ GameObject:
   - component: {fileID: 4916049903551669945}
   - component: {fileID: 4916049903551669946}
   - component: {fileID: 4916049903551669947}
-  - component: {fileID: 4916049903551669948}
   - component: {fileID: 4916049903551669949}
   - component: {fileID: 4916049903551669950}
   - component: {fileID: 4916049903551669951}
@@ -64,7 +63,6 @@ GameObject:
   - component: {fileID: 4916049903551669904}
   - component: {fileID: 4916049903551669905}
   - component: {fileID: 4916049903551669906}
-  - component: {fileID: 4916049903551669907}
   - component: {fileID: 4916049903551669908}
   - component: {fileID: 4916049903551669909}
   - component: {fileID: 4916049903551669910}
@@ -91,7 +89,6 @@ GameObject:
   - component: {fileID: 4916049903551669883}
   - component: {fileID: 4916049903551669884}
   - component: {fileID: 4916049903551669885}
-  - component: {fileID: 4916049903551669886}
   - component: {fileID: 4916049903551669887}
   - component: {fileID: 4916049903551669872}
   - component: {fileID: 4916049903551669873}
@@ -118,7 +115,6 @@ GameObject:
   - component: {fileID: 4916049903551669830}
   - component: {fileID: 4916049903551669831}
   - component: {fileID: 4916049903551669848}
-  - component: {fileID: 4916049903551669849}
   - component: {fileID: 4916049903551669850}
   - component: {fileID: 4916049903551669851}
   - component: {fileID: 4916049903551669852}
@@ -189,6 +185,12 @@ GameObject:
   - component: {fileID: 4072710321766915123}
   - component: {fileID: 7557591534289161409}
   - component: {fileID: 6918992704201399712}
+  - component: {fileID: 808615581338149050}
+  - component: {fileID: 6180833291981575334}
+  - component: {fileID: 9179766309844650872}
+  - component: {fileID: 9208036051039886324}
+  - component: {fileID: 8129589821593705923}
+  - component: {fileID: 7276783612376321412}
   m_Layer: 0
   m_Name: FungusManager
   m_TagString: Untagged
@@ -223,7 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -423.77112, y: 224.676}
+  scrollPos: {x: -420.80875, y: 231.75458}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -234,21 +236,22 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 4916049903551669887}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 4916049903551669797}
   - {fileID: 4916049903551669922}
-  - {fileID: 4916049903551669948}
+  - {fileID: 808615581338149050}
   - {fileID: 4916049903551669906}
-  - {fileID: 4916049903551669907}
+  - {fileID: 6180833291981575334}
   - {fileID: 4916049903551669885}
-  - {fileID: 4916049903551669886}
+  - {fileID: 9179766309844650872}
   - {fileID: 4916049903551669848}
-  - {fileID: 4916049903551669849}
+  - {fileID: 9208036051039886324}
   - {fileID: 4916049903551669799}
+  - {fileID: 7276783612376321412}
   - {fileID: 4916049903551669816}
+  - {fileID: 8129589821593705923}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -932,7 +935,7 @@ MonoBehaviour:
           vector4Val: {x: 0, y: 0, z: 0, w: 0}
   - compareOperator: 0
     anyVar:
-      variable: {fileID: 4916049903551669948}
+      variable: {fileID: 0}
       data:
         animatorData:
           animatorRef: {fileID: 0}
@@ -1342,7 +1345,7 @@ MonoBehaviour:
           vector4Val: {x: 0, y: 0, z: 0, w: 0}
   - compareOperator: 0
     anyVar:
-      variable: {fileID: 4916049903551669948}
+      variable: {fileID: 0}
       data:
         animatorData:
           animatorRef: {fileID: 0}
@@ -1585,21 +1588,6 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: End
   targetLabelOLD: {fileID: 0}
---- !u!114 &4916049903551669948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4916049903551669764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 1
-  key: glassCorrect
-  value: 0
 --- !u!114 &4916049903551669949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2799,7 +2787,7 @@ MonoBehaviour:
           vector4Val: {x: 0, y: 0, z: 0, w: 0}
   - compareOperator: 0
     anyVar:
-      variable: {fileID: 4916049903551669907}
+      variable: {fileID: 0}
       data:
         animatorData:
           animatorRef: {fileID: 0}
@@ -3247,7 +3235,7 @@ MonoBehaviour:
           vector4Val: {x: 0, y: 0, z: 0, w: 0}
   - compareOperator: 0
     anyVar:
-      variable: {fileID: 4916049903551669907}
+      variable: {fileID: 0}
       data:
         animatorData:
           animatorRef: {fileID: 0}
@@ -3877,21 +3865,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 1
   key: reflectorVar
-  value: 0
---- !u!114 &4916049903551669907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4916049903551669764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 1
-  key: reflectorCorrect
   value: 0
 --- !u!114 &4916049903551669908
 MonoBehaviour:
@@ -4608,7 +4581,7 @@ MonoBehaviour:
           vector4Val: {x: 0, y: 0, z: 0, w: 0}
   - compareOperator: 0
     anyVar:
-      variable: {fileID: 4916049903551669886}
+      variable: {fileID: 0}
       data:
         animatorData:
           animatorRef: {fileID: 0}
@@ -5055,7 +5028,7 @@ MonoBehaviour:
           vector4Val: {x: 0, y: 0, z: 0, w: 0}
   - compareOperator: 0
     anyVar:
-      variable: {fileID: 4916049903551669886}
+      variable: {fileID: 0}
       data:
         animatorData:
           animatorRef: {fileID: 0}
@@ -5685,21 +5658,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 1
   key: gridVar
-  value: 0
---- !u!114 &4916049903551669886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4916049903551669764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 1
-  key: gridCorrect
   value: 0
 --- !u!114 &4916049903551669887
 MonoBehaviour:
@@ -6416,7 +6374,7 @@ MonoBehaviour:
           vector4Val: {x: 0, y: 0, z: 0, w: 0}
   - compareOperator: 0
     anyVar:
-      variable: {fileID: 4916049903551669849}
+      variable: {fileID: 0}
       data:
         animatorData:
           animatorRef: {fileID: 0}
@@ -6863,7 +6821,7 @@ MonoBehaviour:
           vector4Val: {x: 0, y: 0, z: 0, w: 0}
   - compareOperator: 0
     anyVar:
-      variable: {fileID: 4916049903551669849}
+      variable: {fileID: 0}
       data:
         animatorData:
           animatorRef: {fileID: 0}
@@ -7493,21 +7451,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 1
   key: condVar
-  value: 0
---- !u!114 &4916049903551669849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4916049903551669764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 1
-  key: condCorrect
   value: 0
 --- !u!114 &4916049903551669850
 MonoBehaviour:
@@ -8673,7 +8616,7 @@ MonoBehaviour:
           vector4Val: {x: 0, y: 0, z: 0, w: 0}
   - compareOperator: 0
     anyVar:
-      variable: {fileID: 4916049903551669849}
+      variable: {fileID: 0}
       data:
         animatorData:
           animatorRef: {fileID: 0}
@@ -11427,3 +11370,93 @@ MonoBehaviour:
   stopVoiceover: 0
   waitForVO: 1
   setSayDialog: {fileID: 0}
+--- !u!114 &808615581338149050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4916049903551669764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: glassPosition
+  value: 0
+--- !u!114 &6180833291981575334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4916049903551669764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: reflectorPosition
+  value: 0
+--- !u!114 &9179766309844650872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4916049903551669764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: gridPosition
+  value: 0
+--- !u!114 &9208036051039886324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4916049903551669764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: condPosition
+  value: 0
+--- !u!114 &8129589821593705923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4916049903551669764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: nPosition
+  value: 0
+--- !u!114 &7276783612376321412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4916049903551669764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: pPosition
+  value: 0
