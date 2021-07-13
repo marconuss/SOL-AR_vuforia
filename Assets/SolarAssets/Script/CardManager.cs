@@ -21,8 +21,6 @@ public class CardManager : MonoBehaviour
     public delegate void CardRemove();
     public static event CardPlace OnCardRemoved;
 
-    public Flowchart fungusManager;
-
     GridSystem grid;
 
     void Start()
@@ -37,12 +35,6 @@ public class CardManager : MonoBehaviour
         CreateNewGrid(columns, rows, cellSize);
         Debug.Log("Card Grid Setup!");
         cardsOnField = new List<Card>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
     }
 
     public void CreateNewGrid(int _columns, int _rows, Vector2 _cellSize)
@@ -70,7 +62,7 @@ public class CardManager : MonoBehaviour
         _card.InstantiateCard(grid.GetCellCenter(x, y), cardPrefab);
 
         //save new placed card position for fungus
-        fungusManager.SetIntegerVariable("lastCardPos", _card.gridPosition.y);
+        GameManager.instance.fungusManager.SetIntegerVariable("lastCardPos", _card.gridPosition.y);
 
 
         foreach (Card card in cardsOnField)
@@ -78,14 +70,14 @@ public class CardManager : MonoBehaviour
             UpdateNeighbours(card.gridPosition.x, card.gridPosition.y, card);     
         }
 
+        //call fungus flowchart block
+        if(GameManager.instance.secondPhase == false)
+            GameManager.instance.fungusManager.ExecuteBlock(_card.type.ToString());
+
         if(OnCardPlaced != null)
         {
             OnCardPlaced();
-        }
-
-
-        //call fungus flowchart block
-        fungusManager.ExecuteBlock(_card.type.ToString());
+        } 
     }
 
     public void RemoveCard(int x, int y, Card _card)
@@ -93,9 +85,10 @@ public class CardManager : MonoBehaviour
         cardsOnField.Remove(_card);
         grid.gridArray[x, y].placedCards.Remove(_card);
 
+        //not really working for some reason...
         if (_card.type == Card.cardType.PTypeSilicon || _card.type == Card.cardType.NTypeSilicon)
         {
-            fungusManager.SetBooleanVariable("electricField", false);
+            GameManager.instance.fungusManager.SetBooleanVariable("electricField", false);
         }
 
         _card.RemoveCard();

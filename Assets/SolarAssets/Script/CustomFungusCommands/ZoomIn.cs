@@ -8,7 +8,10 @@ public class ZoomIn : Command
 {
 
     private GameObject zoomObj;
-    public Sprite zoomCard;
+    //public Sprite zoomCard;
+    [SerializeField]
+    protected SpriteData zoomSprite;
+
 
     public override void OnEnter()
     {
@@ -17,8 +20,7 @@ public class ZoomIn : Command
 
         if(!sr.enabled)
         {
-            sr.sprite = zoomCard;
-            //zoomObj.SetActive(true);
+            sr.sprite = zoomSprite;
             sr.enabled = true;
         }
 
