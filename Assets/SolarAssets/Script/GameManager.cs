@@ -16,8 +16,6 @@ public class GameManager : MonoBehaviour
     public bool secondPhase;
 
     public Flowchart fungusManager;
-    public VariableReference[] fungusVariables;
-
 
     public enum photonState { Pass, Blocked, Reflected }
 
@@ -96,8 +94,6 @@ public class GameManager : MonoBehaviour
             {
                 if (card.neighbourCards[1] != null && card.neighbourCards[1].type == Card.cardType.PTypeSilicon) ActivateElectricField();
                 if (card.neighbourCards[3] != null && card.neighbourCards[3].type == Card.cardType.PTypeSilicon) ActivateElectricField();
-
-
             }
             if (card.type == Card.cardType.PTypeSilicon)
             {
@@ -202,7 +198,9 @@ public class GameManager : MonoBehaviour
     public void ActivateElectricField()
     {
         if (electricFieldActive == false) electricFieldActive = true;
-        Debug.Log("Electric Field activated");
+        //set fungus variable
+        fungusManager.SetBooleanVariable("electricField", true);
+        //Debug.Log("Electric Field activated");
     }
 
     public void ChangePhotonState()

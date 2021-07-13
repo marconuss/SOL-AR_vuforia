@@ -11,6 +11,8 @@ TagManager:
   - GridConductor
   - NTypeSilicon
   - PTypeSilicon
+  - Glass
+  - Reflector
   layers:
   - Default
   - TransparentFX

@@ -69,6 +69,9 @@ public class CardManager : MonoBehaviour
         _card.gridPosition = new Vector2Int(x, y);
         _card.InstantiateCard(grid.GetCellCenter(x, y), cardPrefab);
 
+        //save new placed card position for fungus
+        fungusManager.SetIntegerVariable("lastCardPos", _card.gridPosition.y);
+
 
         foreach (Card card in cardsOnField)
         {
@@ -89,8 +92,13 @@ public class CardManager : MonoBehaviour
     {
         cardsOnField.Remove(_card);
         grid.gridArray[x, y].placedCards.Remove(_card);
-        _card.RemoveCard();
 
+        if (_card.type == Card.cardType.PTypeSilicon || _card.type == Card.cardType.NTypeSilicon)
+        {
+            fungusManager.SetBooleanVariable("electricField", false);
+        }
+
+        _card.RemoveCard();
 
         foreach (Card card in cardsOnField)
         {
