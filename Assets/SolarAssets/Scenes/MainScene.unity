@@ -1313,6 +1313,26 @@ PrefabInstance:
       propertyPath: animator.animatorVal
       value: 
       objectReference: {fileID: 1141488884}
+    - target: {fileID: 1026871059, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+      propertyPath: animator.animatorVal
+      value: 
+      objectReference: {fileID: 1141488884}
+    - target: {fileID: 1026871060, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+      propertyPath: animator.animatorVal
+      value: 
+      objectReference: {fileID: 1141488884}
+    - target: {fileID: 1026871061, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+      propertyPath: animator.animatorVal
+      value: 
+      objectReference: {fileID: 1141488884}
+    - target: {fileID: 1026871062, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+      propertyPath: animator.animatorVal
+      value: 
+      objectReference: {fileID: 1141488884}
+    - target: {fileID: 1026871073, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+      propertyPath: animator.animatorVal
+      value: 
+      objectReference: {fileID: 1141488884}
     - target: {fileID: 1105398581, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
       propertyPath: animator.animatorVal
       value: 
