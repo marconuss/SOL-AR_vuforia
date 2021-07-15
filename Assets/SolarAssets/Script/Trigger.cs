@@ -23,7 +23,7 @@ public class Trigger : MonoBehaviour
         if (other.gameObject.tag == "Cards")
         {
             if(!cardPlaced) cardPlaced = true;
-            Debug.Log(other.gameObject.name + " on " + this.gameObject.name);
+            //Debug.Log(other.gameObject.name + " on " + this.gameObject.name);
             CardsOnTrigger.Add(other.gameObject);
             CardManager.instance.PlaceCard((int)TriggerGrid.instance.GetTriggerGridPosition(this.gameObject).x, (int)TriggerGrid.instance.GetTriggerGridPosition(this.gameObject).y, other.gameObject.GetComponent<Card>());
         }
@@ -37,7 +37,7 @@ public class Trigger : MonoBehaviour
             //Debug.Log("Card placed");
             if (this.gameObject.tag != "ZoomTrigger")
             {
-                //Debug.Log(collision.gameObject.name + " on " + this.gameObject.name);
+                Debug.Log(collision.gameObject.name + " on " + this.gameObject.name);
                 CardsOnTrigger.Add(collision.gameObject);
                 CardManager.instance.PlaceCard((int)TriggerGrid.instance.GetTriggerGridPosition(this.gameObject).x, (int)TriggerGrid.instance.GetTriggerGridPosition(this.gameObject).y, collision.gameObject.GetComponent<Card>());
             }

@@ -18,6 +18,9 @@ public class ZoomIn : Command
         zoomObj = GameObject.FindGameObjectWithTag("ZoomImage");
         SpriteRenderer sr = zoomObj.GetComponent<SpriteRenderer>();
 
+        //ZoomImage.instance.StartAnimation();
+
+
         if(!sr.enabled)
         {
             sr.sprite = zoomSprite;

@@ -12,6 +12,8 @@ public class ZoomOut : Command
         zoomObj = GameObject.FindGameObjectWithTag("ZoomImage");
         SpriteRenderer sr = zoomObj.GetComponent<SpriteRenderer>();
 
+        //ZoomImage.instance.DestroyMyChildern();
+
         if(sr.enabled)
         {
             sr.enabled = false;

@@ -1,12 +1,36 @@
 fileFormatVersion: 2
 guid: e4ceed8a384549b41bfe82022c9a95c6
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -112491386599143268
+    second: Photon and Electron Clash Sprites_0
+  - first:
+      213: -305959054320879518
+    second: Photon and Electron Clash Sprites_1
+  - first:
+      213: 836670900223495889
+    second: Photon and Electron Clash Sprites_2
+  - first:
+      213: 8025343339218717336
+    second: Photon and Electron Clash Sprites_3
+  - first:
+      213: 212646133525247460
+    second: Photon and Electron Clash Sprites_4
+  - first:
+      213: -5286692423471496241
+    second: Photon and Electron Clash Sprites_5
+  - first:
+      213: -4843330749022843031
+    second: Photon and Electron Clash Sprites_6
+  - first:
+      213: 948753329747434371
+    second: Photon and Electron Clash Sprites_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -35,13 +59,13 @@ TextureImporter:
     filterMode: -1
     aniso: -1
     mipBias: -100
-    wrapU: -1
-    wrapV: -1
+    wrapU: 1
+    wrapV: 1
     wrapW: -1
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -50,9 +74,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -75,13 +99,217 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Photon and Electron Clash Sprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 453.5
+        width: 450.2
+        height: 453.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98877d0ea9507ef0800000000000000
+      internalID: -112491386599143268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photon and Electron Clash Sprites_1
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 453.5
+        width: 450.2
+        height: 453.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268b3637cd301cbf0800000000000000
+      internalID: -305959054320879518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photon and Electron Clash Sprites_2
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 453.5
+        width: 450.2
+        height: 453.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de4ab930c37c9b00800000000000000
+      internalID: 836670900223495889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photon and Electron Clash Sprites_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.5
+        width: 450.2
+        height: 453.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89acda63f3fbf5f60800000000000000
+      internalID: 8025343339218717336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photon and Electron Clash Sprites_4
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0.5
+        width: 450.2
+        height: 453.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5f1a3288873f200800000000000000
+      internalID: 212646133525247460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photon and Electron Clash Sprites_5
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0.5
+        width: 450.2
+        height: 453.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc38b3e3045e1a6b0800000000000000
+      internalID: -5286692423471496241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photon and Electron Clash Sprites_6
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 0.5
+        width: 450.2
+        height: 453.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f44c6485809ccb0800000000000000
+      internalID: -4843330749022843031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photon and Electron Clash Sprites_7
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0.5
+        width: 450.2
+        height: 453.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b901f6026aa2d00800000000000000
+      internalID: 948753329747434371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7f15c272c2ab47b4e8b803d9d8a2bba7
     internalID: 0
     vertices: []
     indices: 

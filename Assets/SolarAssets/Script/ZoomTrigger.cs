@@ -6,13 +6,10 @@ public class ZoomTrigger : MonoBehaviour
 {
 
     private GameObject zoomObject;
-    private SpriteRenderer spriteR;
 
     void Start()
     {
         zoomObject = GameObject.FindGameObjectWithTag("ZoomImage");
-
-        spriteR = zoomObject.gameObject.GetComponent<SpriteRenderer>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

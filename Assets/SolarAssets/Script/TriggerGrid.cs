@@ -26,11 +26,6 @@ public class TriggerGrid : MonoBehaviour
 
         triggers = GameObject.FindGameObjectsWithTag("Trigger");
         triggers = triggers.OrderBy(t => t.transform.GetSiblingIndex()).ToArray();
-
-        //foreach(GameObject t in triggers)
-        //{
-        //    Debug.Log(t.name);
-        //}
         SetUpTriggerGrid();
     }
 
@@ -39,22 +34,22 @@ public class TriggerGrid : MonoBehaviour
         return triggerGrid[x, y].GetComponent<Trigger>().GetCardsOnTrigger();
     }
 
-    public void UpdateCards()
-    {
-        for (int x = 0; x < collumns; x++)
-        {
-            for (int y = 0; y < rows; y++)
-            {
-                if (GetCardsOnTrigger(x, y).Count != 0)
-                {
-                    foreach (GameObject card in GetCardsOnTrigger(x, y))
-                    {
-                        Debug.Log(card.name + " on " + triggerGrid[x, y].name);
-                    }
-                }
-            }
-        }
-    }
+    //public void UpdateCards()
+    //{
+    //    for (int x = 0; x < collumns; x++)
+    //    {
+    //        for (int y = 0; y < rows; y++)
+    //        {
+    //            if (GetCardsOnTrigger(x, y).Count != 0)
+    //            {
+    //                foreach (GameObject card in GetCardsOnTrigger(x, y))
+    //                {
+    //                    Debug.Log(card.name + " on " + triggerGrid[x, y].name);
+    //                }
+    //            }
+    //        }
+    //    }
+    //}
 
     private void SetUpTriggerGrid()
     {
@@ -66,12 +61,12 @@ public class TriggerGrid : MonoBehaviour
             for (int y = 0; y < rows; y++)
             {
                 triggerGrid[x, y] = triggers[triggerIndex];
-                Debug.Log(triggerGrid[x, y].name + "with position " + x + ", " + y + " with index " + triggerIndex);
+                //Debug.Log(triggerGrid[x, y].name + "with position " + x + ", " + y + " with index " + triggerIndex);
                 triggerIndex++;
             }
         }
 
-        Debug.Log("Trigger Grid Setup!");
+        //Debug.Log("Trigger Grid Setup!");
     }
 
     public Vector2 GetTriggerGridPosition(GameObject trigger)
