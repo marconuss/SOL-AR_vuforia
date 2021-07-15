@@ -327,8 +327,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af967b696bb50bb43935a73d65edd149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rows: 3
+  columns: 3
+  cellSize: {x: 3, y: 3}
   cardPrefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4,
     type: 3}
+  cardsOnField: []
+  fungusManager: {fileID: 0}
 --- !u!4 &950562945
 Transform:
   m_ObjectHideFlags: 0

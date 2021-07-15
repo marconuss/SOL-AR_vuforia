@@ -88,17 +88,16 @@ public class GameManager : MonoBehaviour
                     {
                         ActivateCircuit();
                     }
+                    else if (circuitActive) DeactivateCircuit();
                 }
+                
             }
             if (card.type == Card.cardType.NTypeSilicon)
             {
                 if (card.neighbourCards[1] != null && card.neighbourCards[1].type == Card.cardType.PTypeSilicon) ActivateElectricField();
+                else if (electricFieldActive) DeactivateElectricField();
                 if (card.neighbourCards[3] != null && card.neighbourCards[3].type == Card.cardType.PTypeSilicon) ActivateElectricField();
-            }
-            if (card.type == Card.cardType.PTypeSilicon)
-            {
-                //if (card.neighbourCards[1] != null && card.neighbourCards[1].type == Card.cardType.NTypeSilicon) ActivateElectricField();
-                //if (card.neighbourCards[3] != null && card.neighbourCards[3].type == Card.cardType.NTypeSilicon) ActivateElectricField();
+                else if (electricFieldActive) DeactivateElectricField();
             }
 
         }
@@ -194,12 +193,25 @@ public class GameManager : MonoBehaviour
 
         Debug.Log("Circuit Activated");
     }
+    public void DeactivateCircuit()
+    {
+        if (circuitActive == true) circuitActive = false;
+
+        Debug.Log("Circuit Activated");
+    }
 
     public void ActivateElectricField()
     {
         if (electricFieldActive == false) electricFieldActive = true;
         //set fungus variable
         fungusManager.SetBooleanVariable("electricField", true);
+        //Debug.Log("Electric Field activated");
+    }
+    public void DeactivateElectricField()
+    {
+        if (electricFieldActive == true) electricFieldActive = false;
+        //set fungus variable
+        fungusManager.SetBooleanVariable("electricField", false);
         //Debug.Log("Electric Field activated");
     }
 

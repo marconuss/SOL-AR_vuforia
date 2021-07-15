@@ -120,7 +120,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveDirection: {x: 1, y: -1, z: 0}
   movementSpeed: 5
-  state: 0
+  reflectionRate: 60
+  state: 1
 --- !u!58 &1834461560982309897
 CircleCollider2D:
   m_ObjectHideFlags: 0

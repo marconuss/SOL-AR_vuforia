@@ -415,7 +415,6 @@ MonoBehaviour:
   cardPrefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4,
     type: 3}
   cardsOnField: []
-  fungusManager: {fileID: 0}
 --- !u!4 &950562945
 Transform:
   m_ObjectHideFlags: 0
@@ -645,7 +644,6 @@ MonoBehaviour:
   solution: 020000000500000004000000030000000000000001000000
   secondPhase: 0
   fungusManager: {fileID: 0}
-  fungusVariables: []
 --- !u!4 &1952345208
 Transform:
   m_ObjectHideFlags: 0

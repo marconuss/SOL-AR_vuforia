@@ -6,34 +6,41 @@ public class PhotonBehavior : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public Vector3 moveDirection;
+    public Vector3 moveDirection = new Vector3(1, -1, 0);
+    Vector3 reflectedDirection;
     public float movementSpeed;
+    bool reflected = false;
 
-    public enum PhotonState { SemiAbsorbed, Absorbed, Reflected, SemiReflected, Pass}
+    [Tooltip("This is the probability for a photon to get reflected in percent. (e.g. 30 for 30%)")]
+    public float reflectionRate = 30f;
+
+    SpriteRenderer renderer;
+
+
+
+    public enum PhotonState { Reflected, Default}
     public PhotonState state;
 
     void Start()
     {
-        state = PhotonState.Pass;
+        state = PhotonState.Default;
+        reflectedDirection = Vector3.Reflect(moveDirection, new Vector3(0, 1, 0));
+        renderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(state == PhotonState.Pass)
+        if(state == PhotonState.Default)
         {
             DefaultMovement();
         }
 
         else if (state == PhotonState.Reflected)
         {
-
+            ReflectedMovement();
         }
 
-        else if (state == PhotonState.SemiReflected)
-        {
-
-        }
     }
 
     public void UpdatePhotonState(PhotonState _state)
@@ -46,9 +53,26 @@ public class PhotonBehavior : MonoBehaviour
         transform.position += moveDirection * movementSpeed * Time.deltaTime;
     }
 
+    void ReflectedMovement()
+    {
+        transform.position += reflectedDirection * movementSpeed * Time.deltaTime;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Conductor")
+        if (collision.tag == "Reflector")
+        {
+            if (reflected)
+            {
+                reflected = false;
+                UpdatePhotonState(PhotonState.Default);
+                renderer.flipX = false;
+                renderer.flipY = false;
+
+            }  
+        }
+
+        if (collision.tag == "Conductor")
         {
             //UpdatePhotonState(PhotonState.Absorbed);
             Destroy(gameObject);
@@ -57,17 +81,31 @@ public class PhotonBehavior : MonoBehaviour
         if (collision.tag == "GridConductor")
         {
             //UpdatePhotonState(PhotonState.SemiAbsorbed);
-            if(Random.Range(0, 3) != 0) Destroy(gameObject);
+            if(Random.Range(0, 3) == 0) Destroy(gameObject);
         }
 
         if (collision.tag == "NTypeSilicon")
         {
-            UpdatePhotonState(PhotonState.SemiReflected);
+            float reflectionValue = reflectionRate / 100;
+            if (Random.Range(0f, 1f) <= reflectionValue)
+            {
+                UpdatePhotonState(PhotonState.Reflected);
+                reflected = true;
+                renderer.flipY = true;
+
+            }
+
         }
 
         if (collision.tag == "PTypeSilicon")
         {
-            UpdatePhotonState(PhotonState.SemiReflected);
+            float reflectionValue = reflectionRate / 100;
+            if (Random.Range(0f, 1f) <= reflectionValue)
+            {
+                UpdatePhotonState(PhotonState.Reflected);
+                reflected = true;
+                renderer.flipY = true;
+            }
         }
     }
 }

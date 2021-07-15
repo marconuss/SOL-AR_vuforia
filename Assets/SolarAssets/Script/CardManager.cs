@@ -62,7 +62,7 @@ public class CardManager : MonoBehaviour
         _card.InstantiateCard(grid.GetCellCenter(x, y), cardPrefab);
 
         //save new placed card position for fungus
-        GameManager.instance.fungusManager.SetIntegerVariable("lastCardPos", _card.gridPosition.y);
+        //GameManager.instance.fungusManager.SetIntegerVariable("lastCardPos", _card.gridPosition.y);
 
 
         foreach (Card card in cardsOnField)
@@ -72,7 +72,7 @@ public class CardManager : MonoBehaviour
 
         //call fungus flowchart block
         if(GameManager.instance.secondPhase == false)
-            GameManager.instance.fungusManager.ExecuteBlock(_card.type.ToString());
+            //GameManager.instance.fungusManager.ExecuteBlock(_card.type.ToString());
 
         if(OnCardPlaced != null)
         {
@@ -84,12 +84,6 @@ public class CardManager : MonoBehaviour
     {
         cardsOnField.Remove(_card);
         grid.gridArray[x, y].placedCards.Remove(_card);
-
-        //not really working for some reason...
-        if (_card.type == Card.cardType.PTypeSilicon || _card.type == Card.cardType.NTypeSilicon)
-        {
-            GameManager.instance.fungusManager.SetBooleanVariable("electricField", false);
-        }
 
         _card.RemoveCard();
 
