@@ -381,7 +381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -823.38794, y: 77.17822}
+  scrollPos: {x: -543.38794, y: 20.178223}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 371.8
@@ -392,8 +392,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 4916049903551669908}
+  selectedCommands:
+  - {fileID: 1436333271965601197}
   variables:
   - {fileID: 4916049903551669797}
   - {fileID: 1105398579}
@@ -2634,7 +2636,7 @@ MonoBehaviour:
   itemId: 101
   indentLevel: 1
   storyText: The reflector helps the solar cell capture more sunlight, increasing
-    its output efficiency. The more photons we get in, the better!
+    its output efficiency. The more photons we get in, the more power we get out!
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6378,7 +6380,7 @@ MonoBehaviour:
   itemId: 200
   indentLevel: 1
   storyText: While admittedly a little dull on the surface, this semiconductive metal
-    layer helps create a circuit, allowing our little solar cell to produce electricity.
+    helps create a circuit, allowing our little solar cell to produce electricity.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -13795,7 +13797,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 569.2064
-    y: 257.584
+    y: 258.584
     width: 130.8
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -13881,7 +13883,6 @@ MonoBehaviour:
   - {fileID: 1026871082}
   - {fileID: 731238450}
   - {fileID: 363067891}
-  - {fileID: 0}
   - {fileID: 731238448}
   - {fileID: 731238447}
   - {fileID: 731238446}
@@ -16185,7 +16186,7 @@ MonoBehaviour:
   itemId: 406
   indentLevel: 1
   storyText: The reflector helps the solar cell capture more sunlight, increasing
-    its output efficiency. The more photons we get in, the better!
+    its output efficiency. The more photons we get in, the more power we get out!
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -16798,7 +16799,7 @@ MonoBehaviour:
   itemId: 415
   indentLevel: 1
   storyText: While admittedly a little dull on the surface, this semiconductive metal
-    layer helps create a circuit, allowing our little solar cell to produce electricity.
+    helps create a circuit, allowing our little solar cell to produce electricity.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
