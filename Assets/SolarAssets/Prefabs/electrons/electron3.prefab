@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5634497967620921757}
   - component: {fileID: 5634497967620921754}
   - component: {fileID: 5634497967620921755}
+  - component: {fileID: -867585156478661266}
   m_Layer: 0
   m_Name: electron3
   m_TagString: Untagged
@@ -103,3 +104,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-867585156478661266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5634497967620921752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328d290006fd6514e857bbf1cd54bdd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
