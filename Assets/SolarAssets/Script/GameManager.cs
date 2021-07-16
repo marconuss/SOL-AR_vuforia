@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
     public Sprite[] PTypeSiliconSprite;
     public Sprite[] ConductorSprite;
 
+    public GameObject electronPrefab;
+
+
     public List<Card.cardType> solution;
     public bool secondPhase;
 

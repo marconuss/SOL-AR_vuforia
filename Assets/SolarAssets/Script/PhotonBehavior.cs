@@ -97,6 +97,13 @@ public class PhotonBehavior : MonoBehaviour
                 renderer.flipY = true;
 
             }
+            else
+            {
+                //instantiate electron
+                Instantiate(GameManager.instance.electronPrefab, collision.gameObject.transform.position, Quaternion.identity, collision.gameObject.transform);
+                Destroy(gameObject);
+                //activate elctron behavior
+            }
 
         }
 
@@ -108,6 +115,10 @@ public class PhotonBehavior : MonoBehaviour
                 UpdatePhotonState(PhotonState.Reflected);
                 reflected = true;
                 renderer.flipY = true;
+            }
+            else
+            {
+                Destroy(gameObject);
             }
         }
     }

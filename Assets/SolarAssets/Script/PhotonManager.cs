@@ -30,22 +30,4 @@ public class PhotonManager : MonoBehaviour
         }
     }
 
-    void CheckForStateChange()
-    {
-        //foreach (Card card in CardManager.instance.cardsOnField)
-        //{
-        //    if (card.type == Card.cardType.GridConductor) { } //semi absorb
-        //    if (card.type == Card.cardType.NTypeSilicon) { } //reacts with photons, a few get reflected, electrons activated
-        //    if (card.type == Card.cardType.PTypeSilicon) { } //a few get reflected
-        //    if (card.type == Card.cardType.Conductor) 
-        //    {
-        //        foreach (PhotonBehavior photon in GetComponentsInChildren<PhotonBehavior>())
-        //        {
-        //            photon.UpdatePhotonState(PhotonBehavior.PhotonState.Absorbed)
-        //        }
-        //    } //blocks
-
-                
-        //}
-    }
 }
