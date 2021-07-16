@@ -29,4 +29,12 @@ public class ElectronBehavior : MonoBehaviour
 
         transform.position = new Vector3(Xpos, Ypos, 0);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "WireConnector")
+        {
+            Destroy(gameObject);
+        }
+    }
 }

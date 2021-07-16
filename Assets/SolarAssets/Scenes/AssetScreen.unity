@@ -641,7 +641,7 @@ MonoBehaviour:
   ConductorSprite:
   - {fileID: 21300000, guid: 41ef4b7fdafc6f04c82a7a3f50ce084b, type: 3}
   - {fileID: 21300000, guid: 5b42d0fcaf6e9dd4db0b9d0928a0eaa6, type: 3}
-  electronPrefab: {fileID: 2113443002729490582, guid: 6b8aa89dbb97825489502d0c289f747b,
+  electronPrefab: {fileID: 7718431215071248876, guid: 83e27c02274244f429f6b1eb77216025,
     type: 3}
   solution: 020000000500000004000000030000000000000001000000
   secondPhase: 0
