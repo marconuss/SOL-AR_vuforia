@@ -58,3 +58,6 @@ TagManager:
   - name: Cards
     uniqueID: 2871135279
     locked: 0
+  - name: ZoomLens
+    uniqueID: 235825945
+    locked: 0
