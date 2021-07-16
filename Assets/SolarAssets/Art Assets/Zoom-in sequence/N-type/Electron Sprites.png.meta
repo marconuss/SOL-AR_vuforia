@@ -132,8 +132,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 450
-        height: 450
+        width: 370
+        height: 375
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,10 +151,10 @@ TextureImporter:
       name: Electron Sprites_1
       rect:
         serializedVersion: 2
-        x: 450
+        x: 370
         y: 0
-        width: 450
-        height: 450
+        width: 370
+        height: 375
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,10 +172,10 @@ TextureImporter:
       name: Electron Sprites_2
       rect:
         serializedVersion: 2
-        x: 900
+        x: 740
         y: 0
-        width: 450
-        height: 450
+        width: 370
+        height: 375
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,10 +193,10 @@ TextureImporter:
       name: Electron Sprites_3
       rect:
         serializedVersion: 2
-        x: 1350
+        x: 1110
         y: 0
-        width: 450
-        height: 450
+        width: 370
+        height: 375
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

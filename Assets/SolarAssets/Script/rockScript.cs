@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class rockScript : MonoBehaviour
 {
-
+    [Range(0, 3)]
     public float delay;
     private Animator animator;
     // Start is called before the first frame update
@@ -15,7 +15,6 @@ public class rockScript : MonoBehaviour
     }
     public IEnumerator playAnimation() {
         yield return new WaitForSeconds(delay);
-        animator.Play("rock");
+        animator.Play("idle");
     }
-
 }

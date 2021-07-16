@@ -133,12 +133,12 @@ TextureImporter:
       name: Photon Flower Sprites_0
       rect:
         serializedVersion: 2
-        x: 30
+        x: 0
         y: 0
-        width: 377
-        height: 450
+        width: 415.4
+        height: 385
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -154,12 +154,12 @@ TextureImporter:
       name: Photon Flower Sprites_1
       rect:
         serializedVersion: 2
-        x: 489
+        x: 415
         y: 0
-        width: 384
-        height: 450
+        width: 415.4
+        height: 385
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -175,12 +175,12 @@ TextureImporter:
       name: Photon Flower Sprites_2
       rect:
         serializedVersion: 2
-        x: 938
+        x: 830
         y: 0
-        width: 384
-        height: 450
+        width: 415.4
+        height: 385
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -196,12 +196,12 @@ TextureImporter:
       name: Photon Flower Sprites_3
       rect:
         serializedVersion: 2
-        x: 1389
+        x: 1245
         y: 0
-        width: 384
-        height: 450
+        width: 415.4
+        height: 385
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -217,12 +217,12 @@ TextureImporter:
       name: Photon Flower Sprites_4
       rect:
         serializedVersion: 2
-        x: 1778
+        x: 1660
         y: 0
-        width: 384
-        height: 450
+        width: 415.4
+        height: 385
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

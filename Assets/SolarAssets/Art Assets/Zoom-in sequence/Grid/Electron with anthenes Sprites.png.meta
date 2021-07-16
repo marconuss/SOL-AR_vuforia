@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: fec6a387488019748b98d2160498c519
+guid: 878447f9005d9b844ae1d5c3bf6dd8ed
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3790003760785202451
-    second: Photon Flower Sprites_0
+      213: -3586682024395369621
+    second: Electron with anthenes Sprites_0
   - first:
-      213: 5212941726934907504
-    second: Photon Flower Sprites_1
+      213: -5059667612938612880
+    second: Electron with anthenes Sprites_1
   - first:
-      213: 4904739191732091640
-    second: Photon Flower Sprites_2
+      213: -2515943404295005354
+    second: Electron with anthenes Sprites_2
   - first:
-      213: -3080060019256810197
-    second: Photon Flower Sprites_3
-  - first:
-      213: 3549902667570779716
-    second: Photon Flower Sprites_4
+      213: -6547980203276456374
+    second: Electron with anthenes Sprites_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -130,13 +127,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Photon Flower Sprites_0
+      name: Electron with anthenes Sprites_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 415.4
-        height: 385
+        width: 403.25
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,20 +141,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31d1ff2175cc89430800000000000000
-      internalID: 3790003760785202451
+      spriteID: b6392ada3bb893ec0800000000000000
+      internalID: -3586682024395369621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Photon Flower Sprites_1
+      name: Electron with anthenes Sprites_1
       rect:
         serializedVersion: 2
-        x: 415
+        x: 403
         y: 0
-        width: 415.4
-        height: 385
+        width: 403.25
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07a34cc91e6185840800000000000000
-      internalID: 5212941726934907504
+      spriteID: 07fce310d1378c9b0800000000000000
+      internalID: -5059667612938612880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Photon Flower Sprites_2
+      name: Electron with anthenes Sprites_2
       rect:
         serializedVersion: 2
-        x: 830
+        x: 806
         y: 0
-        width: 415.4
-        height: 385
+        width: 403.25
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fab027fe42211440800000000000000
-      internalID: 4904739191732091640
+      spriteID: 65b5208cdc2951dd0800000000000000
+      internalID: -2515943404295005354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Photon Flower Sprites_3
+      name: Electron with anthenes Sprites_3
       rect:
         serializedVersion: 2
-        x: 1245
+        x: 1209
         y: 0
-        width: 415.4
-        height: 385
+        width: 403.25
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,29 +204,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b25a0593bbd6145d0800000000000000
-      internalID: -3080060019256810197
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Photon Flower Sprites_4
-      rect:
-        serializedVersion: 2
-        x: 1660
-        y: 0
-        width: 415.4
-        height: 385
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44694cffaa9c34130800000000000000
-      internalID: 3549902667570779716
+      spriteID: a4eaa63a2b6e025a0800000000000000
+      internalID: -6547980203276456374
       vertices: []
       indices: 
       edges: []
@@ -237,7 +213,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: f38f52915fc3d734a81d4f4039cd7144
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

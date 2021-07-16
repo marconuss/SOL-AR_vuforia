@@ -135,8 +135,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 449.6
-        height: 452
+        width: 273
+        height: 298
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,10 +154,10 @@ TextureImporter:
       name: Hole Tentacles Sprites_1
       rect:
         serializedVersion: 2
-        x: 449
+        x: 273
         y: 0
-        width: 449.6
-        height: 452
+        width: 273
+        height: 298
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,10 +175,10 @@ TextureImporter:
       name: Hole Tentacles Sprites_2
       rect:
         serializedVersion: 2
-        x: 898
+        x: 546
         y: 0
-        width: 449.6
-        height: 452
+        width: 273
+        height: 298
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,10 +196,10 @@ TextureImporter:
       name: Hole Tentacles Sprites_3
       rect:
         serializedVersion: 2
-        x: 1347
+        x: 819
         y: 0
-        width: 449.6
-        height: 452
+        width: 273
+        height: 298
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,10 +217,10 @@ TextureImporter:
       name: Hole Tentacles Sprites_4
       rect:
         serializedVersion: 2
-        x: 1796
+        x: 1092
         y: 0
-        width: 449.6
-        height: 452
+        width: 273
+        height: 298
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -135,8 +135,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 450
-        height: 450
+        width: 403.25
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,10 +154,10 @@ TextureImporter:
       name: Electron with anthenes Sprites_1
       rect:
         serializedVersion: 2
-        x: 450
+        x: 403
         y: 0
-        width: 450
-        height: 450
+        width: 403.25
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,10 +175,10 @@ TextureImporter:
       name: Electron with anthenes Sprites_2
       rect:
         serializedVersion: 2
-        x: 900
+        x: 806
         y: 0
-        width: 450
-        height: 450
+        width: 403.25
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,10 +196,10 @@ TextureImporter:
       name: Electron with anthenes Sprites_3
       rect:
         serializedVersion: 2
-        x: 1350
+        x: 1209
         y: 0
-        width: 450
-        height: 450
+        width: 403.25
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
