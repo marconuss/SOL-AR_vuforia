@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class PhotonBehavior : MonoBehaviour
 {
-    // Start is called before the first frame update
 
     public Vector3 moveDirection = new Vector3(1, -1, 0);
     Vector3 reflectedDirection;
     public float movementSpeed;
     bool reflected = false;
 
+    public float borderX = 80f;
+    public float borderY = -100f;
+
     [Tooltip("This is the probability for a photon to get reflected in percent. (e.g. 30 for 30%)")]
     public float reflectionRate = 30f;
 
     SpriteRenderer renderer;
-
-
 
     public enum PhotonState { Reflected, Default}
     public PhotonState state;
@@ -51,6 +51,9 @@ public class PhotonBehavior : MonoBehaviour
     void DefaultMovement()
     {
         transform.position += moveDirection * movementSpeed * Time.deltaTime;
+        if (transform.position.x > borderX || transform.position.y < borderY) Destroy(gameObject);
+       
+
     }
 
     void ReflectedMovement()
