@@ -147,7 +147,7 @@ public class PhotonBehaviourMarco : MonoBehaviour
         //Vector2 randTarget = parentPos + (Random.insideUnitCircle * 4f);
         //randTarget.y += yOffset;
 
-        float randTargetY = Random.Range(-5f, 4f);
+        float randTargetY = Random.Range(-4f, 4f);
 
         if (transform.position.y < randTargetY)
         {

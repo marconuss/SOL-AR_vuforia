@@ -7,27 +7,35 @@ using Fungus;
 public class ZoomIn : Command
 {
 
-    private GameObject zoomObj;
+    //private GameObject zoomObj;
     //public Sprite zoomCard;
+    //[SerializeField]
+    //protected SpriteData zoomSprite;
+
     [SerializeField]
-    protected SpriteData zoomSprite;
+    protected GameObjectData zoomObj;
 
 
     public override void OnEnter()
     {
-        zoomObj = GameObject.FindGameObjectWithTag("ZoomImage");
-        SpriteRenderer sr = zoomObj.GetComponent<SpriteRenderer>();
+        //zoomObj = GameObject.FindGameObjectWithTag("ZoomImage");
+        //SpriteRenderer sr = zoomObj.GetComponent<SpriteRenderer>();
 
         //ZoomImage.instance.StartAnimation();
 
 
-        if(!sr.enabled)
-        {
-            sr.sprite = zoomSprite;
-            sr.enabled = true;
-        }
+        //if(!sr.enabled)
+        //{
+        //    sr.sprite = zoomSprite;
+        //    sr.enabled = true;
+        //}
+        //
+        //Continue();
+
+        Instantiate(zoomObj);
 
         Continue();
+
     }
     
 }

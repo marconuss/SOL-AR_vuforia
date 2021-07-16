@@ -10,13 +10,19 @@ public class ZoomOut : Command
     public override void OnEnter()
     {
         zoomObj = GameObject.FindGameObjectWithTag("ZoomImage");
-        SpriteRenderer sr = zoomObj.GetComponent<SpriteRenderer>();
+        //SpriteRenderer sr = zoomObj.GetComponent<SpriteRenderer>();
 
         //ZoomImage.instance.DestroyMyChildern();
 
-        if(sr.enabled)
+        //if(sr.enabled)
+        //{
+        //    sr.enabled = false;
+        //}
+        if (zoomObj)
         {
-            sr.enabled = false;
+            Destroy(zoomObj);
+            Debug.LogWarning("destroyed");
+
         }
 
         Continue();

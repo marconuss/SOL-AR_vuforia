@@ -199,10 +199,7 @@ GameObject:
   - component: {fileID: 1105398639}
   - component: {fileID: 363067866}
   - component: {fileID: 363067867}
-  - component: {fileID: 363067868}
-  - component: {fileID: 363067869}
   - component: {fileID: 363067870}
-  - component: {fileID: 363067871}
   - component: {fileID: 363067878}
   - component: {fileID: 363067884}
   - component: {fileID: 363067885}
@@ -347,6 +344,9 @@ GameObject:
   - component: {fileID: 363067935}
   - component: {fileID: 363067936}
   - component: {fileID: 363067937}
+  - component: {fileID: 363067883}
+  - component: {fileID: 363067869}
+  - component: {fileID: 363067868}
   m_Layer: 0
   m_Name: FungusManager
   m_TagString: Untagged
@@ -381,7 +381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -543.38794, y: 20.178223}
+  scrollPos: {x: -90.8053, y: -8.584015}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 371.8
@@ -393,15 +393,15 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 4916049903551669908}
+  - {fileID: 363067886}
   selectedCommands:
-  - {fileID: 1436333271965601197}
+  - {fileID: 363067891}
   variables:
   - {fileID: 4916049903551669797}
   - {fileID: 1105398579}
   - {fileID: 4916049903551669922}
   - {fileID: 808615581338149050}
-  - {fileID: 363067871}
+  - {fileID: 363067883}
   - {fileID: 4916049903551669906}
   - {fileID: 6180833291981575334}
   - {fileID: 363067870}
@@ -413,10 +413,10 @@ MonoBehaviour:
   - {fileID: 363067866}
   - {fileID: 4916049903551669799}
   - {fileID: 7276783612376321412}
-  - {fileID: 363067869}
+  - {fileID: 363067868}
   - {fileID: 4916049903551669816}
   - {fileID: 8129589821593705923}
-  - {fileID: 363067868}
+  - {fileID: 363067869}
   - {fileID: 4872035699784695756}
   - {fileID: 363067878}
   description: 
@@ -445,7 +445,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 680.3198
     y: -17.31337
-    width: 112.4
+    width: 71
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -486,7 +486,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 345.87756
     y: 117.25486
-    width: 82
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2261,7 +2261,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 452.80212
     y: 119.392204
-    width: 102
+    width: 61
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4243,7 +4243,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 581.7874
     y: 121.1724
-    width: 133.2
+    width: 92
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6045,7 +6045,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 740.2415
     y: 118.020386
-    width: 110
+    width: 69
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7898,7 +7898,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 864.775
     y: 118.872
-    width: 127.6
+    width: 86
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9747,9 +9747,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 310
   indentLevel: 1
-  zoomSprite:
-    spriteRef: {fileID: 363067871}
-    spriteVal: {fileID: 0}
+  zoomObj:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
 --- !u!114 &3287442785218147881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9804,9 +9804,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 313
   indentLevel: 1
-  zoomSprite:
-    spriteRef: {fileID: 363067870}
-    spriteVal: {fileID: 0}
+  zoomObj:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
 --- !u!114 &6498530615058444733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9835,9 +9835,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 315
   indentLevel: 1
-  zoomSprite:
-    spriteRef: {fileID: 363067867}
-    spriteVal: {fileID: 0}
+  zoomObj:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
 --- !u!114 &7531728503465351936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9866,9 +9866,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 317
   indentLevel: 1
-  zoomSprite:
-    spriteRef: {fileID: 363067866}
-    spriteVal: {fileID: 0}
+  zoomObj:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
 --- !u!114 &5631575379946402298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9897,9 +9897,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 321
   indentLevel: 1
-  zoomSprite:
-    spriteRef: {fileID: 363067869}
-    spriteVal: {fileID: 0}
+  zoomObj:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
 --- !u!114 &4072710321766915123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13447,36 +13447,6 @@ MonoBehaviour:
   scope: 0
   key: gridZoomSprite
   value: {fileID: 21300000, guid: b8da1f3a745394f4890aa94794ef41eb, type: 3}
---- !u!114 &363067868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4916049903551669764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf67d97824e8c45c5b26fe72bfef82ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 0
-  key: pZoomSprite
-  value: {fileID: 21300000, guid: 2fa190fd26a4a9d45aeb4a4049d9cfec, type: 3}
---- !u!114 &363067869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4916049903551669764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf67d97824e8c45c5b26fe72bfef82ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 0
-  key: nZoomSprite
-  value: {fileID: 21300000, guid: 41503058d8462f948bca3b688f7a32c0, type: 3}
 --- !u!114 &363067870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13492,21 +13462,6 @@ MonoBehaviour:
   scope: 0
   key: reflectorZoomSprite
   value: {fileID: 21300000, guid: f929220765edf8042b5170a335a78c26, type: 3}
---- !u!114 &363067871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4916049903551669764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf67d97824e8c45c5b26fe72bfef82ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 0
-  key: glassZoomSprite
-  value: {fileID: 21300000, guid: 563eff546bfe2474cb8977c05bcf0d35, type: 3}
 --- !u!114 &363067878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13779,9 +13734,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 372
   indentLevel: 1
-  zoomSprite:
-    spriteRef: {fileID: 363067870}
-    spriteVal: {fileID: 0}
+  zoomObj:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
 --- !u!114 &363067886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13796,9 +13751,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 569.2064
+    x: 564.3053
     y: 258.584
-    width: 130.8
+    width: 89
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13907,9 +13862,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 375
   indentLevel: 1
-  zoomSprite:
-    spriteRef: {fileID: 363067871}
-    spriteVal: {fileID: 0}
+  zoomObj:
+    gameObjectRef: {fileID: 363067883}
+    gameObjectVal: {fileID: 0}
 --- !u!114 &363067888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14167,9 +14122,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 383
   indentLevel: 1
-  zoomSprite:
-    spriteRef: {fileID: 363067869}
-    spriteVal: {fileID: 0}
+  zoomObj:
+    gameObjectRef: {fileID: 363067869}
+    gameObjectVal: {fileID: 0}
 --- !u!114 &363067890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14427,9 +14382,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 381
   indentLevel: 1
-  zoomSprite:
-    spriteRef: {fileID: 363067868}
-    spriteVal: {fileID: 0}
+  zoomObj:
+    gameObjectRef: {fileID: 363067868}
+    gameObjectVal: {fileID: 0}
 --- !u!114 &363067892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14687,9 +14642,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 379
   indentLevel: 1
-  zoomSprite:
-    spriteRef: {fileID: 363067866}
-    spriteVal: {fileID: 0}
+  zoomObj:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
 --- !u!114 &363067894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15190,9 +15145,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 376
   indentLevel: 1
-  zoomSprite:
-    spriteRef: {fileID: 363067867}
-    spriteVal: {fileID: 0}
+  zoomObj:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
 --- !u!114 &363067897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15375,7 +15330,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 738.17224
     y: 259.30817
-    width: 140.4
+    width: 99
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21108,9 +21063,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 501
   indentLevel: 1
-  zoomSprite:
-    spriteRef: {fileID: 363067868}
-    spriteVal: {fileID: 0}
+  zoomObj:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
 --- !u!114 &363067929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21627,7 +21582,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1010.9879
     y: 121.52176
-    width: 126.8
+    width: 85
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21699,3 +21654,48 @@ MonoBehaviour:
   stopVoiceover: 0
   waitForVO: 1
   setSayDialog: {fileID: 0}
+--- !u!114 &363067883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4916049903551669764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1941e052c0ed4280b25507cd2e6ad8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: GlassZoomIn
+  value: {fileID: 2084832208088763575, guid: 6b9fc53209d6f79448656ab2aeaba0a4, type: 3}
+--- !u!114 &363067869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4916049903551669764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1941e052c0ed4280b25507cd2e6ad8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: nTypeZoomIn
+  value: {fileID: 9872504814194362, guid: 06d074be8481c7e4995f43738beaf6df, type: 3}
+--- !u!114 &363067868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4916049903551669764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1941e052c0ed4280b25507cd2e6ad8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: pTypeZoomIn
+  value: {fileID: 2949072653114595342, guid: 8672bfc69b71eee4aa508e72b1ee1fc2, type: 3}
