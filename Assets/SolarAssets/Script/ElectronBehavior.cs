@@ -15,11 +15,8 @@ public class ElectronBehavior : MonoBehaviour
     float amplitude = 1f;
     public float moveSpeed = 5f;
 
-    public GameObject secondWire;
-
     bool moveToLeft = false;
 
-    [SerializeField]
     bool respawned = false;
 
     Animator animator;

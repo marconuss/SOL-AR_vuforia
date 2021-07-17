@@ -5,6 +5,7 @@ using Fungus;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("Card Sprites")]
     public Sprite[] GlassSprite;
     public Sprite[] ReflectorSprite;
     public Sprite[] ConductorGridSprite;
@@ -12,19 +13,22 @@ public class GameManager : MonoBehaviour
     public Sprite[] PTypeSiliconSprite;
     public Sprite[] ConductorSprite;
 
+    [Header("Electrons")]
     public GameObject electronPrefab;
     public GameObject electronParent;
 
-
+    [Header("Solution")]
     public List<Card.cardType> solution;
     public bool secondPhase;
 
+    [Header("Fungus")]
     public Flowchart fungusManager;
 
-    public enum photonState { Pass, Blocked, Reflected }
+    enum photonState { Pass, Blocked, Reflected }
 
     public static GameManager instance;
 
+    [Header("Interactions")]
     public bool circuitActive = false;
     public bool electricFieldActive = false;
 
@@ -222,26 +226,15 @@ public class GameManager : MonoBehaviour
     {
         if (electricFieldActive == false) electricFieldActive = true;
         //set fungus variable
-        //fungusManager.SetBooleanVariable("electricField", true);
+        fungusManager.SetBooleanVariable("electricField", true);
         //Debug.Log("Electric Field activated");
     }
     public void DeactivateElectricField()
     {
         if (electricFieldActive == true) electricFieldActive = false;
         //set fungus variable
-        //fungusManager.SetBooleanVariable("electricField", false);
+        fungusManager.SetBooleanVariable("electricField", false);
         //Debug.Log("Electric Field activated");
-    }
-
-
-    public void ChangeElectronState()
-    {
-        if (electricFieldActive == false) { }
-        //electrons loose
-        if (electricFieldActive && circuitActive == false) { }
-        // electrons move and then realign
-        if (electricFieldActive && circuitActive) { }
-        //electrons travel to P type layer
     }
 
     private void OnDisable()
