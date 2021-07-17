@@ -8,15 +8,12 @@ public class ElectronManager : MonoBehaviour
 
     GameObject electronPrefab;
 
+    ElectronBehavior electron;
+
     void Start()
     {
         if (instance != null) Destroy(instance);
         else instance = this;
     }
-    public void SpawnElectron(Vector3 pos, Transform parent)
-    {
-        Instantiate(electronPrefab, pos, Quaternion.identity, parent);
-    }
 
-    
 }

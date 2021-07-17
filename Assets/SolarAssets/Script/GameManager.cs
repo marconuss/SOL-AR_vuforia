@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public Sprite[] ConductorSprite;
 
     public GameObject electronPrefab;
+    public GameObject electronParent;
 
 
     public List<Card.cardType> solution;
@@ -24,8 +25,8 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
 
-    bool circuitActive = false;
-    bool electricFieldActive = false;
+    public bool circuitActive = false;
+    public bool electricFieldActive = false;
 
     int correctTiles;
 
@@ -56,53 +57,67 @@ public class GameManager : MonoBehaviour
     {
         foreach (Card card in CardManager.instance.cardsOnField)
         {
-            if (card.type == Card.cardType.Conductor)
-            {
-                if (card.neighbourCards[1])
-                {
-                    if (card.neighbourCards[1].type == Card.cardType.NTypeSilicon || card.neighbourCards[1].type == Card.cardType.PTypeSilicon)
-                    {
-                        ActivateCircuit();
-                    }
-                }
-
-                if (card.neighbourCards[3])
-                {
-                    if (card.neighbourCards[3].type == Card.cardType.NTypeSilicon || card.neighbourCards[3].type == Card.cardType.PTypeSilicon)
-                    {
-                        ActivateCircuit();
-                    }
-                }
-
-            }
             if (card.type == Card.cardType.GridConductor)
             {
-                if (card.neighbourCards[1])
-                {
-                    if (card.neighbourCards[1].type == Card.cardType.NTypeSilicon || card.neighbourCards[1].type == Card.cardType.PTypeSilicon)
-                    {
-                        ActivateCircuit();
-                    }
-                }
-
+                //does for below neighbour exist
                 if (card.neighbourCards[3])
                 {
-                    if (card.neighbourCards[3].type == Card.cardType.NTypeSilicon || card.neighbourCards[3].type == Card.cardType.PTypeSilicon)
+                    //is neighbour below ntype?
+                    if (card.neighbourCards[3].type == Card.cardType.NTypeSilicon)
                     {
-                        ActivateCircuit();
+                        //set this neighbourcard to the next checked card
+                        Card nextCard = card.neighbourCards[3];
+
+                        //does neighbour for next checked card exist?
+                        if (nextCard.neighbourCards[3])
+                        {
+                            //is next checked card of type psilicon?
+                            if (nextCard.neighbourCards[3].type == Card.cardType.PTypeSilicon)
+                            {
+                                nextCard = nextCard.neighbourCards[3];
+                                
+                                if(nextCard.neighbourCards[3])
+                                {
+                                    if(nextCard.neighbourCards[3].type == Card.cardType.Conductor)
+                                    {
+                                        ActivateCircuit();
+                                        break;
+                                    }
+                                    else if (circuitActive) DeactivateCircuit();
+                                }
+                                else if (circuitActive) DeactivateCircuit();
+
+                            }
+                            else if (circuitActive) DeactivateCircuit();
+                        }
+                        else if (circuitActive) DeactivateCircuit();
                     }
                     else if (circuitActive) DeactivateCircuit();
+
+
                 }
-                
+                else if (circuitActive) DeactivateCircuit();
+
             }
+            else if (circuitActive) DeactivateCircuit();
+
+
+
             if (card.type == Card.cardType.NTypeSilicon)
             {
-                if (card.neighbourCards[1] != null && card.neighbourCards[1].type == Card.cardType.PTypeSilicon) ActivateElectricField();
-                else if (electricFieldActive) DeactivateElectricField();
-                if (card.neighbourCards[3] != null && card.neighbourCards[3].type == Card.cardType.PTypeSilicon) ActivateElectricField();
-                else if (electricFieldActive) DeactivateElectricField();
+                if (card.neighbourCards[1] != null && card.neighbourCards[1].type == Card.cardType.PTypeSilicon) { ActivateElectricField(); }
+                else if (electricFieldActive)
+                {
+                    DeactivateElectricField();
+
+                }
+
+                if (card.neighbourCards[3] != null && card.neighbourCards[3].type == Card.cardType.PTypeSilicon) { ActivateElectricField();}
+                else if (electricFieldActive)
+                { DeactivateElectricField(); }
             }
 
+            
         }
     }
 
@@ -200,28 +215,24 @@ public class GameManager : MonoBehaviour
     {
         if (circuitActive == true) circuitActive = false;
 
-        Debug.Log("Circuit Activated");
+        Debug.Log("Circuit Deactivated");
     }
 
     public void ActivateElectricField()
     {
         if (electricFieldActive == false) electricFieldActive = true;
         //set fungus variable
-        fungusManager.SetBooleanVariable("electricField", true);
+        //fungusManager.SetBooleanVariable("electricField", true);
         //Debug.Log("Electric Field activated");
     }
     public void DeactivateElectricField()
     {
         if (electricFieldActive == true) electricFieldActive = false;
         //set fungus variable
-        fungusManager.SetBooleanVariable("electricField", false);
+        //fungusManager.SetBooleanVariable("electricField", false);
         //Debug.Log("Electric Field activated");
     }
 
-    public void ChangePhotonState()
-    {
-        //change particle direction or animation stuff here
-    }
 
     public void ChangeElectronState()
     {

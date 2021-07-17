@@ -62,7 +62,7 @@ public class CardManager : MonoBehaviour
         _card.InstantiateCard(grid.GetCellCenter(x, y), cardPrefab);
 
         //save new placed card position for fungus
-        GameManager.instance.fungusManager.SetIntegerVariable("lastCardPos", _card.gridPosition.y);
+        //GameManager.instance.fungusManager.SetIntegerVariable("lastCardPos", _card.gridPosition.y);
 
 
         foreach (Card card in cardsOnField)
@@ -71,8 +71,8 @@ public class CardManager : MonoBehaviour
         }
 
         //call fungus flowchart block
-        if(GameManager.instance.secondPhase == false)
-            GameManager.instance.fungusManager.ExecuteBlock(_card.type.ToString());
+        //if(GameManager.instance.secondPhase == false)
+           // GameManager.instance.fungusManager.ExecuteBlock(_card.type.ToString());
 
         if(OnCardPlaced != null)
         {

@@ -52,13 +52,16 @@ public class PhotonBehavior : MonoBehaviour
     {
         transform.position += moveDirection * movementSpeed * Time.deltaTime;
         if (transform.position.x > borderX || transform.position.y < borderY) Destroy(gameObject);
-       
-
     }
 
     void ReflectedMovement()
     {
         transform.position += reflectedDirection * movementSpeed * Time.deltaTime;
+    }
+
+    void SpawnElectron(Vector3 pos, Transform parent)
+    {
+        GameObject electron = Instantiate(GameManager.instance.electronPrefab, pos, Quaternion.identity, parent);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -100,11 +103,13 @@ public class PhotonBehavior : MonoBehaviour
             else
             {
                 //instantiate electron
-                Instantiate(GameManager.instance.electronPrefab, collision.gameObject.transform.position, Quaternion.identity, collision.gameObject.transform);
+                Vector3 pos = new Vector3(transform.position.x, collision.transform.position.y, 0);
+                SpawnElectron(pos, GameManager.instance.electronParent.transform);
                 Destroy(gameObject);
                 //activate elctron behavior
             }
 
+          
         }
 
         if (collision.tag == "PTypeSilicon")

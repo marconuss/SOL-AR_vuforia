@@ -122,7 +122,7 @@ MonoBehaviour:
   movementSpeed: 5
   borderX: 80
   borderY: -50
-  reflectionRate: 60
+  reflectionRate: 0
   state: 1
 --- !u!58 &1834461560982309897
 CircleCollider2D:
