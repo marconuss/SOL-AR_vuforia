@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1598,14 +1598,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4916049903551669931, guid: 05efad992d94d5947b7ab9e023d6292a,
         type: 3}
+      propertyPath: zoom
+      value: 0.6700002
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916049903551669931, guid: 05efad992d94d5947b7ab9e023d6292a,
+        type: 3}
+      propertyPath: scrollPos.x
+      value: 326.62042
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916049903551669931, guid: 05efad992d94d5947b7ab9e023d6292a,
+        type: 3}
+      propertyPath: scrollPos.y
+      value: 364.26593
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916049903551669931, guid: 05efad992d94d5947b7ab9e023d6292a,
+        type: 3}
       propertyPath: selectedBlocks.Array.size
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4916049903551669934, guid: 05efad992d94d5947b7ab9e023d6292a,
+    - target: {fileID: 4916049903551669931, guid: 05efad992d94d5947b7ab9e023d6292a,
         type: 3}
-      propertyPath: nodeRect.y
-      value: 116.25486
-      objectReference: {fileID: 0}
+      propertyPath: selectedBlocks.Array.data[0]
+      value: 
+      objectReference: {fileID: 363068200}
     - target: {fileID: 4916049903551669940, guid: 05efad992d94d5947b7ab9e023d6292a,
         type: 3}
       propertyPath: animator.animatorVal
@@ -1638,6 +1653,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &363068200 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4916049903551669934, guid: 05efad992d94d5947b7ab9e023d6292a,
+    type: 3}
+  m_PrefabInstance: {fileID: 363067863}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &381274056

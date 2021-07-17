@@ -30,6 +30,9 @@ public class PhotonBehaviourMarco : MonoBehaviour
     private AudioSource audioSource;
     private Animator animator;
 
+    private Vector2 randTarget;
+    private GameObject zoomImageParent;
+
     void Start()
     {
         state = PhotonState.Default;
@@ -39,8 +42,14 @@ public class PhotonBehaviourMarco : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
 
-    }
+        zoomImageParent = FindParentWithTag(this.gameObject, "ZoomImage");
 
+        if (zoomImageParent)
+        {
+            GetComponent<CircleCollider2D>().enabled = false;
+            randTarget.y = Random.Range(-4, 4);
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -54,7 +63,7 @@ public class PhotonBehaviourMarco : MonoBehaviour
             ReflectedMovement();
         }
 
-        if (FindParentWithTag(this.gameObject, "ZoomImage"))
+        if (zoomImageParent)
         {
             ZoomBehavior();
         }
@@ -143,23 +152,20 @@ public class PhotonBehaviourMarco : MonoBehaviour
 
     private void ZoomBehavior()
     {
-        //Vector2 parentPos = new Vector2(transform.parent.position.x, transform.parent.position.y);
-        //Vector2 randTarget = parentPos + (Random.insideUnitCircle * 4f);
-        //randTarget.y += yOffset;
-
-        float randTargetY = Random.Range(-4f, 4f);
-
-        if (transform.position.y < randTargetY)
-        {
-            if (!audioSource.isPlaying)
+        //if(zoomImageParent.GetComponent<ZoomImage>().GetCardType() == Card.cardType.Glass)
+        //{
+            if (transform.localPosition.y < randTarget.y)
             {
-                int clipIndex = Random.Range(0, audioClips.Length);
-                audioSource.PlayOneShot(audioClips[clipIndex], clipsVolume);
+                if (!audioSource.isPlaying)
+                {
+                    int clipIndex = Random.Range(0, audioClips.Length);
+                    audioSource.PlayOneShot(audioClips[clipIndex], clipsVolume);
+                }
+                renderer.sortingOrder = 2;
+                animator.Play("photonsShrink");
+                Destroy(gameObject, animator.GetCurrentAnimatorStateInfo(0).length + 0.3f);
             }
-            renderer.sortingOrder = 2;
-            animator.Play("photonsShrink");
-            Destroy(gameObject, animator.GetCurrentAnimatorStateInfo(0).length + 0.3f);
-        }
+        //}
     }
 
     private GameObject FindParentWithTag(GameObject child, string tag)
