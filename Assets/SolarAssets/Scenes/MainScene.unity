@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1285,22 +1285,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 363067886, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
-      propertyPath: nodeRect.x
-      value: 564.3053
-      objectReference: {fileID: 0}
-    - target: {fileID: 363067887, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
-      propertyPath: zoomObj.gameObjectRef
-      value: 
-      objectReference: {fileID: 363067883}
-    - target: {fileID: 363067889, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
-      propertyPath: zoomObj.gameObjectRef
-      value: 
-      objectReference: {fileID: 363067869}
-    - target: {fileID: 363067891, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
-      propertyPath: zoomObj.gameObjectRef
-      value: 
-      objectReference: {fileID: 363067868}
     - target: {fileID: 363067905, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
       propertyPath: animator.animatorVal
       value: 
@@ -1617,6 +1601,11 @@ PrefabInstance:
       propertyPath: selectedBlocks.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4916049903551669934, guid: 05efad992d94d5947b7ab9e023d6292a,
+        type: 3}
+      propertyPath: nodeRect.y
+      value: 116.25486
+      objectReference: {fileID: 0}
     - target: {fileID: 4916049903551669940, guid: 05efad992d94d5947b7ab9e023d6292a,
         type: 3}
       propertyPath: animator.animatorVal
@@ -1649,42 +1638,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &363067868 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 363067868, guid: 05efad992d94d5947b7ab9e023d6292a,
-    type: 3}
-  m_PrefabInstance: {fileID: 363067863}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1941e052c0ed4280b25507cd2e6ad8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &363067869 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 363067869, guid: 05efad992d94d5947b7ab9e023d6292a,
-    type: 3}
-  m_PrefabInstance: {fileID: 363067863}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1941e052c0ed4280b25507cd2e6ad8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &363067883 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 363067883, guid: 05efad992d94d5947b7ab9e023d6292a,
-    type: 3}
-  m_PrefabInstance: {fileID: 363067863}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1941e052c0ed4280b25507cd2e6ad8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &381274056

@@ -392,10 +392,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 363067886}
-  selectedCommands:
-  - {fileID: 363067891}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 4916049903551669797}
   - {fileID: 1105398579}
@@ -547,7 +545,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: ddf917bdd9c4b154c9b95135c9c2b20f, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: b447ae07c5d68e542b15f76745c65ff6, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -1370,7 +1368,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: fd180e067b1ce6343a13d9131d33f75c, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 8ed63b41a920fce4a95dcd8753a9ba70, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -1781,7 +1779,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: d2c40ff29ca59b6418d8aad7ffab51bf, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 8ee21a9e4a455ed408319ff4e7df7693, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -2106,7 +2104,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 08e1aa6c5b9a2a040a7fb0f8f13578b8, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 95a244e6657c8764bbff2198db321a50, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -2594,7 +2592,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 498d1d65a5e2e764a9b4f46e40251ff7, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 17698cfeff123a745b660b0201521d97, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -2640,7 +2638,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 05e42ab17af7cea43aad59637fd0987f, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: a5c92cc19b63272448842ee9b13779a5, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -3329,7 +3327,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 0600af00123cb4c4fb7d0f8036b46c37, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 355561e185c6bc945a18bea8e4ed7c1d, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -3865,7 +3863,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: f3d201f48a3c8aa4a9f8596588c5135e, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 7da7c1bda0e5be5479559d5438d8c87f, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -4575,7 +4573,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: b3e29a2b73657a84d9fdd3e47cb4f0df, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 09bd875071008f64f8f54a3d4213b242, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -4621,7 +4619,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: f67fcd0a6fa86a24daac8586de710f76, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 926484598204d954a8e240e1abb00671, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -5220,7 +5218,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: e21bd7231d7c8f142a35bc5366c62a16, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 2cd3a67f1bcaf484bb6c7b74e6073cc1, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -5667,7 +5665,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 8b6a556bd88aa0c4cb0c83ce15cf4275, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: fbfa302560bd3534fb67651d74b08c5b, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -6043,7 +6041,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 740.2415
+    x: 741.2415
     y: 118.020386
     width: 69
     height: 40
@@ -6384,7 +6382,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: aade67cab4a6b814ea577bbaa9352bea, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 697c0db17b4cf9f48a8e5d5dde5f7c41, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -6429,7 +6427,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: ab2192f593b913a48bae2824c1884660, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 697c0db17b4cf9f48a8e5d5dde5f7c41, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -7028,7 +7026,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 7218fc88649cd114890a32d6c174acad, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: d9364fe5d0bf7b74fb4a77f7d4a96eba, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -7475,7 +7473,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 564afcfa089d06643b1e688be7186d00, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 6c8aa5a634dd61241a8881c18bbd08e2, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -8206,7 +8204,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 85817827bdf1da74e856396a08136663, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: d28814424aa79864d9f7efdc122e0167, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -9386,7 +9384,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: cd479f961d199e946ab6f555ac30d851, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -9919,7 +9917,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 977d11c1ba0afce40834795f464146b7, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 21d5089769c289247a39e7c0e2c93a60, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -10123,12 +10121,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 329
   indentLevel: 1
-  storyText: A reflector on top of the cell helps increase efficiency, yes. But I
-    fear that it might require some sort of protection from the elements...
+  storyText: The reflector helps increase efficiency, yes. But I fear that it might
+    require some sort of protection from the natural elements...
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 9cc001cc4badbdc4faac2671871a7062, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 9aeadc73fbde5b84288e00dffb838fee, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -10571,12 +10569,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 335
   indentLevel: 1
-  storyText: "We do need a conductor down there; however, the precious grid structure
-    is wasted in this position, wouldn\u2019t you agree?"
+  storyText: We do need a conductor down there; however, the precious grid structure
+    is wasted in this position.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 9df5dd8ecdb1fe64f80eebaa79945952, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 6d60aafd326eacc44a3d3b8e9439cfb2, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -11019,12 +11017,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 341
   indentLevel: 1
-  storyText: "Here\u2019s a subtle hint: we do not, in fact, want a slab of metal
+  storyText: "Here\u2019s a subtle hint: We do not, in fact, want a slab of metal
     on top of our solar cell."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 3a4f97579ec1dbd4ead8c291d425391e, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: e7d10835d6601764c8c68d9571d9db6a, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -12783,7 +12781,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 4d2bd5323c8f66c4fae518ace5572e02, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 9632aeb2c9df69b44a5b5dd5f9cdd5d3, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -13751,8 +13749,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 564.3053
-    y: 258.584
+    x: 565.3053
+    y: 260.584
     width: 89
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -15328,8 +15326,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 738.17224
-    y: 259.30817
+    x: 740.17224
+    y: 258.30817
     width: 99
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -15710,7 +15708,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: d2c40ff29ca59b6418d8aad7ffab51bf, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 8ee21a9e4a455ed408319ff4e7df7693, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -15755,7 +15753,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: ddf917bdd9c4b154c9b95135c9c2b20f, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: b447ae07c5d68e542b15f76745c65ff6, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -16145,7 +16143,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 05e42ab17af7cea43aad59637fd0987f, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: a5c92cc19b63272448842ee9b13779a5, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -16190,7 +16188,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 498d1d65a5e2e764a9b4f46e40251ff7, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 17698cfeff123a745b660b0201521d97, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -16758,7 +16756,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: aade67cab4a6b814ea577bbaa9352bea, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 697c0db17b4cf9f48a8e5d5dde5f7c41, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -16803,7 +16801,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: ab2192f593b913a48bae2824c1884660, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 2b8001e5ba1459c4fa1789d9ad23b729, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -17193,7 +17191,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: f67fcd0a6fa86a24daac8586de710f76, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 926484598204d954a8e240e1abb00671, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -17238,7 +17236,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: b3e29a2b73657a84d9fdd3e47cb4f0df, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 09bd875071008f64f8f54a3d4213b242, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -17628,7 +17626,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 977d11c1ba0afce40834795f464146b7, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 21d5089769c289247a39e7c0e2c93a60, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -17673,7 +17671,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 85817827bdf1da74e856396a08136663, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: d28814424aa79864d9f7efdc122e0167, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -17911,7 +17909,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 2375f23be014c5849ada14de1fffdbfb, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 1d2ce6a133ba1b34eb7506e19244d0e9, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -17939,7 +17937,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 565b6fe740dbff649b73048534d3351c, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 28c8a0a672ec8ab4b80d6d816b9543e0, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -17984,7 +17982,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: c875ed2f141771e4a84e07efa5a8426b, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 5d6ea2d41dd2acc458b594f1c039014e, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -18311,7 +18309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 459
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 1870818aed1294b42bcbe1598a1ff1d7, type: 3}
+  soundClip: {fileID: 8300000, guid: 6328712ef2947c74da80ea3ffab012f7, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871006
@@ -18328,7 +18326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 458
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 1870818aed1294b42bcbe1598a1ff1d7, type: 3}
+  soundClip: {fileID: 8300000, guid: 6328712ef2947c74da80ea3ffab012f7, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871007
@@ -18345,7 +18343,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 457
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 1870818aed1294b42bcbe1598a1ff1d7, type: 3}
+  soundClip: {fileID: 8300000, guid: 6328712ef2947c74da80ea3ffab012f7, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871008
@@ -18362,7 +18360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 456
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 1870818aed1294b42bcbe1598a1ff1d7, type: 3}
+  soundClip: {fileID: 8300000, guid: 6328712ef2947c74da80ea3ffab012f7, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871009
@@ -18379,7 +18377,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 455
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 1870818aed1294b42bcbe1598a1ff1d7, type: 3}
+  soundClip: {fileID: 8300000, guid: 6328712ef2947c74da80ea3ffab012f7, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871010
@@ -18396,7 +18394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 462
   indentLevel: 1
-  soundClip: {fileID: 8300000, guid: c9df201f343f7104ba11a55db0ca9d37, type: 3}
+  soundClip: {fileID: 8300000, guid: f0af63a9077eb4a4587af06894831b5a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871011
@@ -18413,7 +18411,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 461
   indentLevel: 1
-  soundClip: {fileID: 8300000, guid: 1c0aa4b993d79e14788e33160ee8d6fa, type: 3}
+  soundClip: {fileID: 8300000, guid: 46a3d89a91f9e8342bb2ac4dd910649a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871012
@@ -18430,7 +18428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 464
   indentLevel: 1
-  soundClip: {fileID: 8300000, guid: c9df201f343f7104ba11a55db0ca9d37, type: 3}
+  soundClip: {fileID: 8300000, guid: f0af63a9077eb4a4587af06894831b5a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871013
@@ -18447,7 +18445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 463
   indentLevel: 1
-  soundClip: {fileID: 8300000, guid: 1c0aa4b993d79e14788e33160ee8d6fa, type: 3}
+  soundClip: {fileID: 8300000, guid: 46a3d89a91f9e8342bb2ac4dd910649a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871014
@@ -18464,7 +18462,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 465
   indentLevel: 1
-  soundClip: {fileID: 8300000, guid: 1c0aa4b993d79e14788e33160ee8d6fa, type: 3}
+  soundClip: {fileID: 8300000, guid: 46a3d89a91f9e8342bb2ac4dd910649a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871015
@@ -18481,7 +18479,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 466
   indentLevel: 1
-  soundClip: {fileID: 8300000, guid: c9df201f343f7104ba11a55db0ca9d37, type: 3}
+  soundClip: {fileID: 8300000, guid: f0af63a9077eb4a4587af06894831b5a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871016
@@ -18498,7 +18496,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 470
   indentLevel: 1
-  soundClip: {fileID: 8300000, guid: 1c0aa4b993d79e14788e33160ee8d6fa, type: 3}
+  soundClip: {fileID: 8300000, guid: 46a3d89a91f9e8342bb2ac4dd910649a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871017
@@ -18515,7 +18513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 469
   indentLevel: 1
-  soundClip: {fileID: 8300000, guid: c9df201f343f7104ba11a55db0ca9d37, type: 3}
+  soundClip: {fileID: 8300000, guid: f0af63a9077eb4a4587af06894831b5a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871018
@@ -18532,7 +18530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 468
   indentLevel: 1
-  soundClip: {fileID: 8300000, guid: c9df201f343f7104ba11a55db0ca9d37, type: 3}
+  soundClip: {fileID: 8300000, guid: f0af63a9077eb4a4587af06894831b5a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871019
@@ -18549,7 +18547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 467
   indentLevel: 1
-  soundClip: {fileID: 8300000, guid: 1c0aa4b993d79e14788e33160ee8d6fa, type: 3}
+  soundClip: {fileID: 8300000, guid: 46a3d89a91f9e8342bb2ac4dd910649a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871059
@@ -18696,7 +18694,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 485
   indentLevel: 1
-  soundClip: {fileID: 8300000, guid: c9df201f343f7104ba11a55db0ca9d37, type: 3}
+  soundClip: {fileID: 8300000, guid: f0af63a9077eb4a4587af06894831b5a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871077
@@ -18713,7 +18711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 484
   indentLevel: 1
-  soundClip: {fileID: 8300000, guid: c9df201f343f7104ba11a55db0ca9d37, type: 3}
+  soundClip: {fileID: 8300000, guid: f0af63a9077eb4a4587af06894831b5a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871078
@@ -18730,7 +18728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 483
   indentLevel: 1
-  soundClip: {fileID: 8300000, guid: c9df201f343f7104ba11a55db0ca9d37, type: 3}
+  soundClip: {fileID: 8300000, guid: f0af63a9077eb4a4587af06894831b5a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871079
@@ -18747,7 +18745,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 482
   indentLevel: 1
-  soundClip: {fileID: 8300000, guid: c9df201f343f7104ba11a55db0ca9d37, type: 3}
+  soundClip: {fileID: 8300000, guid: f0af63a9077eb4a4587af06894831b5a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871080
@@ -18764,7 +18762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 481
   indentLevel: 1
-  soundClip: {fileID: 8300000, guid: c9df201f343f7104ba11a55db0ca9d37, type: 3}
+  soundClip: {fileID: 8300000, guid: f0af63a9077eb4a4587af06894831b5a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871081
@@ -18781,7 +18779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 480
   indentLevel: 1
-  soundClip: {fileID: 8300000, guid: c9df201f343f7104ba11a55db0ca9d37, type: 3}
+  soundClip: {fileID: 8300000, guid: f0af63a9077eb4a4587af06894831b5a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871082
@@ -18798,7 +18796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 479
   indentLevel: 1
-  soundClip: {fileID: 8300000, guid: 1c0aa4b993d79e14788e33160ee8d6fa, type: 3}
+  soundClip: {fileID: 8300000, guid: 46a3d89a91f9e8342bb2ac4dd910649a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871102
@@ -18815,7 +18813,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 478
   indentLevel: 1
-  soundClip: {fileID: 8300000, guid: 1c0aa4b993d79e14788e33160ee8d6fa, type: 3}
+  soundClip: {fileID: 8300000, guid: 46a3d89a91f9e8342bb2ac4dd910649a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871127
@@ -18832,7 +18830,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 477
   indentLevel: 1
-  soundClip: {fileID: 8300000, guid: 1c0aa4b993d79e14788e33160ee8d6fa, type: 3}
+  soundClip: {fileID: 8300000, guid: 46a3d89a91f9e8342bb2ac4dd910649a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871128
@@ -18849,7 +18847,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 476
   indentLevel: 1
-  soundClip: {fileID: 8300000, guid: 1c0aa4b993d79e14788e33160ee8d6fa, type: 3}
+  soundClip: {fileID: 8300000, guid: 46a3d89a91f9e8342bb2ac4dd910649a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871129
@@ -18866,7 +18864,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 475
   indentLevel: 1
-  soundClip: {fileID: 8300000, guid: 1c0aa4b993d79e14788e33160ee8d6fa, type: 3}
+  soundClip: {fileID: 8300000, guid: 46a3d89a91f9e8342bb2ac4dd910649a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871130
@@ -18883,7 +18881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 474
   indentLevel: 1
-  soundClip: {fileID: 8300000, guid: 1c0aa4b993d79e14788e33160ee8d6fa, type: 3}
+  soundClip: {fileID: 8300000, guid: 46a3d89a91f9e8342bb2ac4dd910649a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1026871131
@@ -18900,7 +18898,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 473
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 1870818aed1294b42bcbe1598a1ff1d7, type: 3}
+  soundClip: {fileID: 8300000, guid: 6328712ef2947c74da80ea3ffab012f7, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &3033551032667175012
@@ -18921,7 +18919,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 33e0476ff1c82d545bae87779c5cfae8, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: dc1005feb6b12404293d2c25491267f1, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -18948,7 +18946,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 5158c18d2e34a134baf6e3b38fefe463, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: e64c9212ded77c94792fd62a24f2b440, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -19281,7 +19279,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 05bf39ffe493995448a3d5351d8cd38d, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: cd479f961d199e946ab6f555ac30d851, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -20890,7 +20888,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 33e0476ff1c82d545bae87779c5cfae8, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: dc1005feb6b12404293d2c25491267f1, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -20963,7 +20961,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 505
   indentLevel: 1
-  soundClip: {fileID: 8300000, guid: c9df201f343f7104ba11a55db0ca9d37, type: 3}
+  soundClip: {fileID: 8300000, guid: f0af63a9077eb4a4587af06894831b5a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &363067925
@@ -21011,7 +21009,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 2375f23be014c5849ada14de1fffdbfb, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 1d2ce6a133ba1b34eb7506e19244d0e9, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -21035,12 +21033,11 @@ MonoBehaviour:
   itemId: 502
   indentLevel: 1
   storyText: This silicon layer has been brutally modified to contain fewer electrons,
-    creating those ghastly holes you see floating about. This gives the layer a positive
-    charge, hence its P-type nomenclature.
+    creating those ghastly holes you see floating about.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 565b6fe740dbff649b73048534d3351c, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 28c8a0a672ec8ab4b80d6d816b9543e0, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -21098,7 +21095,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 499
   indentLevel: 1
-  soundClip: {fileID: 8300000, guid: 1c0aa4b993d79e14788e33160ee8d6fa, type: 3}
+  soundClip: {fileID: 8300000, guid: 46a3d89a91f9e8342bb2ac4dd910649a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &363067931
@@ -21145,7 +21142,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: c875ed2f141771e4a84e07efa5a8426b, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 5d6ea2d41dd2acc458b594f1c039014e, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -21563,7 +21560,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 494
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 1870818aed1294b42bcbe1598a1ff1d7, type: 3}
+  soundClip: {fileID: 8300000, guid: 6328712ef2947c74da80ea3ffab012f7, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &363067936
@@ -21645,7 +21642,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 5158c18d2e34a134baf6e3b38fefe463, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: e64c9212ded77c94792fd62a24f2b440, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
