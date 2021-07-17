@@ -18,26 +18,25 @@ public class ElectronBehavior : MonoBehaviour
     public GameObject secondWire;
 
     bool moveToLeft = false;
+
+    [SerializeField]
     bool respawned = false;
 
     Animator animator;
 
-    bool moving;
+    bool moving = false;
 
     void Start()
     {
         originalPos = transform.position;
         Xpos = originalPos.x;
-        moving = false;
-        respawned = false;
 
 
         animator = GetComponentInParent<Animator>();
         if (GameManager.instance.circuitActive == false) StartCoroutine("DislodgeElectron");
-        if (GameManager.instance.circuitActive == true)
+        if (GameManager.instance.circuitActive == true && respawned == false)
         {
-            StartCoroutine("MoveElectronToGrid");
-            
+            StartCoroutine("MoveElectronToGrid");       
         }
     }
 
@@ -56,7 +55,11 @@ public class ElectronBehavior : MonoBehaviour
             if (moveToLeft == true)
             {
                 Xpos -= moveSpeed * Time.deltaTime;
-                if (Xpos <= 25) Destroy(gameObject);
+
+                if (Xpos <= 25)
+                {
+                    StartCoroutine("MoveElectronToGrid");
+                }
             }
 
 
@@ -80,6 +83,13 @@ public class ElectronBehavior : MonoBehaviour
             animator.Play("moveToGrid");
             yield return new WaitForSeconds(1.1f);
         }
+        else if (respawned == true)
+        {
+            moving = false;
+            animator.Play("moveToGrid");
+            yield return new WaitForSeconds(1.1f);
+            Destroy(gameObject);
+        }
 
         moving = true;
         originalPos = transform.position;
@@ -100,6 +110,7 @@ public class ElectronBehavior : MonoBehaviour
                 GameObject newElectron = Instantiate(GameManager.instance.electronPrefab, spawnPos, Quaternion.identity, GameManager.instance.electronParent.transform);
                 newElectron.GetComponent<ElectronBehavior>().moveToLeft = true;
                 newElectron.GetComponent<ElectronBehavior>().respawned = true;
+                newElectron.GetComponent<ElectronBehavior>().moving = true;
             }
 
         }
