@@ -32,27 +32,39 @@ public class Trigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Vector2 positionOnTrigger = TriggerGrid.instance.GetTriggerGridPosition(this.gameObject);
         if (collision.gameObject.tag == "Cards")
         {
             //Debug.Log("Card placed");
             if (this.gameObject.tag != "ZoomTrigger")
             {
-                Debug.Log(collision.gameObject.name + " on " + this.gameObject.name);
-                CardsOnTrigger.Add(collision.gameObject);
-                CardManager.instance.PlaceCard((int)TriggerGrid.instance.GetTriggerGridPosition(this.gameObject).x, (int)TriggerGrid.instance.GetTriggerGridPosition(this.gameObject).y, collision.gameObject.GetComponent<Card>());
+                if((GameManager.instance.secondPhase == false) && (int)positionOnTrigger.x ==0)
+                {
+                    Debug.Log(collision.gameObject.name + " on " + this.gameObject.name);
+
+                    CardsOnTrigger.Add(collision.gameObject);
+                    CardManager.instance.PlaceCard((int)positionOnTrigger.x, (int)positionOnTrigger.y, collision.gameObject.GetComponent<Card>());
+                }
+                else if((GameManager.instance.secondPhase == true) && (int)positionOnTrigger.x ==1)
+                {
+                    Debug.Log(collision.gameObject.name + " on " + this.gameObject.name);
+
+                    CardsOnTrigger.Add(collision.gameObject);
+                    CardManager.instance.PlaceCard((int)positionOnTrigger.x, (int)positionOnTrigger.y, collision.gameObject.GetComponent<Card>());
+                }
             }
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        //Debug.Log("Card placed");
+         Vector2 positionOnTrigger = TriggerGrid.instance.GetTriggerGridPosition(this.gameObject);
         if (collision.gameObject.tag == "Cards")
         {
             if (this.gameObject.tag != "ZoomTrigger")
             {
                 CardsOnTrigger.Remove(collision.gameObject);
-                CardManager.instance.RemoveCard((int)TriggerGrid.instance.GetTriggerGridPosition(this.gameObject).x, (int)TriggerGrid.instance.GetTriggerGridPosition(this.gameObject).y, collision.gameObject.GetComponent<Card>());
+                CardManager.instance.RemoveCard((int)positionOnTrigger.x, (int)positionOnTrigger.y, collision.gameObject.GetComponent<Card>());
             }
         }
     }
