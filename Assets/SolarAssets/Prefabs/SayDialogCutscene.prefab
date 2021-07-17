@@ -28,14 +28,14 @@ RectTransform:
   m_GameObject: {fileID: 188894}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.88679, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 22488900}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.78700006}
-  m_AnchoredPosition: {x: -64.38977, y: -52.061897}
+  m_AnchoredPosition: {x: -134, y: -52.061897}
   m_SizeDelta: {x: -267.7795, y: -134.8762}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &22288894
@@ -139,7 +139,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -952, y: 0}
+  m_AnchoredPosition: {x: -1045, y: 0}
   m_SizeDelta: {x: 1500, y: 313.515}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &22288900
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 11481894}
   - component: {fileID: 8294266}
   m_Layer: 5
-  m_Name: SayDialog
+  m_Name: SayDialogCutscene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
