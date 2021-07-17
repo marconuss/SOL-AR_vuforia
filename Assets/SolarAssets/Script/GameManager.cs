@@ -186,6 +186,7 @@ public class GameManager : MonoBehaviour
         correctTiles = 0;
         Debug.Log("Second Phase started");
 
+        fungusManager.ExecuteBlock("StartSeceondPhase");
  
         CardManager.instance.CreateNewGrid(CardManager.instance.columns + 1, CardManager.instance.rows, new Vector3(CardManager.instance.cellSize.x / 2, CardManager.instance.cellSize.y));
         CardManager.instance.RemoveAllCards();

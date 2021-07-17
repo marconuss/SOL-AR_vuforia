@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8332668363061268109}
   - component: {fileID: 8770100809382220916}
   - component: {fileID: 8880481782436455553}
+  - component: {fileID: 1762933229}
   m_Layer: 0
   m_Name: SirKit_Character
   m_TagString: Untagged
@@ -96,9 +97,26 @@ Animator:
   m_Controller: {fileID: 9100000, guid: d843a046886027540819f95be5dd04f3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1762933229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8765804713128502321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547d58fdddb1d0a4499d91f6a4a7a950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  speed: 5
+  litUp: 0
