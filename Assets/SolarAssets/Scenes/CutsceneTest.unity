@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311912, g: 0.3807398, b: 0.3587271, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 9534189}
   - component: {fileID: 9534190}
   - component: {fileID: 9534191}
+  - component: {fileID: 9534192}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1582,7 +1583,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 108.234344
     y: -442.73615
-    width: 75.6
+    width: 75
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1668,6 +1669,7 @@ MonoBehaviour:
   - {fileID: 9534167}
   - {fileID: 9534149}
   - {fileID: 9534165}
+  - {fileID: 9534192}
   suppressAllAutoSelections: 0
 --- !u!114 &9534173
 MonoBehaviour:
@@ -1784,7 +1786,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 112.53702
     y: -521.4716
-    width: 77.2
+    width: 77
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1825,7 +1827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 13.618408, y: 639.43616}
+  scrollPos: {x: -2.3815918, y: 661.43616}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -1839,7 +1841,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 9534172}
   selectedCommands:
-  - {fileID: 9534120}
+  - {fileID: 9534192}
   variables:
   - {fileID: 9534179}
   description: 'This is an example of a short Visual Novel / RPG
@@ -2027,7 +2029,7 @@ MonoBehaviour:
     floatVal: 0
 --- !u!114 &9534190
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2053,7 +2055,7 @@ MonoBehaviour:
     floatVal: 0
 --- !u!114 &9534191
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2068,6 +2070,25 @@ MonoBehaviour:
   soundClip: {fileID: 8300000, guid: aef2bdd99fcd4b54c8a3d744762362c7, type: 3}
   volume: 1
   waitUntilFinished: 0
+--- !u!114 &9534192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9534105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 159
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: ZFinalScene
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!1001 &183232509
 PrefabInstance:
   m_ObjectHideFlags: 0
