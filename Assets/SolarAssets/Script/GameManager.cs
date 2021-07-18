@@ -139,7 +139,8 @@ public class GameManager : MonoBehaviour
 
                     if (correctTiles == 6 && secondPhase == false)
                     {
-                        ActivateSecondPhase();
+                        fungusManager.ExecuteBlock("StartSecondPhase");
+                        //ActivateSecondPhase();
                         return;
                     }
 
@@ -163,7 +164,8 @@ public class GameManager : MonoBehaviour
 
                     if (correctTiles == 6 && secondPhase == false)
                     {
-                        ActivateSecondPhase();
+                        fungusManager.ExecuteBlock("StartSeceondPhase");
+                        //ActivateSecondPhase();
                         return;
                     }
 
@@ -176,17 +178,16 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-
-
     }
 
-    void ActivateSecondPhase()
-    {
+
+
+    public void ActivateSecondPhase()
+    {       
         secondPhase = true;
         correctTiles = 0;
         Debug.Log("Second Phase started");
 
-        fungusManager.ExecuteBlock("StartSeceondPhase");
  
         CardManager.instance.CreateNewGrid(CardManager.instance.columns + 1, CardManager.instance.rows, new Vector3(CardManager.instance.cellSize.x / 2, CardManager.instance.cellSize.y));
         CardManager.instance.RemoveAllCards();

@@ -14,11 +14,14 @@ public class ZoomTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        int cardIndex = (int)collision.gameObject.GetComponent<Card>().type;
+        if(!GameManager.instance.secondPhase)
+        {
+            int cardIndex = (int)collision.gameObject.GetComponent<Card>().type;
 
-        GameManager.instance.fungusManager.SetIntegerVariable("cardOnZoom", cardIndex);
+            GameManager.instance.fungusManager.SetIntegerVariable("cardOnZoom", cardIndex);
 
-        GameManager.instance.fungusManager.ExecuteBlock("ZoomInHelper");
+            GameManager.instance.fungusManager.ExecuteBlock("ZoomInHelper");
+        }
 
     }
 
