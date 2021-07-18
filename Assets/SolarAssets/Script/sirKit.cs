@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class sirKit : MonoBehaviour
 {
-    public Transform[] waypoints;
     public float speed;
     public bool litUp;
 
-
-    private int wIndex;
     private bool arrived;
+    [SerializeField]
     public bool activateCircuitAnim;
 
     private Animator childAnimator;
@@ -23,7 +21,6 @@ public class sirKit : MonoBehaviour
     {
         childAnimator = transform.GetChild(0).GetComponent<Animator>();    
         parentAnimator = GetComponent<Animator>();    
-        wIndex = 0;
         arrived = false;
         litUp = false;
         activateCircuitAnim = false;

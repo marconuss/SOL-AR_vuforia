@@ -17,9 +17,9 @@ public class GameManager : MonoBehaviour
     public GameObject electronPrefab;
     public GameObject electronParent;
 
-    [Header("ElectricField")]
-    public GameObject electricFieldPrefab;
-    public GameObject electricFieldSmall;
+   // [Header("ElectricField")]
+   // public GameObject electricFieldPrefab;
+   // public GameObject electricFieldSmall;
 
     [Header("Solution")]
     public List<Card.cardType> solution;
@@ -244,12 +244,12 @@ public class GameManager : MonoBehaviour
     public void ActivateElectricField(Vector3 pos)
     {
         if (electricFieldActive == false) electricFieldActive = true;
-
-        if (!secondPhase)
-            Instantiate(electricFieldPrefab, pos, Quaternion.identity);
-
-        if(secondPhase)
-            Instantiate(electricFieldSmall, pos, Quaternion.identity);
+        //
+        //if (!secondPhase)
+        //    Instantiate(electricFieldPrefab, pos, Quaternion.identity);
+        //
+        //if(secondPhase)
+        //    Instantiate(electricFieldSmall, pos, Quaternion.identity);
         
 
         //set fungus variable
