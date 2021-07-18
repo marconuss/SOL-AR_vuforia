@@ -103,7 +103,7 @@ public class CardManager : MonoBehaviour
 
         _card.RemoveCard();
 
-        //check if there are still cards left and if there are, show the most top one
+        //check if there are still cards left and if there are, show the most top sprite
         int slotCardCount = grid.gridArray[x, y].placedCards.Count;
         if (slotCardCount > 0)
         {
