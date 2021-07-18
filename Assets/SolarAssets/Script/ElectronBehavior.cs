@@ -23,12 +23,22 @@ public class ElectronBehavior : MonoBehaviour
 
     bool moving = false;
 
+    bool idling = false;
+    
+    
+    [SerializeField] AudioClip[] dislodgeClips;
+    [SerializeField] AudioClip[] entersCircuitClips;
+    [SerializeField] AudioClip   electronIdle;
+    [SerializeField] AudioClip[] RecenterClips;
+
+    AudioSource audio;
+
     void Start()
     {
         originalPos = transform.position;
         Xpos = originalPos.x;
 
-
+        audio = GetComponent<AudioSource>();
         animator = GetComponentInParent<Animator>();
         if (GameManager.instance.circuitActive == false) StartCoroutine("DislodgeElectron");
         if (GameManager.instance.circuitActive == true && respawned == false)
@@ -40,6 +50,16 @@ public class ElectronBehavior : MonoBehaviour
     void Update()
     {
         if(moving) CircuitMovement();
+
+        if (!idling && moving)
+        {
+
+            idling = true;
+            //audio.loop = true;
+            //audio.clip = electronIdle;
+           // audio.Play();
+
+        }
     }
 
     void CircuitMovement()
@@ -67,6 +87,9 @@ public class ElectronBehavior : MonoBehaviour
 
     IEnumerator DislodgeElectron()
     {
+        audio.clip = dislodgeClips[Random.Range(0, dislodgeClips.Length)];
+        audio.Play();
+
         animator.Play("dislodge");
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
         Destroy(gameObject);
@@ -76,7 +99,9 @@ public class ElectronBehavior : MonoBehaviour
     IEnumerator MoveElectronToGrid()
     {
         if (respawned == false)
-        {
+        {   
+            audio.clip = entersCircuitClips[Random.Range(0, entersCircuitClips.Length)];
+            audio.Play();
             animator.Play("moveToGrid");
             yield return new WaitForSeconds(1.1f);
         }
@@ -85,7 +110,12 @@ public class ElectronBehavior : MonoBehaviour
             moving = false;
             animator.Play("moveToGrid");
             yield return new WaitForSeconds(1.1f);
-            Destroy(gameObject);
+
+            idling = false;
+            audio.loop = false;
+            audio.clip = RecenterClips[Random.Range(0, RecenterClips.Length)];
+            audio.Play();
+            Destroy(gameObject, 1f);
         }
 
         moving = true;

@@ -21,11 +21,19 @@ public class PhotonBehavior : MonoBehaviour
     public enum PhotonState { Reflected, Default}
     public PhotonState state;
 
+    [SerializeField] AudioClip[] reflectedClips;
+    [SerializeField] AudioClip[] absorbedClips;
+    [SerializeField] AudioClip[] passThroughClips;
+
+    AudioSource audio;
+
     void Start()
     {
         state = PhotonState.Default;
         reflectedDirection = Vector3.Reflect(moveDirection, new Vector3(0, 1, 0));
         renderer = GetComponent<SpriteRenderer>();
+        audio = GetComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame
@@ -74,23 +82,37 @@ public class PhotonBehavior : MonoBehaviour
                 UpdatePhotonState(PhotonState.Default);
                 renderer.flipX = false;
                 renderer.flipY = false;
-
+                audio.clip = reflectedClips[Random.Range(0, reflectedClips.Length)];
+                audio.Play();
             }  
         }
 
-        if (collision.tag == "Conductor")
+        else if (collision.tag == "Conductor")
         {
             //UpdatePhotonState(PhotonState.Absorbed);
-            Destroy(gameObject);
+            audio.clip = absorbedClips[Random.Range(0, absorbedClips.Length)];
+            audio.Play();
+            Destroy(gameObject, 1f);
         }
 
-        if (collision.tag == "GridConductor")
+        else if (collision.tag == "GridConductor")
         {
             //UpdatePhotonState(PhotonState.SemiAbsorbed);
-            if(Random.Range(0, 3) == 0) Destroy(gameObject);
+
+            if (Random.Range(0, 3) == 0)
+            {
+                audio.clip = absorbedClips[Random.Range(0, absorbedClips.Length)];
+                audio.Play();
+                Destroy(gameObject, 0.2f);
+            }
+            else
+            {
+                audio.clip = passThroughClips[Random.Range(0, passThroughClips.Length)];
+                audio.Play();
+            }
         }
 
-        if (collision.tag == "NTypeSilicon")
+        else if (collision.tag == "NTypeSilicon")
         {
             float reflectionValue = reflectionRate / 100;
             if (Random.Range(0f, 1f) <= reflectionValue)
@@ -98,6 +120,8 @@ public class PhotonBehavior : MonoBehaviour
                 UpdatePhotonState(PhotonState.Reflected);
                 reflected = true;
                 renderer.flipY = true;
+                audio.clip = reflectedClips[Random.Range(0, reflectedClips.Length)];
+                audio.Play();
 
             }
             else
@@ -112,7 +136,7 @@ public class PhotonBehavior : MonoBehaviour
           
         }
 
-        if (collision.tag == "PTypeSilicon")
+        else if (collision.tag == "PTypeSilicon")
         {
             float reflectionValue = reflectionRate / 100;
             if (Random.Range(0f, 1f) <= reflectionValue)
@@ -120,11 +144,21 @@ public class PhotonBehavior : MonoBehaviour
                 UpdatePhotonState(PhotonState.Reflected);
                 reflected = true;
                 renderer.flipY = true;
+                audio.clip = reflectedClips[Random.Range(0, reflectedClips.Length)];
+                audio.Play();
             }
             else
             {
-                Destroy(gameObject);
+                audio.clip = absorbedClips[Random.Range(0, absorbedClips.Length)];
+                audio.Play();
+                Destroy(gameObject, 0.2f);
             }
         }
+        else if(collision.tag == "Glass")
+        {
+            audio.clip = passThroughClips[Random.Range(0, passThroughClips.Length)];
+            audio.Play();
+        }
+
     }
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2042,7 +2042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 644
+  itemId: 655
   indentLevel: 1
   storyText: There it is again, an electric field!
   description: 
@@ -2069,7 +2069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 645
+  itemId: 656
   indentLevel: 0
   storyText: Try placing one on your playmat and see what happens!
   description: 
@@ -2096,7 +2096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 646
+  itemId: 657
   indentLevel: 0
   storyText: Grab the cards from Deck A. This deck contains all the components you
     will need to build a solar cell.
@@ -2124,7 +2124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 647
+  itemId: 658
   indentLevel: 0
   storyText: "Don't worry. I\u2019ll guide you through the process and provide helpful
     insights!"
@@ -2152,7 +2152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 648
+  itemId: 659
   indentLevel: 0
 --- !u!114 &363067871
 MonoBehaviour:
@@ -2166,7 +2166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5316d953c7abe498799575550c973535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 649
+  itemId: 660
   indentLevel: 0
   animator:
     animatorRef: {fileID: 0}
@@ -2192,7 +2192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5316d953c7abe498799575550c973535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 650
+  itemId: 661
   indentLevel: 0
   animator:
     animatorRef: {fileID: 0}
@@ -2218,7 +2218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5316d953c7abe498799575550c973535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 651
+  itemId: 662
   indentLevel: 0
   animator:
     animatorRef: {fileID: 0}
@@ -6295,6 +6295,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8294266, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -5059908281815251174, guid: 50a6a0d531136eb418a0a9c6beb0c6c7,
+        type: 2}
     - target: {fileID: 11404316, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
       propertyPath: volume
       value: 0.267
