@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2003,6 +2003,14 @@ PrefabInstance:
       objectReference: {fileID: 1141488884}
     m_RemovedComponents:
     - {fileID: 363067917, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+    - {fileID: 8074846996551989101, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+    - {fileID: 363067867, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+    - {fileID: 6350502110258191871, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+    - {fileID: 6285296643937954154, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+    - {fileID: 363067870, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+    - {fileID: 363067871, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+    - {fileID: 363067872, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+    - {fileID: 363067873, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
 --- !u!1 &363067864 stripped
 GameObject:
@@ -2034,7 +2042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 636
+  itemId: 644
   indentLevel: 1
   storyText: There it is again, an electric field!
   description: 
@@ -2061,7 +2069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 639
+  itemId: 645
   indentLevel: 0
   storyText: Try placing one on your playmat and see what happens!
   description: 
@@ -2088,7 +2096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 638
+  itemId: 646
   indentLevel: 0
   storyText: Grab the cards from Deck A. This deck contains all the components you
     will need to build a solar cell.
@@ -2116,7 +2124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 637
+  itemId: 647
   indentLevel: 0
   storyText: "Don't worry. I\u2019ll guide you through the process and provide helpful
     insights!"
@@ -2144,7 +2152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 640
+  itemId: 648
   indentLevel: 0
 --- !u!114 &363067871
 MonoBehaviour:
@@ -2158,7 +2166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5316d953c7abe498799575550c973535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 643
+  itemId: 649
   indentLevel: 0
   animator:
     animatorRef: {fileID: 0}
@@ -2184,7 +2192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5316d953c7abe498799575550c973535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 642
+  itemId: 650
   indentLevel: 0
   animator:
     animatorRef: {fileID: 0}
@@ -2210,7 +2218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5316d953c7abe498799575550c973535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 641
+  itemId: 651
   indentLevel: 0
   animator:
     animatorRef: {fileID: 0}
@@ -2608,7 +2616,7 @@ Camera:
   far clip plane: 10
   field of view: 60
   orthographic: 1
-  orthographic size: 28.49197
+  orthographic size: 51
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -2816,7 +2824,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 21.03482
+  orthographic size: 35.2
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
