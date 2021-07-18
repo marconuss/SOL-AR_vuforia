@@ -71,6 +71,18 @@ public partial class Card : MonoBehaviour
 
     }
 
+    public void HideCardSprite()
+    {
+        spriteRenderer.enabled = false;
+    }
+
+    public void ShowCardSprite()
+    {
+        spriteRenderer.enabled = true;
+    }
+
+
+
     public void InstatiateCardSprite(Vector3 pos, cardType _type)
     {
         newGameObject = Instantiate(prefab, pos, Quaternion.identity);

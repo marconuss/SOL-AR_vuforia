@@ -60,7 +60,20 @@ public class CardManager : MonoBehaviour
     {
         cardsOnField.Add(_card);
         grid.gridArray[x, y].placedCards.Add(_card);
-        grid.gridArray[x, y].hasCard = true;
+
+        if (grid.gridArray[x, y].hasCard == false) grid.gridArray[x, y].hasCard = true;
+          
+        else if (grid.gridArray[x,y].hasCard)
+        {
+            foreach (Card slotCard in grid.gridArray[x,y].placedCards)
+            {
+                if(slotCard != _card)
+                {
+                    slotCard.HideCardSprite();
+                }
+            }
+            
+        }
         _card.gridPosition = new Vector2Int(x, y);
         _card.InstantiateCard(grid.GetCellCenter(x, y), cardPrefab);
 
@@ -89,6 +102,14 @@ public class CardManager : MonoBehaviour
         grid.gridArray[x, y].placedCards.Remove(_card);
 
         _card.RemoveCard();
+
+        //check if there are still cards left and if there are, show the most top one
+        int slotCardCount = grid.gridArray[x, y].placedCards.Count;
+        if (slotCardCount > 0)
+        {
+            grid.gridArray[x, y].placedCards[slotCardCount - 1].ShowCardSprite();
+        }
+        else grid.gridArray[x, y].hasCard = false;
 
         foreach (Card card in cardsOnField)
         {
