@@ -17,11 +17,15 @@ public class Trigger : MonoBehaviour
 
     private void Update()
     {
-        if(onTriggerFirst && cardCollider)
-        {
-            if(!cardCollider.gameObject.GetComponent<CardPickup>().mouseHold)
-                PlaceCardOnTrigger(cardCollider);
-        }
+        //if (onTriggerFirst && cardCollider)
+        //{
+        //    if (!cardCollider.gameObject.GetComponent<CardPickup>().mouseHold)
+        //    {
+        //        PlaceCardOnTrigger(cardCollider);
+        //        onTriggerFirst = false;
+        //    }
+
+        //}
     }
 
     public List<GameObject> GetCardsOnTrigger()
@@ -46,12 +50,30 @@ public class Trigger : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         cardCollider = collision;
+
         onTriggerFirst = true;
+        if(!collision.gameObject.GetComponent<CardPickup>().mouseHold)
+        {
+            CardManager.instance.PlaceCard((int)TriggerGrid.instance.GetTriggerGridPosition(this.gameObject).x, (int)TriggerGrid.instance.GetTriggerGridPosition(this.gameObject).y, collision.gameObject.GetComponent<Card>());
+        }
+
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (!collision.gameObject.GetComponent<CardPickup>().mouseHold && onTriggerFirst)
+        {
+            PlaceCardOnTrigger(collision);
+            onTriggerFirst = false;
+        }
+
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-         Vector2 positionOnTrigger = TriggerGrid.instance.GetTriggerGridPosition(this.gameObject);
+        Vector2 positionOnTrigger = TriggerGrid.instance.GetTriggerGridPosition(this.gameObject);
+
         if (collision.gameObject.tag == "Cards")
         {
             if (this.gameObject.tag != "ZoomTrigger")

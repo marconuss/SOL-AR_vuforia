@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: dac0efff019abcc41967fce8760b6e05
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -782122885150005048
+    second: Electric field Sprites_0
+  - first:
+      213: -4517464325889901152
+    second: Electric field Sprites_1
+  - first:
+      213: 3089410535263289509
+    second: Electric field Sprites_2
+  - first:
+      213: -4039674882509291528
+    second: Electric field Sprites_3
+  - first:
+      213: -6753378768338870165
+    second: Electric field Sprites_4
+  - first:
+      213: 6868833999449262311
+    second: Electric field Sprites_5
+  - first:
+      213: 1662437084492775907
+    second: Electric field Sprites_6
+  - first:
+      213: 5853576492102174120
+    second: Electric field Sprites_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +65,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,7 +137,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Electric field Sprites_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1820
+        width: 1563
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c82eeb31675525f0800000000000000
+      internalID: -782122885150005048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric field Sprites_1
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 1824
+        width: 1557
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad35d1512ebe41c0800000000000000
+      internalID: -4517464325889901152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric field Sprites_2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1230
+        width: 1556
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0c7bf638acfda20800000000000000
+      internalID: 3089410535263289509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric field Sprites_3
+      rect:
+        serializedVersion: 2
+        x: 1697
+        y: 1230
+        width: 1559
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff37f3f81130f7c0800000000000000
+      internalID: -4039674882509291528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric field Sprites_4
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 630
+        width: 1563
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b602f778acd2742a0800000000000000
+      internalID: -6753378768338870165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric field Sprites_5
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 637
+        width: 1565
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e88c4e3120035f50800000000000000
+      internalID: 6868833999449262311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric field Sprites_6
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 40
+        width: 1571
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e1c0aa68b9221710800000000000000
+      internalID: 1662437084492775907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric field Sprites_7
+      rect:
+        serializedVersion: 2
+        x: 1697
+        y: 45
+        width: 1561
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a5c3555ec41c3150800000000000000
+      internalID: 5853576492102174120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

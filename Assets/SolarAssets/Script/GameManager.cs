@@ -17,6 +17,10 @@ public class GameManager : MonoBehaviour
     public GameObject electronPrefab;
     public GameObject electronParent;
 
+    [Header("ElectricField")]
+    public GameObject electricFieldPrefab;
+    public GameObject electricFieldSmall;
+
     [Header("Solution")]
     public List<Card.cardType> solution;
     public bool secondPhase;
@@ -33,6 +37,7 @@ public class GameManager : MonoBehaviour
     public bool electricFieldActive = false;
 
     int correctTiles;
+
 
 
     void Start()
@@ -109,16 +114,28 @@ public class GameManager : MonoBehaviour
 
             if (card.type == Card.cardType.NTypeSilicon)
             {
-                if (card.neighbourCards[1] != null && card.neighbourCards[1].type == Card.cardType.PTypeSilicon) { ActivateElectricField(); }
+                if (card.neighbourCards[1] != null && card.neighbourCards[1].type == Card.cardType.PTypeSilicon) 
+                {
+                    Vector3 spawnPos = (GameObject.FindGameObjectWithTag("PTypeSilicon").transform.position + GameObject.FindGameObjectWithTag("NTypeSilicon").transform.position) / 2;
+                    ActivateElectricField(spawnPos); 
+                }
+                
                 else if (electricFieldActive)
                 {
+
                     DeactivateElectricField();
 
                 }
 
-                if (card.neighbourCards[3] != null && card.neighbourCards[3].type == Card.cardType.PTypeSilicon) { ActivateElectricField();}
+                else if (card.neighbourCards[3] != null && card.neighbourCards[3].type == Card.cardType.PTypeSilicon) 
+                {
+                    Vector3 spawnPos = (GameObject.FindGameObjectWithTag("PTypeSilicon").transform.position + GameObject.FindGameObjectWithTag("NTypeSilicon").transform.position) / 2;
+                    ActivateElectricField(spawnPos);
+                }
                 else if (electricFieldActive)
-                { DeactivateElectricField(); }
+                { 
+                    DeactivateElectricField(); 
+                }
             }
 
             
@@ -224,19 +241,31 @@ public class GameManager : MonoBehaviour
         Debug.Log("Circuit Deactivated");
     }
 
-    public void ActivateElectricField()
+    public void ActivateElectricField(Vector3 pos)
     {
         if (electricFieldActive == false) electricFieldActive = true;
+
+        if (!secondPhase)
+            Instantiate(electricFieldPrefab, pos, Quaternion.identity);
+
+        if(secondPhase)
+            Instantiate(electricFieldSmall, pos, Quaternion.identity);
+        
+
         //set fungus variable
         fungusManager.SetBooleanVariable("electricField", true);
-        //Debug.Log("Electric Field activated");
+        Debug.Log("Electric Field activated");
     }
     public void DeactivateElectricField()
     {
         if (electricFieldActive == true) electricFieldActive = false;
+
+        GameObject electricField = GameObject.FindGameObjectWithTag("ElectricField");
+        Destroy(electricField);
+
         //set fungus variable
         fungusManager.SetBooleanVariable("electricField", false);
-        //Debug.Log("Electric Field activated");
+        Debug.Log("Electric Field deactivated");
     }
 
     private void OnDisable()

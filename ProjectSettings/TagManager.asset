@@ -15,6 +15,7 @@ TagManager:
   - Reflector
   - ZoomTrigger
   - WireConnector
+  - ElectricField
   layers:
   - Default
   - TransparentFX

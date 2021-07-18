@@ -26,6 +26,7 @@ public class CardPickup : MonoBehaviour
         
         mousePos = Input.mousePosition;
         mousePos = camera.ScreenToWorldPoint(mousePos);
+
         if(mouseHold)
         {
             this.gameObject.transform.localPosition = new Vector3(mousePos.x - startXpos, mousePos.y - startYpos, 0);

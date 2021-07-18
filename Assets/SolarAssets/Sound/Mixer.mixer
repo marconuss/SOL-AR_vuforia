@@ -20,7 +20,7 @@ AudioMixerGroupController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Fungus
+  m_Name: Sir Kit
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: c538ae216eadbf744bbd936fb677969d
   m_Children: []
