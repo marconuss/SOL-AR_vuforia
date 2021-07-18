@@ -47,7 +47,7 @@ public class PhotonBehaviourMarco : MonoBehaviour
         if (zoomImageParent)
         {
             GetComponent<CircleCollider2D>().enabled = false;
-            randTarget.y = Random.Range(-4, 4);
+            randTarget.y = Random.Range(-3, 3);
         }
     }
     // Update is called once per frame
@@ -162,7 +162,7 @@ public class PhotonBehaviourMarco : MonoBehaviour
                     audioSource.PlayOneShot(audioClips[clipIndex], clipsVolume);
                 }
                 renderer.sortingOrder = 2;
-                animator.Play("photonsShrink");
+                animator.Play("photonsFade");
                 Destroy(gameObject, animator.GetCurrentAnimatorStateInfo(0).length + 0.3f);
             }
         //}

@@ -16,6 +16,6 @@ public class AnimationDelation : MonoBehaviour
     public IEnumerator playAnimation()
     {
         yield return new WaitForSeconds(delay);
-        animator.Play("idle");
+        animator.Play("idle2");
     }
 }
