@@ -12,7 +12,7 @@ public class CardPickup : MonoBehaviour
     private float startXpos;
     private float startYpos;
 
-    private bool mouseHold = false;
+    public bool mouseHold = false;
 
 
     private void Awake()

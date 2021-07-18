@@ -11,6 +11,19 @@ public class Trigger : MonoBehaviour
     [SerializeField]
     bool cardPlaced = false;
 
+    private Collider2D cardCollider;
+    private bool onTriggerFirst;
+
+
+    private void Update()
+    {
+        if(onTriggerFirst && cardCollider)
+        {
+            if(!cardCollider.gameObject.GetComponent<CardPickup>().mouseHold)
+                PlaceCardOnTrigger(cardCollider);
+        }
+    }
+
     public List<GameObject> GetCardsOnTrigger()
     {
         return CardsOnTrigger;
@@ -32,28 +45,8 @@ public class Trigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Vector2 positionOnTrigger = TriggerGrid.instance.GetTriggerGridPosition(this.gameObject);
-        if (collision.gameObject.tag == "Cards")
-        {
-            //Debug.Log("Card placed");
-            if (this.gameObject.tag != "ZoomTrigger")
-            {
-                if((GameManager.instance.secondPhase == false) && (int)positionOnTrigger.x ==0)
-                {
-                    Debug.Log(collision.gameObject.name + " on " + this.gameObject.name);
-
-                    CardsOnTrigger.Add(collision.gameObject);
-                    CardManager.instance.PlaceCard((int)positionOnTrigger.x, (int)positionOnTrigger.y, collision.gameObject.GetComponent<Card>());
-                }
-                else if((GameManager.instance.secondPhase == true) && (int)positionOnTrigger.x ==1)
-                {
-                    Debug.Log(collision.gameObject.name + " on " + this.gameObject.name);
-
-                    CardsOnTrigger.Add(collision.gameObject);
-                    CardManager.instance.PlaceCard((int)positionOnTrigger.x, (int)positionOnTrigger.y, collision.gameObject.GetComponent<Card>());
-                }
-            }
-        }
+        cardCollider = collision;
+        onTriggerFirst = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -87,5 +80,34 @@ public class Trigger : MonoBehaviour
 
             }
         }
+        onTriggerFirst = false;
     }
+
+    private void PlaceCardOnTrigger(Collider2D collision)
+    {
+        Vector2 positionOnTrigger = TriggerGrid.instance.GetTriggerGridPosition(this.gameObject);
+        if (collision.gameObject.tag == "Cards")
+        {
+            //Debug.Log("Card placed");
+            if (this.gameObject.tag != "ZoomTrigger")
+            {
+                if ((GameManager.instance.secondPhase == false) && (int)positionOnTrigger.x == 0)
+                {
+                    Debug.Log(collision.gameObject.name + " on " + this.gameObject.name);
+
+                    CardsOnTrigger.Add(collision.gameObject);
+                    CardManager.instance.PlaceCard((int)positionOnTrigger.x, (int)positionOnTrigger.y, collision.gameObject.GetComponent<Card>());
+                }
+                else if ((GameManager.instance.secondPhase == true) && (int)positionOnTrigger.x == 1)
+                {
+                    Debug.Log(collision.gameObject.name + " on " + this.gameObject.name);
+
+                    CardsOnTrigger.Add(collision.gameObject);
+                    CardManager.instance.PlaceCard((int)positionOnTrigger.x, (int)positionOnTrigger.y, collision.gameObject.GetComponent<Card>());
+                }
+            }
+        }
+        onTriggerFirst = false;
+    }
+
 }
