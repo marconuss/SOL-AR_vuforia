@@ -82,6 +82,7 @@ public class Trigger : MonoBehaviour
                 CardManager.instance.RemoveCard((int)positionOnTrigger.x, (int)positionOnTrigger.y, collision.gameObject.GetComponent<Card>());
             }
         }
+        onTriggerFirst = false;
     }
 
     private void OnTriggerExit(Collider other)

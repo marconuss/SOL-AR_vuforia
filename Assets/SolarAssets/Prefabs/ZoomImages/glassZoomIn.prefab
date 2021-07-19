@@ -1217,7 +1217,7 @@ GameObject:
   - component: {fileID: 2084832207878679721}
   - component: {fileID: 2846989967982368406}
   - component: {fileID: 3988191660712389417}
-  - component: {fileID: 1116275391}
+  - component: {fileID: 6353149845920105986}
   m_Layer: 0
   m_Name: rock
   m_TagString: Untagged
@@ -1418,7 +1418,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1116275391
+--- !u!114 &6353149845920105986
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1427,12 +1427,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2084832207878679719}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c010488ef5e433428271dc2dc0e84f0, type: 3}
+  m_Script: {fileID: 11500000, guid: 1789cadae1c01424fbd07343acaf1480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  volume: 0.241
   audioClips:
   - {fileID: 8300000, guid: b869dc016b8c57c4b859b4445fa0695e, type: 3}
-  clipsVolume: 0.423
 --- !u!1 &2084832208088763575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1796,7 +1796,7 @@ GameObject:
   - component: {fileID: 2084832208329020566}
   - component: {fileID: 8762557926222249923}
   - component: {fileID: 1350686486}
-  - component: {fileID: 1116275390}
+  - component: {fileID: 4860665768699585791}
   m_Layer: 0
   m_Name: rock
   m_TagString: Untagged
@@ -1997,7 +1997,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1116275390
+--- !u!114 &4860665768699585791
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2006,12 +2006,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2084832208329020564}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c010488ef5e433428271dc2dc0e84f0, type: 3}
+  m_Script: {fileID: 11500000, guid: 1789cadae1c01424fbd07343acaf1480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  volume: 0.234
   audioClips:
   - {fileID: 8300000, guid: b869dc016b8c57c4b859b4445fa0695e, type: 3}
-  clipsVolume: 0.423
 --- !u!1 &2084832208334118363
 GameObject:
   m_ObjectHideFlags: 0
