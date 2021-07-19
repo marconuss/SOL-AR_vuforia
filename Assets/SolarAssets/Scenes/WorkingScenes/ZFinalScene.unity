@@ -1536,22 +1536,6 @@ PrefabInstance:
       propertyPath: animator.animatorVal
       value: 
       objectReference: {fileID: 1312556238}
-    - target: {fileID: 363067979, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
-      propertyPath: animator.animatorVal
-      value: 
-      objectReference: {fileID: 1312556238}
-    - target: {fileID: 363067980, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
-      propertyPath: animator.animatorVal
-      value: 
-      objectReference: {fileID: 657396500}
-    - target: {fileID: 363067981, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
-      propertyPath: _animator.animatorVal
-      value: 
-      objectReference: {fileID: 1312556238}
-    - target: {fileID: 363067982, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
-      propertyPath: _animator.animatorVal
-      value: 
-      objectReference: {fileID: 657396500}
     - target: {fileID: 363067994, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
       propertyPath: animator.animatorVal
       value: 
@@ -1560,26 +1544,6 @@ PrefabInstance:
       propertyPath: _animator.animatorVal
       value: 
       objectReference: {fileID: 1312556238}
-    - target: {fileID: 363068001, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
-      propertyPath: animator.animatorVal
-      value: 
-      objectReference: {fileID: 657396500}
-    - target: {fileID: 363068002, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
-      propertyPath: _animator.animatorVal
-      value: 
-      objectReference: {fileID: 657396500}
-    - target: {fileID: 363068003, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
-      propertyPath: commandList.Array.size
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 363068003, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
-      propertyPath: commandList.Array.data[3]
-      value: 
-      objectReference: {fileID: 363067866}
-    - target: {fileID: 363068003, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
-      propertyPath: commandList.Array.data[4]
-      value: 
-      objectReference: {fileID: 363067864}
     - target: {fileID: 363068042, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
       propertyPath: animator.animatorVal
       value: 
@@ -1918,26 +1882,8 @@ PrefabInstance:
       propertyPath: _animator.animatorVal
       value: 
       objectReference: {fileID: 1312556238}
-    m_RemovedComponents:
-    - {fileID: 363068002, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
-    - {fileID: 363068001, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
-    - {fileID: 363067982, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
-    - {fileID: 363067981, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
-    - {fileID: 363067980, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
-    - {fileID: 363067979, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
---- !u!114 &363067864 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 363067999, guid: 05efad992d94d5947b7ab9e023d6292a,
-    type: 3}
-  m_PrefabInstance: {fileID: 363067863}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &363067865 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4916049903551669931, guid: 05efad992d94d5947b7ab9e023d6292a,
@@ -1948,18 +1894,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &363067866 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 363067998, guid: 05efad992d94d5947b7ab9e023d6292a,
-    type: 3}
-  m_PrefabInstance: {fileID: 363067863}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &381274056
@@ -2762,12 +2696,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &657396500 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 7048835136087099768, guid: 47649936f38482849ae98df7a20721af,
-    type: 3}
-  m_PrefabInstance: {fileID: 1317560860}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &666520992
 GameObject:
   m_ObjectHideFlags: 0
