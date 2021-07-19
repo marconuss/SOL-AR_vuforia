@@ -305,7 +305,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 1.1
+    floatVal: 1.4
   durationOLD: 0
 --- !u!114 &9534108
 MonoBehaviour:
@@ -398,7 +398,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 0.4
+    floatVal: 0.3
   durationOLD: 0
 --- !u!114 &9534113
 MonoBehaviour:
@@ -2894,7 +2894,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 0.3
+    floatVal: 0.1
   durationOLD: 0
 --- !u!114 &9534232
 MonoBehaviour:
