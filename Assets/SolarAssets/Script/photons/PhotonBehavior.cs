@@ -69,7 +69,14 @@ public class PhotonBehavior : MonoBehaviour
 
     void SpawnElectron(Vector3 pos, Transform parent)
     {
-        GameObject electron = Instantiate(GameManager.instance.electronPrefab, pos, Quaternion.identity, parent);
+        //electrons don't spawn in phase two
+        //
+        // ---- probably should change this later ---------
+        ///
+        if (!GameManager.instance.secondPhase)
+        {
+            GameObject electron = Instantiate(GameManager.instance.electronPrefab, pos, Quaternion.identity, parent);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

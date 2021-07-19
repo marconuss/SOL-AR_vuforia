@@ -35,6 +35,7 @@ public class ElectronBehavior : MonoBehaviour
 
     void Start()
     {
+        GameManager.instance.allElectrons.Add(this);
         originalPos = transform.position;
         Xpos = originalPos.x;
 
@@ -78,6 +79,7 @@ public class ElectronBehavior : MonoBehaviour
                     StartCoroutine("MoveElectronToGrid");
                 }
             }
+            
 
 
         transform.position = new Vector3(Xpos, Ypos, 0);
@@ -98,18 +100,28 @@ public class ElectronBehavior : MonoBehaviour
 
     IEnumerator MoveElectronToGrid()
     {
+        bool animationPlayed = false;
+
         if (respawned == false)
         {   
             audio.clip = entersCircuitClips[Random.Range(0, entersCircuitClips.Length)];
             audio.Play();
             animator.Play("moveToGrid");
+            animationPlayed = true;
             yield return new WaitForSeconds(1.1f);
         }
         else if (respawned == true)
         {
             moving = false;
-            animator.Play("moveToGrid");
+
+            if (!animationPlayed)
+            {
+                animator.Play("moveToGrid");
+                animationPlayed = true;
+            }
+
             yield return new WaitForSeconds(1.1f);
+            
 
             idling = false;
             audio.loop = false;
