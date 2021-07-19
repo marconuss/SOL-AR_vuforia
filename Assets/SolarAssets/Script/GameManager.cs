@@ -279,6 +279,7 @@ public class GameManager : MonoBehaviour
 
     void Win()
     {
+        fungusManager.ExecuteBlock("EndSecondPhase");
         Debug.Log("You won the game wohoo!");
     }
 
