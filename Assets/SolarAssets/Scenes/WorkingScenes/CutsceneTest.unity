@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -305,7 +305,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 1.75
+    floatVal: 1.25
   durationOLD: 0
 --- !u!114 &9534108
 MonoBehaviour:
@@ -1623,9 +1623,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 115.234344
+    x: 118.234344
     y: -443.73615
-    width: 75
+    width: 75.6
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1868,7 +1868,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 114.53702
     y: -521.4716
-    width: 77
+    width: 77.2
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1921,9 +1921,9 @@ MonoBehaviour:
     width: 1939.0176
     height: 2009.5223
   selectedBlocks:
-  - {fileID: 9534178}
+  - {fileID: 9534172}
   selectedCommands:
-  - {fileID: 9534177}
+  - {fileID: 9534231}
   variables:
   - {fileID: 9534179}
   description: 'This is an example of a short Visual Novel / RPG
@@ -2894,7 +2894,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 0.1
+    floatVal: 0.6
   durationOLD: 0
 --- !u!114 &9534232
 MonoBehaviour:
