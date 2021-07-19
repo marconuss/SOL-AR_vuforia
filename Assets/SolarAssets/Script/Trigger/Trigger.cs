@@ -67,21 +67,22 @@ public class Trigger : MonoBehaviour
             onTriggerFirst = false;
         }
 
-
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         Vector2 positionOnTrigger = TriggerGrid.instance.GetTriggerGridPosition(this.gameObject);
 
-        if (collision.gameObject.tag == "Cards")
+        if ((collision.gameObject.tag == "Cards") && (this.gameObject.tag != "ZoomTrigger"))
         {
-            if (this.gameObject.tag != "ZoomTrigger")
+            if(CardsOnTrigger.Contains(collision.gameObject))
             {
                 CardsOnTrigger.Remove(collision.gameObject);
                 CardManager.instance.RemoveCard((int)positionOnTrigger.x, (int)positionOnTrigger.y, collision.gameObject.GetComponent<Card>());
             }
+            
         }
+        onTriggerFirst = false;
     }
 
     private void OnTriggerExit(Collider other)

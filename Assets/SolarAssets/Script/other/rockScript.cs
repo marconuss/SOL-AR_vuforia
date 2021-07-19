@@ -4,17 +4,21 @@ using UnityEngine;
 
 public class rockScript : MonoBehaviour
 {
-    [Range(0, 3)]
-    public float delay;
-    private Animator animator;
+    [Range(0, 1)]
+    public float volume;
+    [SerializeField]
+    private AudioClip[] audioClips;
+    private AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
-        StartCoroutine(playAnimation());
+        audioSource = GetComponent<AudioSource>();
     }
-    public IEnumerator playAnimation() {
-        yield return new WaitForSeconds(delay);
-        animator.Play("idle");
+
+
+    public void PlaySound()
+    {
+        int cIndex = Random.Range(0, audioClips.Length);
+        audioSource.PlayOneShot(audioClips[cIndex], volume);
     }
 }

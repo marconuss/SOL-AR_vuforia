@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -211,7 +211,6 @@ GameObject:
   - component: {fileID: 9534189}
   - component: {fileID: 9534190}
   - component: {fileID: 9534191}
-  - component: {fileID: 9534192}
   - component: {fileID: 9534193}
   - component: {fileID: 9534195}
   - component: {fileID: 9534194}
@@ -258,6 +257,7 @@ GameObject:
   - component: {fileID: 9534230}
   - component: {fileID: 9534231}
   - component: {fileID: 9534232}
+  - component: {fileID: 9534192}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -305,7 +305,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 1.75
+    floatVal: 1.25
   durationOLD: 0
 --- !u!114 &9534108
 MonoBehaviour:
@@ -1623,7 +1623,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 115.234344
+    x: 118.234344
     y: -443.73615
     width: 75
     height: 40
@@ -1909,7 +1909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 6.7350616, y: 704.60175}
+  scrollPos: {x: 110.73506, y: 635.60175}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 381.25
@@ -1921,9 +1921,9 @@ MonoBehaviour:
     width: 1939.0176
     height: 2009.5223
   selectedBlocks:
-  - {fileID: 9534178}
+  - {fileID: 9534172}
   selectedCommands:
-  - {fileID: 9534177}
+  - {fileID: 9534192}
   variables:
   - {fileID: 9534179}
   description: 'This is an example of a short Visual Novel / RPG
@@ -2154,23 +2154,21 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &9534192
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9534105}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 159
+  itemId: 212
   indentLevel: 0
-  _sceneName:
-    stringRef: {fileID: 0}
-    stringVal: ZFinalScene
-  loadingImage: {fileID: 0}
-  sceneNameOLD: 
+  targetObject: {fileID: 332433079}
+  methodName: LoadNextScene
+  delay: 0
 --- !u!114 &9534193
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2894,7 +2892,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 0.1
+    floatVal: 0.6
   durationOLD: 0
 --- !u!114 &9534232
 MonoBehaviour:
@@ -3089,6 +3087,49 @@ Transform:
   - {fileID: 931708455}
   m_Father: {fileID: 0}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &332433079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 332433081}
+  - component: {fileID: 332433080}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &332433080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332433079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6618bb36309f68b4b80586656b34bb30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &332433081
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332433079}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 50.18952, y: 18.065655, z: -44.071373}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &365988409
 GameObject:

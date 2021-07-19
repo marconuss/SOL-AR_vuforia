@@ -15,6 +15,7 @@ public class sirKit : MonoBehaviour
     private Animator parentAnimator;
     private Vector3 startPos;
     private bool backToStart = true;
+    private bool secondPhaseStart = false;
 
 
     void Start()
@@ -24,6 +25,7 @@ public class sirKit : MonoBehaviour
         arrived = false;
         litUp = false;
         activateCircuitAnim = false;
+        secondPhaseStart = false;
         startPos = transform.position;
     }
 
@@ -90,15 +92,18 @@ public class sirKit : MonoBehaviour
 
         parentAnimator.SetBool("move", false);
 
-        if (!backToStart)
+        if (!backToStart && parentAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
         {
             childAnimator.Play("idle", 0);
             backToStart = true;
             arrived = false;
-            if(GameManager.instance.fungusManager.GetBooleanVariable("insidePhase2") == true)
-            {
-                GameManager.instance.ActivateSecondPhase();
-            }
+
+        }
+
+        if (GameManager.instance.fungusManager.GetBooleanVariable("insidePhase2") == true && !secondPhaseStart)
+        {
+            GameManager.instance.ActivateSecondPhase();
+            secondPhaseStart = true;
         }
 
         //float step = speed * Time.deltaTime;
