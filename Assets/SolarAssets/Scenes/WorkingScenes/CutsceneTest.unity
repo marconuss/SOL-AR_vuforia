@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -305,7 +305,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 0.8
+    floatVal: 1.75
   durationOLD: 0
 --- !u!114 &9534108
 MonoBehaviour:
@@ -574,7 +574,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9534105}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
   m_Name: 
@@ -670,7 +670,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9534105}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
   m_Name: 
@@ -1625,7 +1625,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 115.234344
     y: -443.73615
-    width: 75.6
+    width: 75
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1848,9 +1848,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 0
   indentLevel: 0
-  musicClip: {fileID: 8300000, guid: f3c866bbc4639e7409c30c71736d84a6, type: 3}
+  musicClip: {fileID: 8300000, guid: caa7b3ad89779c14498154e60f474771, type: 3}
   atTime: 0
-  loop: 1
+  loop: 0
   fadeDuration: 1
 --- !u!114 &9534178
 MonoBehaviour:
@@ -1868,7 +1868,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 114.53702
     y: -521.4716
-    width: 77.2
+    width: 77
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1921,9 +1921,9 @@ MonoBehaviour:
     width: 1939.0176
     height: 2009.5223
   selectedBlocks:
-  - {fileID: 9534172}
+  - {fileID: 9534178}
   selectedCommands:
-  - {fileID: 9534107}
+  - {fileID: 9534177}
   variables:
   - {fileID: 9534179}
   description: 'This is an example of a short Visual Novel / RPG
@@ -2142,7 +2142,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9534105}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
   m_Name: 

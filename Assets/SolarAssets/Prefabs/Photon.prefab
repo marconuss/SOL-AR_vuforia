@@ -123,7 +123,7 @@ MonoBehaviour:
   movementSpeed: 5
   borderX: 80
   borderY: -50
-  reflectionRate: 80
+  reflectionRate: 20
   state: 1
   reflectedClips:
   - {fileID: 8300000, guid: 18abd98e52631124a8637abb07febb64, type: 3}

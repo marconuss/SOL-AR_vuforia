@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2021,6 +2021,12 @@ PrefabInstance:
       propertyPath: animator.animatorVal
       value: 
       objectReference: {fileID: 1312556238}
+    - target: {fileID: 4916049903551669773, guid: 05efad992d94d5947b7ab9e023d6292a,
+        type: 3}
+      propertyPath: storyText
+      value: 'This is quite the puzzle. How can the silicon layers combine their
+        forces for the sake of electricity?      '
+      objectReference: {fileID: 0}
     - target: {fileID: 4916049903551669774, guid: 05efad992d94d5947b7ab9e023d6292a,
         type: 3}
       propertyPath: animator.animatorVal
@@ -3506,6 +3512,20 @@ PrefabInstance:
     - {fileID: 363067969, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
     - {fileID: 363067970, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
     - {fileID: 363067971, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+    - {fileID: 7332077282142434856, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+    - {fileID: 3035160490262860472, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+    - {fileID: 7594104441109424178, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+    - {fileID: 3293615391273221219, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+    - {fileID: 855917015692255243, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+    - {fileID: 3031926094616697853, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+    - {fileID: 1418595265965435494, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+    - {fileID: 7875520259480558548, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+    - {fileID: 8259192835520110768, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+    - {fileID: 4819596213412197131, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+    - {fileID: 363067972, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+    - {fileID: 363067973, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+    - {fileID: 363067974, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
+    - {fileID: 363067975, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 05efad992d94d5947b7ab9e023d6292a, type: 3}
 --- !u!1 &363067864 stripped
 GameObject:
@@ -3537,7 +3557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 685
+  itemId: 710
   indentLevel: 2
   storyText: There it is again, an electric field!
   description: 
@@ -3591,7 +3611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 686
+  itemId: 711
   indentLevel: 0
   storyText: Grab the cards from Deck A. This deck contains all the components you
     will need to build a solar cell.
@@ -3619,7 +3639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 687
+  itemId: 712
   indentLevel: 0
   storyText: "Don't worry. I\u2019ll guide you through the process and provide helpful
     insights!"
@@ -4771,7 +4791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 692
+  itemId: 713
   indentLevel: 0
   anyOrAllConditions: 0
   conditions:
@@ -5038,7 +5058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 693
+  itemId: 714
   indentLevel: 0
   anyOrAllConditions: 0
   conditions:
@@ -6037,7 +6057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee63e642958494f1ebed8116ae4b1103, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 697
+  itemId: 715
   indentLevel: 0
   _animator:
     animatorRef: {fileID: 0}
@@ -6062,7 +6082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee63e642958494f1ebed8116ae4b1103, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 698
+  itemId: 716
   indentLevel: 0
   _animator:
     animatorRef: {fileID: 0}
@@ -6087,7 +6107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 699
+  itemId: 717
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
@@ -6105,7 +6125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 700
+  itemId: 718
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
@@ -6123,7 +6143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5316d953c7abe498799575550c973535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 701
+  itemId: 719
   indentLevel: 0
   animator:
     animatorRef: {fileID: 0}
@@ -6456,7 +6476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 709
+  itemId: 720
   indentLevel: 0
   anyVar:
     variable: {fileID: 363067885}
@@ -6608,7 +6628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 708
+  itemId: 721
   indentLevel: 0
   anyVar:
     variable: {fileID: 363067885}
@@ -6760,7 +6780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 707
+  itemId: 722
   indentLevel: 0
   anyVar:
     variable: {fileID: 363067885}
@@ -6912,7 +6932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 706
+  itemId: 723
   indentLevel: 0
   anyVar:
     variable: {fileID: 363067885}
@@ -12749,6 +12769,134 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1654416044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1654416046}
+  - component: {fileID: 1654416045}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1654416045
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654416044}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 6543760827393577334, guid: 50a6a0d531136eb418a0a9c6beb0c6c7,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: baa69856809333e478228ef9a76dc82b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1654416046
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654416044}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1739805762
 GameObject:
   m_ObjectHideFlags: 0
