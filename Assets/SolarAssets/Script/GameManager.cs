@@ -103,7 +103,6 @@ public class GameManager : MonoBehaviour
                     }
                     else if (circuitActive) DeactivateCircuit();
 
-
                 }
                 else if (circuitActive) DeactivateCircuit();
 
@@ -136,9 +135,7 @@ public class GameManager : MonoBehaviour
                 { 
                     DeactivateElectricField(); 
                 }
-            }
-
-            
+            }            
         }
     }
 
@@ -156,6 +153,7 @@ public class GameManager : MonoBehaviour
 
                     if (correctTiles == 6 && secondPhase == false)
                     {
+                        fungusManager.StopAllBlocks();
                         fungusManager.ExecuteBlock("StartSecondPhase");
                         //ActivateSecondPhase();
                         return;
@@ -181,6 +179,7 @@ public class GameManager : MonoBehaviour
 
                     if (correctTiles == 6 && secondPhase == false)
                     {
+                        fungusManager.StopAllBlocks();
                         fungusManager.ExecuteBlock("StartSeceondPhase");
                         //ActivateSecondPhase();
                         return;

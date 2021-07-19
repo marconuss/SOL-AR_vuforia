@@ -87,8 +87,9 @@ public class CardManager : MonoBehaviour
         }
 
         //call fungus flowchart block
-        if(GameManager.instance.secondPhase == false)
-           GameManager.instance.fungusManager.ExecuteBlock(_card.type.ToString());
+        //if(GameManager.instance.secondPhase == false)
+        //blocks are executed always at card placement
+        GameManager.instance.fungusManager.ExecuteBlock(_card.type.ToString());
 
         if(OnCardPlaced != null)
         {
