@@ -23,8 +23,19 @@ public class HackyScript : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Return))
         {
-            CardManager.instance.PlaceCard(positions[pressCounter].x, positions[pressCounter].y, cardsToPlay[pressCounter]);
-            pressCounter++;
+            if(pressCounter == 4)
+            {
+                CardManager.instance.RemoveCard(positions[pressCounter].x, positions[pressCounter].y, cardsToPlay[pressCounter]);
+                pressCounter++;
+            }
+
+            else
+            {
+                CardManager.instance.PlaceCard(positions[pressCounter].x, positions[pressCounter].y, cardsToPlay[pressCounter]);
+
+                pressCounter++;
+            }
+            
         }
     }
 }

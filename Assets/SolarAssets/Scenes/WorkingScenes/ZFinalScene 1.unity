@@ -617,7 +617,6 @@ GameObject:
   - component: {fileID: 97500713}
   - component: {fileID: 97500712}
   - component: {fileID: 97500711}
-  - component: {fileID: 97500710}
   - component: {fileID: 97500709}
   m_Layer: 0
   m_Name: Glass
@@ -656,19 +655,6 @@ MonoBehaviour:
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
   neighbourCards: []
   gridPosition: {x: 0, y: 0}
---- !u!114 &97500710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 97500707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4219187981226be4bbd4fc8a38b7a458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseHold: 0
 --- !u!61 &97500711
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1130,7 +1116,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 294853032}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!108 &262908411
 Light:
@@ -1311,7 +1297,6 @@ Transform:
   m_LocalPosition: {x: -120.4, y: 2.916605, z: -0.68357086}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 428936319}
   - {fileID: 262908410}
   - {fileID: 1133505003}
   - {fileID: 1127801012}
@@ -1331,7 +1316,6 @@ GameObject:
   - component: {fileID: 313932172}
   - component: {fileID: 313932171}
   - component: {fileID: 313932170}
-  - component: {fileID: 313932169}
   - component: {fileID: 313932168}
   m_Layer: 0
   m_Name: Conductor
@@ -1370,19 +1354,6 @@ MonoBehaviour:
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
   neighbourCards: []
   gridPosition: {x: 0, y: 0}
---- !u!114 &313932169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 313932166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4219187981226be4bbd4fc8a38b7a458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseHold: 0
 --- !u!61 &313932170
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2021,89 +1992,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &428936318
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 428936319}
-  - component: {fileID: 428936321}
-  - component: {fileID: 428936320}
-  m_Layer: 0
-  m_Name: VuforiaCamera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &428936319
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 428936318}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.2, y: 15.083395, z: -8.316429}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 294853032}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &428936320
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 428936318}
-  m_Enabled: 1
---- !u!20 &428936321
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 428936318}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.56078434, g: 0.54901963, b: 0.627451, a: 1}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0.4
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 10
-  field of view: 60
-  orthographic: 1
-  orthographic size: 51
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
 --- !u!1001 &519164648
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2356,7 +2244,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 539658117}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 127.2, y: 14.2, z: -0.31642914}
+  m_LocalPosition: {x: 129.1, y: 12.1, z: -0.31642914}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1815552944}
@@ -2389,7 +2277,7 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.4
+    x: 0
     y: 0
     width: 1
     height: 1
@@ -2397,7 +2285,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 35.2
+  orthographic size: 22.6
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -2550,7 +2438,6 @@ GameObject:
   - component: {fileID: 569086443}
   - component: {fileID: 569086442}
   - component: {fileID: 569086441}
-  - component: {fileID: 569086440}
   - component: {fileID: 569086439}
   m_Layer: 0
   m_Name: Grid Conductor
@@ -2589,19 +2476,6 @@ MonoBehaviour:
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
   neighbourCards: []
   gridPosition: {x: 0, y: 0}
---- !u!114 &569086440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 569086437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4219187981226be4bbd4fc8a38b7a458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseHold: 0
 --- !u!61 &569086441
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2786,7 +2660,6 @@ GameObject:
   - component: {fileID: 724301468}
   - component: {fileID: 724301467}
   - component: {fileID: 724301466}
-  - component: {fileID: 724301465}
   - component: {fileID: 724301464}
   m_Layer: 0
   m_Name: NType Silicon (1)
@@ -2825,19 +2698,6 @@ MonoBehaviour:
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
   neighbourCards: []
   gridPosition: {x: 0, y: 0}
---- !u!114 &724301465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 724301462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4219187981226be4bbd4fc8a38b7a458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseHold: 0
 --- !u!61 &724301466
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3073,7 +2933,6 @@ GameObject:
   - component: {fileID: 893964657}
   - component: {fileID: 893964656}
   - component: {fileID: 893964655}
-  - component: {fileID: 893964654}
   - component: {fileID: 893964653}
   m_Layer: 0
   m_Name: Reflector (1)
@@ -3112,19 +2971,6 @@ MonoBehaviour:
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
   neighbourCards: []
   gridPosition: {x: 0, y: 0}
---- !u!114 &893964654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 893964651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4219187981226be4bbd4fc8a38b7a458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseHold: 0
 --- !u!61 &893964655
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3235,7 +3081,6 @@ GameObject:
   - component: {fileID: 917593109}
   - component: {fileID: 917593108}
   - component: {fileID: 917593107}
-  - component: {fileID: 917593106}
   - component: {fileID: 917593105}
   m_Layer: 0
   m_Name: Grid Conductor (1)
@@ -3274,19 +3119,6 @@ MonoBehaviour:
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
   neighbourCards: []
   gridPosition: {x: 0, y: 0}
---- !u!114 &917593106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 917593103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4219187981226be4bbd4fc8a38b7a458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseHold: 0
 --- !u!61 &917593107
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3415,7 +3247,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 294853032}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1127801013
 MonoBehaviour:
@@ -3500,7 +3332,7 @@ Transform:
   - {fileID: 259922857}
   - {fileID: 2958486}
   m_Father: {fileID: 294853032}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1133505004
 MonoBehaviour:
@@ -3675,7 +3507,6 @@ GameObject:
   - component: {fileID: 1191927826}
   - component: {fileID: 1191927825}
   - component: {fileID: 1191927824}
-  - component: {fileID: 1191927823}
   - component: {fileID: 1191927822}
   m_Layer: 0
   m_Name: Reflector
@@ -3714,19 +3545,6 @@ MonoBehaviour:
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
   neighbourCards: []
   gridPosition: {x: 0, y: 0}
---- !u!114 &1191927823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1191927820}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4219187981226be4bbd4fc8a38b7a458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseHold: 0
 --- !u!61 &1191927824
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3837,7 +3655,6 @@ GameObject:
   - component: {fileID: 1199553177}
   - component: {fileID: 1199553176}
   - component: {fileID: 1199553175}
-  - component: {fileID: 1199553174}
   - component: {fileID: 1199553173}
   m_Layer: 0
   m_Name: Glass (1)
@@ -3876,19 +3693,6 @@ MonoBehaviour:
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
   neighbourCards: []
   gridPosition: {x: 0, y: 0}
---- !u!114 &1199553174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1199553171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4219187981226be4bbd4fc8a38b7a458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseHold: 0
 --- !u!61 &1199553175
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3999,7 +3803,6 @@ GameObject:
   - component: {fileID: 1200229646}
   - component: {fileID: 1200229645}
   - component: {fileID: 1200229644}
-  - component: {fileID: 1200229643}
   - component: {fileID: 1200229642}
   m_Layer: 0
   m_Name: Conductor (1)
@@ -4038,19 +3841,6 @@ MonoBehaviour:
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
   neighbourCards: []
   gridPosition: {x: 0, y: 0}
---- !u!114 &1200229643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1200229640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4219187981226be4bbd4fc8a38b7a458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseHold: 0
 --- !u!61 &1200229644
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4608,8 +4398,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1377630500}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 127.8, y: 14.083395, z: 0.68357086}
-  m_LocalScale: {x: 3.972719, y: 3.972719, z: 3.972719}
+  m_LocalPosition: {x: 129.1, y: 10.9297, z: 0.6836}
+  m_LocalScale: {x: 4.5567083, y: 4.5567083, z: 4.5567083}
   m_Children: []
   m_Father: {fileID: 1815552944}
   m_RootOrder: 3
@@ -4802,7 +4592,6 @@ GameObject:
   - component: {fileID: 1405876046}
   - component: {fileID: 1405876045}
   - component: {fileID: 1405876044}
-  - component: {fileID: 1405876043}
   - component: {fileID: 1405876042}
   m_Layer: 0
   m_Name: NType Silicon
@@ -4841,19 +4630,6 @@ MonoBehaviour:
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
   neighbourCards: []
   gridPosition: {x: 0, y: 0}
---- !u!114 &1405876043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1405876040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4219187981226be4bbd4fc8a38b7a458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseHold: 0
 --- !u!61 &1405876044
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5137,7 +4913,6 @@ GameObject:
   - component: {fileID: 1646275006}
   - component: {fileID: 1646275005}
   - component: {fileID: 1646275004}
-  - component: {fileID: 1646275003}
   - component: {fileID: 1646275002}
   m_Layer: 0
   m_Name: PType Silicon
@@ -5176,19 +4951,6 @@ MonoBehaviour:
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
   neighbourCards: []
   gridPosition: {x: 0, y: 0}
---- !u!114 &1646275003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646275000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4219187981226be4bbd4fc8a38b7a458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseHold: 0
 --- !u!61 &1646275004
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5887,7 +5649,6 @@ Transform:
   - {fileID: 125745332}
   - {fileID: 1597351567}
   - {fileID: 1183746392}
-  - {fileID: 1961659559}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6056,128 +5817,8 @@ Transform:
   - {fileID: 2018783963}
   - {fileID: 893964652}
   m_Father: {fileID: 294853032}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1961659558
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1815552944}
-    m_Modifications:
-    - target: {fileID: 188902, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: m_Name
-      value: SayDialog
-      objectReference: {fileID: 0}
-    - target: {fileID: 188902, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8294266, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: -5059908281815251174, guid: 50a6a0d531136eb418a0a9c6beb0c6c7,
-        type: 2}
-    - target: {fileID: 11404316, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: volume
-      value: 0.267
-      objectReference: {fileID: 0}
-    - target: {fileID: 22388894, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22488902, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22488902, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22488902, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 22488902, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22488902, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22488902, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22488902, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22488902, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22488902, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22488902, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22488902, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22488902, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.68357086
-      objectReference: {fileID: 0}
-    - target: {fileID: 22488902, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 22488902, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22488902, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22488902, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22488902, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 94.33074
-      objectReference: {fileID: 0}
-    - target: {fileID: 22488902, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -2.916605
-      objectReference: {fileID: 0}
-    - target: {fileID: 22488902, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22488902, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22488902, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 651dd88223b0cb845a9b7f626593fc2b, type: 3}
---- !u!224 &1961659559 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 22488902, guid: 651dd88223b0cb845a9b7f626593fc2b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1961659558}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1966503725
 GameObject:
   m_ObjectHideFlags: 0
@@ -6315,7 +5956,6 @@ GameObject:
   - component: {fileID: 2018783968}
   - component: {fileID: 2018783967}
   - component: {fileID: 2018783966}
-  - component: {fileID: 2018783965}
   - component: {fileID: 2018783964}
   m_Layer: 0
   m_Name: PType Silicon (1)
@@ -6354,19 +5994,6 @@ MonoBehaviour:
   prefab: {fileID: 682462182018053093, guid: 94a228bb1b76b8a4b86e35b858aec0a4, type: 3}
   neighbourCards: []
   gridPosition: {x: 0, y: 0}
---- !u!114 &2018783965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2018783962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4219187981226be4bbd4fc8a38b7a458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseHold: 0
 --- !u!61 &2018783966
 BoxCollider2D:
   m_ObjectHideFlags: 0
